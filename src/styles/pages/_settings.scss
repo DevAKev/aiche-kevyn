@@ -1,0 +1,38 @@
+// @font-face {
+//     font-family: "font-1";
+//     src: url(../assets/font/JosefinSans-Medium.ttf);
+//   }
+  
+  $font-1: "font-1", sans-serif;
+  
+  $color-1: #6180fb;
+  $color-2: salmon;
+  $color-3: #282c34;
+  $color-4: rgb(67, 3, 8);
+  $white: rgb(243, 243, 243);
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+    html, body {
+    overflow-x: hidden;
+    }
+}

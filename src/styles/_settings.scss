@@ -1,15 +1,72 @@
-// @font-face {
-//     font-family: "font-1";
-//     src: url(../assets/font/JosefinSans-Medium.ttf);
-//   }
+// Type of font to use
+@font-face {
+  font-family: 'Array-Regular';
+  src: url('../assets/fonts/Array_Complete/Fonts/WEB/fonts/Array-Regular.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+}
+
+// Variables globale for colors
+:root {
+    --background-light: #f8f8f8;  // Color background (light mode)
+    --text-dark: #333;            // Color text (dark mode)
+    --background-dark: #1c1c1c;   // Color background (dark mode)
+    --text-light: #fff;           // Color text (light mode)
+
+    // Principal Font
+    --font-1: 'Array-Regular', sans-serif;
+    --color-1: #6180fb;
+    --color-2: salmon;
+    --color-3: #282c34;
+    --white: rgb(243, 243, 243);
+    --gradient: linear-gradient(to right, rgb(123, 16, 146), rgb(205, 217, 62));
+}
+
+/* Scroll bar */
+html::-webkit-scrollbar {
+  width: 0.6rem;
+}
+html::-webkit-scrollbar-track {
+  background: var(--gradient);      // Color of slide track
+}
+html::-webkit-scrollbar-thumb {
+  background:var(--color-3);        // Color of slide button
+  border-radius: 2rem;
+}
+
+// Container for all the app
+.app-container {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: var(--background);
+  transition: background-color 2s, color 2s;  // Time transition for dark & light mode
+}
+
+// Container for all the page content
+  .page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
   
-  $font-1: "font-1", sans-serif;
+    // Color background & text for light mode
+    &.light-mode {
+      background: var(--background-light);
+      --text: var(--text-dark);
+    }
+   // Color background & text for dark mode
+    &.dark-mode {
+      background: var(--background-dark);
+      --text: var(--text-light);
+    }
+    color: var(--text);
+  }
   
-  $color-1: #6180fb;
-  $color-2: salmon;
-  $color-3: #282c34;
-  $color-4: rgb(67, 3, 8);
-  $white: rgb(243, 243, 243);
+  body {
+    background-color: var(--background);
+    color: var(--text);
+    font-size: 2rem;
+    font-family: var(--font-1);
+  }
 
 @mixin verticalCenter {
     display: flex;
@@ -23,14 +80,11 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-}
-
 li {
     list-style-type: none;
 }
 
+// Responsive
 @media screen and (max-width: 768px) {
     html, body {
     overflow-x: hidden;

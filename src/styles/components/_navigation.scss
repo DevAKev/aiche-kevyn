@@ -6,6 +6,15 @@
   width: 5px;
   font-size: 2rem;
   margin-left: 10px;
+  padding-top: 10px;
+}
+
+.language-toggle {
+  cursor: pointer;
+  width: 5px;
+  font-size: 2rem;
+  margin-left: 20px;
+  color: var(--text);
 }
 
 .light-mode {

@@ -1,41 +1,53 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../hooks/ThemeContext";
+import fr_flag from "../assets/flags/fr_flag.png";
+import uk_flag from "../assets/flags/uk_flag.png";
 
 const Navigation = () => {
-  // Use the actual theme and the function to toggle it from the context
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme, language, toggleLanguage } = useTheme();
 
   return (
-    // Add the theme class to the navigation container
     <div className={`navigation ${theme}-mode`}>
-      {/* Add the theme toggle button */}
       <div className="theme-toggle" onClick={toggleTheme}>
-        {/* Icons dark mode & light mode */}
         {theme === "light" ? "🌚" : "🌝"}
       </div>
 
-      {/* NavLink list */}
+      <div className="language-toggle" onClick={toggleLanguage}>
+        {language === "en" ? (
+          <>
+            <span style={{ display: "inline-block", marginRight: "5px" }}>
+              EN
+            </span>
+            <img src={uk_flag} alt="English Flag" />
+          </>
+        ) : (
+          <>
+            <span style={{ display: "inline-block", marginRight: "5px" }}>
+              FR
+            </span>
+            <img src={fr_flag} alt="French Flag" />
+          </>
+        )}
+      </div>
+
       <ul>
-        {/* Home */}
         <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-          <li>ACCUEIL</li>
+          <li>{language === "en" ? "HOME" : "ACCUEIL"}</li>
         </NavLink>
 
-        {/* Projects */}
         <NavLink
           to="/projets"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li>PROJETS</li>
+          <li>{language === "en" ? "PROJECTS" : "PROJETS"}</li>
         </NavLink>
 
-        {/* About */}
         <NavLink
           to="/about"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li>À PROPOS</li>
+          <li>{language === "en" ? "ABOUT" : "À PROPOS"}</li>
         </NavLink>
       </ul>
     </div>

@@ -1,0 +1,45 @@
+// Style pour la section des projets
+.projects-section {
+    margin-top: 50px;
+    text-align: center;
+}
+.my-projects-title {
+    font-size: 2.5rem;
+    color: #3498db; // Bleu vif
+    margin-bottom: 50px;
+}
+
+.projects-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 50px rgba(67, 29, 236, 0.963);
+}
+.project-title {
+    font-size: 1.5rem;
+    color: #2c3e50; // Gris foncé
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #7f8c8d; // Gris moyen
+    margin-bottom: 15px;
+}
+
+.project-technologies {
+    display: flex;
+        justify-content: center;
+}
+.project-tech-icon {
+    font-size: 2rem;
+    color: #e74c3c;
+    margin: 0 5px;
+}

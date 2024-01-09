@@ -1,14 +1,19 @@
 // About page
 import React from "react";
 import Layout from "../components/Layout";
+import { useTheme } from "../hooks/ThemeContext";
 
 // Component to display the about page
 const About = () => {
+  const { language } = useTheme();
+
+  const titleKey = language === "en" ? "About" : "À propos";
+
   return (
     // Use the Layout component to wrap the page content
     <Layout>
       <div className="page-content">
-        <h1>À PROPOS</h1>
+        <h1>{titleKey}</h1>
         <br />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae,

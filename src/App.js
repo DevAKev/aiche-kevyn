@@ -18,8 +18,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/projets" element={<Projets />} />
           <Route path="/about" element={<About />} />
-
-          {/* Add a 404 error page */}
           <Route path="*" element={<h1>ERROR 404</h1>} />
         </Routes>
       </BrowserRouter>

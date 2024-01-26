@@ -3,10 +3,12 @@ import { NavLink } from "react-router-dom";
 import { useTheme } from "../hooks/ThemeContext";
 import fr_flag from "../assets/flags/fr_flag.png";
 import uk_flag from "../assets/flags/uk_flag.png";
+import Logo from "./Logo";
 
 const Navigation = () => {
   const { theme, toggleTheme, language, toggleLanguage } = useTheme();
 
+  // icons for the themes and language toggles
   return (
     <div className={`navigation ${theme}-mode`}>
       <div className="theme-toggle" onClick={toggleTheme}>
@@ -30,7 +32,9 @@ const Navigation = () => {
           </>
         )}
       </div>
-
+      <div className="logo-container">
+        <Logo />
+      </div>
       <ul>
         <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
           <li>{language === "en" ? "HOME" : "ACCUEIL"}</li>

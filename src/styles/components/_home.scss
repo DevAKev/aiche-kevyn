@@ -1,6 +1,45 @@
-// Ma phrase de description
+// Texte de présentation
 .my-desc {
-    font-size: 2rem;
-    text-align: center;
-    margin: 50px;
+  font-size: 2rem;
+  text-align: center;
+  margin: 50px 0;
+  // word-wrap: break-word;
+  max-width: 400px; // Ajustez la largeur selon vos besoins
+  max-height: 200px;
+  overflow: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  white-space: pre-line; /* Permet au texte de revenir à la ligne */
+  @media (max-width: 860px) {
+    font-size: 1.5rem;
+    display: flex;
+    white-space: normal; /* Permet au texte de revenir à la ligne sur les petits écrans */
+  }
 }
+
+.typewriter {
+    max-width: 100%; /* Largeur de la zone de texte */
+    width: 100%;
+    overflow: hidden; /* Empêche le texte de déborder */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne automatiquement */
+    border-right: 0.20rem solid orange; /* Curseur de texte clignotant */
+    letter-spacing: 0.5px; /* Espacement des lettres */
+    @media (max-width: 860px) {
+      white-space: normal; /* Permet au texte de revenir à la ligne sur les petits écrans */
+    }
+  }
+
+  .visible {
+    opacity: 1; /* Rend le texte visible */
+    animation: typewriter 6.5s steps(30, end), blink-caret 1s step-end infinite; /* Ajoute l'effet d'écriture et le curseur clignotant */
+  }
+  
+  @keyframes typewriter {
+    from { width: 0; } /* Commence sans largeur (invisible) */
+    to { width: 100%; } /* Termine avec une largeur complète (visible) */
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; } /* Curseur clignote à mi-chemin */
+  }

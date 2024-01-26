@@ -6,12 +6,18 @@
   font-style: normal;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 // Variables globale for colors
 :root {
-    --background-light: #f8f8f8;  // Color background (light mode)
-    --text-dark: #333;            // Color text (dark mode)
-    --background-dark: #1c1c1c;   // Color background (dark mode)
-    --text-light: #fff;           // Color text (light mode)
+    --background-light: #ffffff;  // Color background (light mode)
+    --text-dark: #010112;            // Color text (dark mode)
+    --background-dark: #000000;   // Color background (dark mode)
+    --text-light: #ffffff;           // Color text (light mode)
 
     // Principal Font
     --font-1: 'Array-Regular', sans-serif;
@@ -46,7 +52,6 @@ html::-webkit-scrollbar-thumb {
   .page-content {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
   
     // Color background & text for light mode
     &.light-mode {
@@ -62,6 +67,9 @@ html::-webkit-scrollbar-thumb {
   }
   
   body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: var(--background);
     color: var(--text);
     font-size: 2rem;
@@ -72,12 +80,6 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 li {

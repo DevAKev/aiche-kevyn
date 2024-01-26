@@ -10,23 +10,23 @@ const Cards_Projects = () => {
     {
       title: "Project 1",
       description: "Description du projet 1",
-      technologies: ["html5", "css3", "javascript"],
-      // poster: "src/assets/img/logo192.png",
-      // Plus de détails ou des champs si nécessaire
+      technologies: ["html5", "css3", "javascript", "jquery", "php", "mysql"],
+      poster: "./img-Garage-Parrot.png",
+      // More details
     },
     {
       title: "Project 2",
       description: "Description du projet 2",
       technologies: ["react", "nodejs", "mongodb"],
-      // Plus de détails ou des champs si nécessaire
+      // More details
     },
     {
       title: "Project 3",
       description: "Description du projet 3",
       technologies: ["python", "django", "postgresql"],
-      // Plus de détails ou des champs si nécessaire
+      // More details
     },
-    // Projets supplémentaire au besoin
+    // More projects
   ];
 
   return (
@@ -45,8 +45,8 @@ const Cards_Projects = () => {
                 ></i>
               ))}
             </div>
-            {/* Aperçu projets */}
-            <img src={project.poster} alt={project.title} />
+            {/* projects preview */}
+            <img id="imgProjects" src={project.poster} alt={project.title} />
           </div>
         ))}
       </div>

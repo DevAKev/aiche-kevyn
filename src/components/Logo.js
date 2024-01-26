@@ -1,9 +1,11 @@
 import React from "react";
+import { useTheme } from "../hooks/ThemeContext";
 
 const Logo = () => {
+  const { theme } = useTheme();
   return (
-    <div className="logo">
-      {/* Les images importées depuis la balise IMG sont accessibles depuis le dossier public */}
+    <div className={`logo-container ${theme}-mode`}>
+      {/* images imported from the "img" tag are accessible from public folder */}
       <img id="img-logo" src="./galaxy.png" alt="galaxy logo" />
     </div>
   );

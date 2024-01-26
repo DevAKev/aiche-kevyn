@@ -1,14 +1,30 @@
-.logo {
+.logo-container {
     width: 150px;
     height: 150px;
     margin: 0 auto;
     display: block;
     border-radius: 50%;
-    box-shadow: 0 0 50px rgba(67, 29, 236, 0.963);
+    box-shadow: 0 0 100px rgba(67, 29, 236, 0.963);
+    
+    // Styles communs au light et dark mode
+    // border: 1px solid #fdfdfd;
+    
+    // Light mode
+    &.light-mode {
+        background: linear-gradient(to top, rgb(149, 4, 4), rgb(245, 212, 46));
+        box-shadow: 0 0 50px rgba(210, 12, 12, 1);
+        border: 2px solid #fe2600;
+    }
+    
+    // Dark mode
+    &.dark-mode {
+        background: linear-gradient(to top, (#8a2be2), (#ee82ee), (#ff6eff));
+        box-shadow:0 0 50px (#fdb6fd);
+        border: 2px solid #b580b2;
+    }
 }
 
 #img-logo {
-    margin-top: 5px;
     width: 100%;
     height: 100%;
     border-radius: 10%;

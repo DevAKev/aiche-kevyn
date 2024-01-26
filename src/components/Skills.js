@@ -21,17 +21,11 @@ const Skills = () => {
     "php",
     "mysql",
     "git",
-    "bash",
     "github",
     "vscode",
-    "android",
-    "windows8",
-    "apple",
     "flutter",
     "wordpress",
     "trello",
-    "chrome",
-    "firefox",
     // Add more skills here
   ];
 

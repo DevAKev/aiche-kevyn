@@ -1,5 +1,3 @@
-// Star.js
-import React from "react";
 import { useTheme } from "../hooks/ThemeContext";
 
 const Star = () => {

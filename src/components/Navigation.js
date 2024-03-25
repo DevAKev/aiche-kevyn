@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../hooks/ThemeContext";
 import fr_flag from "../assets/flags/fr_flag.png";
@@ -18,16 +17,12 @@ const Navigation = () => {
       <div className="language-toggle" onClick={toggleLanguage}>
         {language === "en" ? (
           <>
-            <span style={{ display: "inline-block", marginRight: "5px" }}>
-              EN
-            </span>
+            <span>EN</span>
             <img src={uk_flag} alt="English Flag" />
           </>
         ) : (
           <>
-            <span style={{ display: "inline-block", marginRight: "5px" }}>
-              FR
-            </span>
+            <span>FR</span>
             <img src={fr_flag} alt="French Flag" />
           </>
         )}

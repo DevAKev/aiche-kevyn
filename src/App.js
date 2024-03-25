@@ -1,5 +1,4 @@
 // Principal files of the app
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./hooks/ThemeContext";
 import Home from "./pages/Home";

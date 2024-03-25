@@ -1,45 +1,40 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import { useTheme } from "../hooks/ThemeContext";
 import Skills from "../components/Skills";
 import CardsProjects from "../components/CardsProjects";
+import Header from "../components/BurgerMenu";
 
-// Component to display the home page
 const Home = () => {
   const { language } = useTheme();
-
   const titleKey = language === "en" ? "Welcome" : "Bienvenue";
   const subtitleKey =
     language === "en"
       ? "I'm AICHE Kévyn, but you can call me DevAKev"
       : "Je suis AICHE Kévyn, mais vous pouvez m'appeler DevAKev";
 
-  // Hook to display typewriter effect
-  const [isVisible, setIsVisible] = useState("");
+  const [isVisible, setIsVisible] = useState(false);
 
-  const scrollToTop = () => {
+  const handleScroll = () => {
     const descriptionSection = document.querySelector(".my-desc");
 
     if (descriptionSection) {
-      const rect = descriptionSection
-        /* getBoundingClientRect is a method that returns the size of an element and its position relative to the viewport. It returns an object with properties such as `top`, `bottom`, `left`, `right`, `width`, and `height`. In the given code, `getBoundingClientRect` is used to calculate the position of the `.my-desc` element and determine if it is visible on the screen. */
-        .getBoundingClientRect(); // position de l'élément par rapport à la fenêtre
+      const rect = descriptionSection.getBoundingClientRect();
       setIsVisible(rect.top < window.innerHeight / 2);
     }
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", scrollToTop);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", scrollToTop);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  // End Hook
 
   return (
-    // Use the Layout component to wrap the page content
     <Layout>
+      <Header />
       <div className="page-content">
         <h1>{titleKey}</h1>
         <p className={`my-desc typewriter ${isVisible ? "visible" : ""}`}>
@@ -50,27 +45,13 @@ const Home = () => {
       </div>
       {/* Section des exemples de projets */}
       <CardsProjects />
+      <img
+        src="./ufo.png"
+        alt="Flying Saucer"
+        className={`flying-saucer ${isVisible ? "show-saucer" : ""}`}
+      />
     </Layout>
   );
 };
 
 export default Home;
-
-//  // Hook to display typewriter effect
-//  const [text, setText] = useState("");
-//  const [isVisible, setIsVisible] = useState(false);
-
-//  useEffect(() => {
-//    let i = 0;
-//    const timer = setInterval(() => {
-//      if (i < subtitleKey.length) {
-//        setText((prevText) => prevText + subtitleKey.charAt(i));
-//        i++;
-//      } else {
-//        clearInterval(timer);
-//      }
-//    }, 80);
-
-//    // Clean up the interval on component unmount
-//    return () => clearInterval(timer);
-//  }, []);

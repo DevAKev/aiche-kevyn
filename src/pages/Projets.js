@@ -1,5 +1,5 @@
 // Projects page
-import React from "react";
+import Header from "../components/BurgerMenu";
 import Layout from "../components/Layout";
 import { useTheme } from "../hooks/ThemeContext";
 
@@ -11,6 +11,7 @@ const Projets = () => {
   return (
     // Use the Layout component to wrap the page content
     <Layout>
+      <Header />
       <div className="page-content">
         <h1>{titleKey}</h1>
       </div>

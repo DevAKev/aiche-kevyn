@@ -1,4 +1,3 @@
-import React from "react";
 import { useTheme } from "../hooks/ThemeContext";
 
 const Skills = () => {
@@ -7,10 +6,6 @@ const Skills = () => {
 
   // List of skills
   const skills = [
-    "figma",
-    "apache",
-    "bootstrap",
-    "filezilla",
     "html5",
     "css3",
     "sass",
@@ -22,11 +17,10 @@ const Skills = () => {
     "mysql",
     "git",
     "github",
-    "vscode",
-    "flutter",
-    "wordpress",
-    "trello",
-    // Add more skills here
+    "figma",
+    "apache",
+    "filezilla",
+    // More skills here
   ];
 
   return (

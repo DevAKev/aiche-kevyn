@@ -1,0 +1,293 @@
+// #### DESKTOP NAVIGATION ####
+// General styles
+.box,
+.flex_row,
+.login_container,
+.desktop_subtitle,
+.mobile_subtitle {
+  display: flex;
+}
+
+.box,
+.login_container {
+  flex-direction: column;
+}
+
+// Nav elements & links
+.flex_row,
+.desktop_subtitle,
+.mobile_subtitle {
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+}
+
+// Nav container
+.box {
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  left: 0px;
+  top: 0px;
+  background-color: var(--title-color2);
+  box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.2);
+  overflow: visible;
+}
+
+// Nav elements
+.flex_row {
+  width: 100%;
+  height: auto;
+  justify-content: flex-end;
+  gap: 5vw;
+  padding: 4vh 2vw;
+}
+
+// Logo
+.logo_nav {
+  margin-right: auto;
+  width: 5vw;
+  height: 5vh;
+}
+
+// Desktop links
+.desktop_subtitle {
+  border-style: none;
+  cursor: pointer;
+  font: 400 21.239999771118164px/0.84 "Outfit", Helvetica, Arial, serif;
+  color: var(--text-color1);
+  background-color: transparent;
+}
+
+// Login container
+.login_container {
+  margin-left: 1vw;
+  margin-right: 5vw;
+  background-color: var(--title-color1);
+  border-radius: 4.8vw;
+  outline: 1px solid var(--title-color1);
+  outline-offset: -1px;
+  width: auto;
+}
+
+// Login link
+.login_subtitle {
+  color: var(--title-color2);
+  font: 600 21.239999771118164px/0.96 "Outfit", Helvetica, Arial, serif;
+  height: 21px;
+  margin: 12px 14px 13px 13px;
+  width: auto;
+}
+
+// Dropdown container
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+// Dropdown bubble
+.dropdownContent {
+  border: solid 1px #dfe5ee;
+  width: 350px;
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  background-color: var(--title-color2);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+// Dropdown links
+.dropdownContent a {
+  //   cursor: url(/assets/red-cursor.svg), auto;
+  color: var(--text-color1);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+}
+
+// Dropdown links hover
+.dropdownContent a:hover {
+  font-weight: bold;
+}
+
+// Dropdown bubble position
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+/// #### A VOIR SI ON GARDE OU PAS ####
+// EFFET POUR LE HOVER DES LIENS "SERVICES" ET "RESSOURCES"
+// .dropdownContent a:hover {
+//   background-color: #ddd;
+//   border-radius: 10px;
+// }
+
+// #### MOBILE NAVIGATION ####
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  //   padding: 1rem 1vw;
+  z-index: 1000;
+  position: fixed;
+  //   background-color: var(--white);
+}
+
+.subtitle_group {
+  font-family: "Outfit", sans-serif;
+  font-size: 5vw;
+  font-weight: 100;
+}
+
+// Mobile Title
+.mobile_nav_link {
+  margin-left: -5vw;
+  display: flex;
+  align-items: center;
+}
+
+// Mobile subtitle2
+.mobile_subtitle2 {
+  margin-left: 10vw;
+  line-height: 30px;
+  font-weight: 100;
+  text-align: center;
+  width: 100%;
+  color: var(--text-color1);
+}
+
+// Training subtitle
+.trainingSubtitle {
+  margin-left: 10vw;
+  font-size: 5vw;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  color: var(--text-color1);
+}
+
+// Mobile login container
+.login_container_mobile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+}
+
+// Login button
+.login_button_mobile {
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15vw;
+  margin: 0.5vh 0;
+}
+
+.navbar__burger {
+  //   height: 40px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  padding-right: 5vw;
+  display: block;
+}
+
+.navbar__links {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -100vw;
+  width: 0;
+  height: auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+  visibility: hidden;
+  transition: all 0.8s ease-out;
+}
+
+.showNav .navbar__links {
+  border: solid 1px #dfe5ee;
+  right: 0;
+  top: 80px;
+  width: 100vw;
+  height: 88vh;
+  visibility: visible;
+  border-radius: 4.8vw 0 0 4.8vw;
+}
+
+.navbar__link {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color1);
+  display: block;
+  padding: 1.5rem;
+  font-size: 6vw;
+}
+
+/* toggle menu */
+/* burger button icon animation */
+.showNav .navbar__burger {
+  padding-right: 5vw;
+}
+.navbar__burger:hover {
+  cursor: pointer;
+}
+.burger__bar,
+.burger__bar::before,
+.burger__bar::after {
+  display: block;
+  width: 40px;
+  height: 5px;
+  position: relative;
+  border-radius: 50px;
+  background: #000000;
+  transition: all 0.5s ease-in-out;
+}
+.burger__bar::before,
+.burger__bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.burger__bar::before {
+  transform: translateY(-12px);
+}
+.burger__bar::after {
+  transform: translateY(12px);
+}
+.showNav .burger__bar {
+  background: transparent;
+}
+.showNav .burger__bar::before {
+  transform: rotate(45deg);
+}
+.showNav .burger__bar::after {
+  transform: rotate(-45deg);
+}
+
+/* Animations nav links */
+.navbar__item {
+  list-style: none;
+  transform: translateY(100vh);
+}
+.showNav .navbar__item {
+  transform: translateY(0);
+}
+.showNav .slideInDown1 {
+  transition: all 1s ease-out;
+}
+.showNav .slideInDown2 {
+  transition: all 1.1s ease-out;
+}
+.showNav .slideInDown3 {
+  transition: all 1.2s ease-out;
+}
+.showNav .slideInDown4 {
+  transition: all 1.3s ease-out;
+}

@@ -15,25 +15,6 @@ const Home = () => {
       ? "I'm AICHE Kévyn, but you can call me DevAKev"
       : "Je suis AICHE Kévyn, mais vous pouvez m'appeler DevAKev";
 
-  // const [isVisible, setIsVisible] = useState(false);
-
-  // const handleScroll = () => {
-  //   const descriptionSection = document.querySelector(".my-desc");
-
-  //   if (descriptionSection) {
-  //     const rect = descriptionSection.getBoundingClientRect();
-  //     setIsVisible(rect.top < window.innerHeight / 2);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
   return (
     <Layout>
       <Header />

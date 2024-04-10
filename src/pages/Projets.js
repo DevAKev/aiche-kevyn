@@ -1,5 +1,5 @@
 // Projects page
-import Header from "../components/BurgerMenu";
+import Header from "../components/Header/Header";
 import Layout from "../components/Layout";
 import { useTheme } from "../hooks/ThemeContext";
 

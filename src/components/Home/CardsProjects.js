@@ -1,4 +1,6 @@
-import { useTheme } from "../hooks/ThemeContext";
+import { useTheme } from "../../hooks/ThemeContext";
+import garageParrotImg from "../../assets/projectsImages/img-Garage-Parrot.png";
+import posterImg from "../../assets/projectsImages/poster.png";
 
 const Cards_Projects = () => {
   const { language } = useTheme();
@@ -10,13 +12,14 @@ const Cards_Projects = () => {
       title: "Project 1",
       description: "Description du projet 1",
       technologies: ["html5", "css3", "javascript", "jquery", "php", "mysql"],
-      poster: "./img-Garage-Parrot.png",
+      poster: garageParrotImg,
       // More details
     },
     {
       title: "Project 2",
       description: "Description du projet 2",
       technologies: ["react", "nodejs", "mongodb"],
+      poster: posterImg,
       // More details
     },
     {

@@ -1,35 +1,33 @@
-// Star.scss
 .star {
-    border-radius: 50%;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: linear-gradient(to top, (#8a2be2), (#ee82ee), (#ff6eff));
+  border-radius: 50%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to top, (#8a2be2), (#ee82ee), (#ff6eff));
+  opacity: 0;
+  animation: starFall linear infinite;
+
+  // .light-mode {
+  //     background: #10017d;
+  // }
+
+  // .dark-mode {
+  //     background: #b580b2;
+  // }
+}
+
+@keyframes starFall {
+  0% {
+    transform: translateY(40vh) rotate(0); // 40vh = hauteur de chute
     opacity: 0;
-    animation: starFall linear infinite;
-    
-    // .light-mode {
-    //     background: #10017d;
-    // }
-
-    // .dark-mode {
-    //     background: #b580b2;
-    // }
   }
-  
-  @keyframes starFall {
-    0% {
-      transform: translateY(40vh) rotate(0); // 40vh = hauteur de chute
-      opacity: 0;
-    }
 
-    50% {
-      opacity: 0.5;
-    }
-
-    100% {
-      transform: translateY(0) rotate(720deg); // 720deg = angle de rotation
-      opacity: 1;
-    }
+  50% {
+    opacity: 0.5;
   }
-  
+
+  100% {
+    transform: translateY(0) rotate(720deg); // 720deg = angle de rotation
+    opacity: 1;
+  }
+}

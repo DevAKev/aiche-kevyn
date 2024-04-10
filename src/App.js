@@ -4,7 +4,7 @@ import { ThemeProvider } from "./hooks/ThemeContext";
 import Home from "./pages/Home";
 import Projets from "./pages/Projets";
 import About from "./pages/About";
-import StarRain from "./components/animations/StarRain";
+import StarRain from "./components/Animations/StarRain";
 
 // Principal component
 const App = () => {

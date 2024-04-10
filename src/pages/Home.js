@@ -1,11 +1,11 @@
 // import { useEffect, useState } from "react";
 import Layout from "../components/Layout";
 import { useTheme } from "../hooks/ThemeContext";
-import Skills from "../components/Skills";
-import CardsProjects from "../components/CardsProjects";
-import Header from "../components/BurgerMenu";
-import Typewriter from "../components/animations/Typewriter";
-import UfoEffect from "../components/animations/UfoEffect";
+import Skills from "../components/Home/Skills";
+import CardsProjects from "../components/Home/CardsProjects";
+import Header from "../components/Header/Header";
+import Typewriter from "../components/Animations/Typewriter";
+import UfoEffect from "../components/Animations/UfoEffect";
 
 const Home = () => {
   const { language } = useTheme();

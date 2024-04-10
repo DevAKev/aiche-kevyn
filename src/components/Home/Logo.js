@@ -1,5 +1,5 @@
 import { useTheme } from "../../hooks/ThemeContext";
-import logo from "../../assets/logo/galaxy.png";
+import logo from "../../assets/images/logo/galaxy.png";
 
 const Logo = () => {
   const { theme } = useTheme();

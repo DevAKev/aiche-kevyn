@@ -1,6 +1,6 @@
 import { useTheme } from "../../hooks/ThemeContext";
-import garageParrotImg from "../../assets/projectsImages/img-Garage-Parrot.png";
-import posterImg from "../../assets/projectsImages/poster.png";
+import garageParrotImg from "../../assets/images/projectsImages/img-Garage-Parrot.png";
+import posterImg from "../../assets/images/projectsImages/poster.png";
 
 const Cards_Projects = () => {
   const { language } = useTheme();

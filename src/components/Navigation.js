@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useTheme } from "../hooks/ThemeContext";
-import fr_flag from "../assets/flags/fr_flag.png";
-import uk_flag from "../assets/flags/uk_flag.png";
+import fr_flag from "../assets/images/flags/fr_flag.png";
+import uk_flag from "../assets/images/flags/uk_flag.png";
 import Logo from "./Home/Logo";
 
 const Navigation = () => {

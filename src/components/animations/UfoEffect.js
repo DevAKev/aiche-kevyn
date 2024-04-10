@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "../../hooks/ThemeContext";
-import ufoLight from "../../assets/animations/ufo_light.png";
-import ufoDark from "../../assets/animations/ufo_dark.png";
+import ufoLight from "../../assets/images/animations/ufo_light.png";
+import ufoDark from "../../assets/images/animations/ufo_dark.png";
 
 const UfoEffect = () => {
   const { theme } = useTheme();

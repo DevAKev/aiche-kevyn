@@ -1,3 +1,186 @@
+// #### MOBILE NAVIGATION ####
+// General styles
+.mobile_navLink_home,
+.mobile_subtitle2,
+.mobile_navbarLink {
+  font-family: var(--font-1);
+}
+
+// Mobile nav container
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+}
+
+.navbar__links {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -100vw;
+  width: 0;
+  height: auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+  visibility: hidden;
+  transition: all 0.8s ease-out;
+}
+
+// Mobile Home link
+.mobile_navLink_home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-2);
+}
+
+// Mobile subtitle2
+.mobile_subtitle2 {
+  font-weight: 100;
+  text-align: center;
+  width: 100%;
+  color: var(--color-1);
+}
+
+.mobile_navbarLink {
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-dark);
+  display: block;
+  padding: 1.5rem;
+  font-size: 6vw;
+}
+
+// Mobile login container
+// .login_container_mobile {
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-top: 8vh;
+// }
+
+// Login button
+// .login_button_mobile {
+//   width: 35vw;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 15vw;
+//   margin: 0.5vh 0;
+// }
+
+// Dark mode & Light mode icons button
+.mobile_theme-toggle {
+  margin-left: 5vw;
+  padding-top: 5vh;
+}
+
+.mobile_theme-icon {
+  height: 5vh;
+}
+
+.mobile_language-toggle {
+  width: 5px;
+  margin-left: 6vw;
+  color: var(--text);
+}
+
+.light-mode {
+  --background: var(--background-light);
+  --text: var(--text-dark);
+}
+
+.dark-mode {
+  --background: var(--background-dark);
+  --text: var(--text-light);
+}
+.navbar__burger {
+  //   height: 40px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  padding-right: 5vw;
+  display: block;
+}
+
+.showNav .navbar__links {
+  border: solid 1px #dfe5ee;
+  right: 0;
+  top: 80px;
+  width: 100vw;
+  height: 88vh;
+  visibility: visible;
+  border-radius: 4.8vw 0 0 4.8vw;
+}
+
+/* toggle menu */
+/* burger button icon animation */
+.showNav .navbar__burger {
+  padding-right: 5vw;
+}
+.navbar__burger:hover {
+  cursor: pointer;
+}
+.burger__bar,
+.burger__bar::before,
+.burger__bar::after {
+  display: block;
+  width: 40px;
+  height: 5px;
+  position: relative;
+  border-radius: 50px;
+  background: var(--text);
+  transition: all 0.5s ease-in-out;
+}
+.burger__bar::before,
+.burger__bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.burger__bar::before {
+  transform: translateY(-12px);
+}
+.burger__bar::after {
+  transform: translateY(12px);
+}
+.showNav .burger__bar {
+  background: transparent;
+}
+.showNav .burger__bar::before {
+  transform: rotate(45deg);
+}
+.showNav .burger__bar::after {
+  transform: rotate(-45deg);
+}
+
+/* Animations nav links */
+.navbar__item {
+  list-style: none;
+  transform: translateY(100vh);
+}
+.showNav .navbar__item {
+  transform: translateY(0);
+}
+.showNav .slideInDown1 {
+  transition: all 1s ease-out;
+}
+.showNav .slideInDown2 {
+  transition: all 1.1s ease-out;
+}
+.showNav .slideInDown3 {
+  transition: all 1.2s ease-out;
+}
+.showNav .slideInDown4 {
+  transition: all 1.3s ease-out;
+}
+
 // #### DESKTOP NAVIGATION ####
 // General styles
 .box,
@@ -20,6 +203,79 @@
   align-items: center;
   font-family: "Outfit", sans-serif;
 }
+// Dark mode & Light mode icons button
+.theme-toggle {
+  cursor: pointer;
+  width: 1vw;
+  margin-left: 4vw;
+  padding-top: 10vh;
+}
+
+.language-toggle {
+  cursor: pointer;
+  width: 5px;
+  font-size: 2rem;
+  margin-left: 6vw;
+  color: var(--text);
+}
+
+.light-mode {
+  --background: var(--background-light);
+  --text: var(--text-dark);
+}
+
+.dark-mode {
+  --background: var(--background-dark);
+  --text: var(--text-light);
+}
+
+// Navigation
+.navigation {
+  ul {
+    width: 20vw;
+    display: grid;
+    margin: 50px;
+
+    // List of navigation links
+    a {
+      width: 100%;
+      text-decoration: none;
+      margin: 20px;
+      font-size: 2rem;
+      padding: 10px;
+      color: var(--text);
+    }
+    // Active link
+    .nav-active {
+      position: relative;
+      // Animation for the active link
+      &::after {
+        content: "";
+        height: 8px;
+        width: 0;
+        background: var(--gradient);
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-animation: anim 0.3s ease forwards;
+        animation: anim 0.5s ease forwards;
+
+        @-webkit-keyframes anim {
+          to {
+            width: 100%;
+          }
+        }
+        @keyframes anim {
+          to {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
 
 // Nav container
 .box {
@@ -38,7 +294,6 @@
   width: 100%;
   height: auto;
   justify-content: flex-end;
-  gap: 5vw;
   padding: 4vh 2vw;
 }
 
@@ -122,172 +377,3 @@
 //   background-color: #ddd;
 //   border-radius: 10px;
 // }
-
-// #### MOBILE NAVIGATION ####
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  //   padding: 1rem 1vw;
-  z-index: 1000;
-  position: fixed;
-  //   background-color: var(--white);
-}
-
-.subtitle_group {
-  font-family: "Outfit", sans-serif;
-  font-size: 5vw;
-  font-weight: 100;
-}
-
-// Mobile Title
-.mobile_nav_link {
-  margin-left: -5vw;
-  display: flex;
-  align-items: center;
-}
-
-// Mobile subtitle2
-.mobile_subtitle2 {
-  margin-left: 10vw;
-  line-height: 30px;
-  font-weight: 100;
-  text-align: center;
-  width: 100%;
-  color: var(--text-color1);
-}
-
-// Training subtitle
-.trainingSubtitle {
-  margin-left: 10vw;
-  font-size: 5vw;
-  font-weight: 600;
-  text-align: center;
-  width: 100%;
-  color: var(--text-color1);
-}
-
-// Mobile login container
-.login_container_mobile {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8vh;
-}
-
-// Login button
-.login_button_mobile {
-  width: 35vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15vw;
-  margin: 0.5vh 0;
-}
-
-.navbar__burger {
-  //   height: 40px;
-  background: transparent;
-  border: none;
-  color: inherit;
-  padding-right: 5vw;
-  display: block;
-}
-
-.navbar__links {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: -100vw;
-  width: 0;
-  height: auto;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(5px);
-  visibility: hidden;
-  transition: all 0.8s ease-out;
-}
-
-.showNav .navbar__links {
-  border: solid 1px #dfe5ee;
-  right: 0;
-  top: 80px;
-  width: 100vw;
-  height: 88vh;
-  visibility: visible;
-  border-radius: 4.8vw 0 0 4.8vw;
-}
-
-.navbar__link {
-  font-family: "Outfit", sans-serif;
-  text-align: center;
-  text-decoration: none;
-  color: var(--text-color1);
-  display: block;
-  padding: 1.5rem;
-  font-size: 6vw;
-}
-
-/* toggle menu */
-/* burger button icon animation */
-.showNav .navbar__burger {
-  padding-right: 5vw;
-}
-.navbar__burger:hover {
-  cursor: pointer;
-}
-.burger__bar,
-.burger__bar::before,
-.burger__bar::after {
-  display: block;
-  width: 40px;
-  height: 5px;
-  position: relative;
-  border-radius: 50px;
-  background: #000000;
-  transition: all 0.5s ease-in-out;
-}
-.burger__bar::before,
-.burger__bar::after {
-  content: "";
-  position: absolute;
-  left: 0;
-}
-.burger__bar::before {
-  transform: translateY(-12px);
-}
-.burger__bar::after {
-  transform: translateY(12px);
-}
-.showNav .burger__bar {
-  background: transparent;
-}
-.showNav .burger__bar::before {
-  transform: rotate(45deg);
-}
-.showNav .burger__bar::after {
-  transform: rotate(-45deg);
-}
-
-/* Animations nav links */
-.navbar__item {
-  list-style: none;
-  transform: translateY(100vh);
-}
-.showNav .navbar__item {
-  transform: translateY(0);
-}
-.showNav .slideInDown1 {
-  transition: all 1s ease-out;
-}
-.showNav .slideInDown2 {
-  transition: all 1.1s ease-out;
-}
-.showNav .slideInDown3 {
-  transition: all 1.2s ease-out;
-}
-.showNav .slideInDown4 {
-  transition: all 1.3s ease-out;
-}

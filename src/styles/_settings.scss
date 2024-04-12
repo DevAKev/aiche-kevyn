@@ -1,7 +1,8 @@
 // Type of font to use
 @font-face {
-  font-family: 'Array-Regular';
-  src: url('../assets/fonts/Array_Complete/Fonts/WEB/fonts/Array-Regular.ttf') format('truetype');
+  font-family: "Array-Regular";
+  src: url("../assets/fonts/Array_Complete/Fonts/WEB/fonts/Array-Regular.ttf")
+    format("truetype");
   font-display: swap;
   font-style: normal;
 }
@@ -14,18 +15,32 @@
 
 // Variables globale for colors
 :root {
-    --background-light: #ffffff;  // Color background (light mode)
-    --text-dark: #010112;            // Color text (dark mode)
-    --background-dark: #000000;   // Color background (dark mode)
-    --text-light: #ffffff;           // Color text (light mode)
+  --background-light: #ffffff; // Color background (light mode)
+  --text-dark: #010112; // Color text (dark mode)
+  --background-dark: #000000; // Color background (dark mode)
+  --text-light: #ffffff; // Color text (light mode)
 
-    // Principal Font
-    --font-1: 'Array-Regular', sans-serif;
-    --color-1: #6180fb;
-    --color-2: salmon;
-    --color-3: #282c34;
-    --white: rgb(243, 243, 243);
-    --gradient: linear-gradient(to right, rgb(123, 16, 146), rgb(205, 217, 62));
+  // Principal Font & Colors
+  --font-1: "Array-Regular", sans-serif;
+  --color-1: #6180fb;
+  --color-2: salmon;
+  --color-3: #282c34;
+  --white: rgb(243, 243, 243);
+  --gradient: linear-gradient(to right, rgb(123, 16, 146), rgb(205, 217, 62));
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Scroll bar */
@@ -33,10 +48,10 @@ html::-webkit-scrollbar {
   width: 0.6rem;
 }
 html::-webkit-scrollbar-track {
-  background: var(--gradient);      // Color of slide track
+  background: var(--gradient); // Color of slide track
 }
 html::-webkit-scrollbar-thumb {
-  background:var(--color-3);        // Color of slide button
+  background: var(--color-3); // Color of slide button
   border-radius: 2rem;
 }
 
@@ -45,50 +60,47 @@ html::-webkit-scrollbar-thumb {
   max-width: 100%;
   margin: 0 auto;
   background-color: var(--background);
-  transition: background-color 2s, color 2s;  // Time transition for dark & light mode
+  transition: background-color 2s, color 2s; // Time transition for dark & light mode
 }
 
 // Container for all the page content
-  .page-content {
-    max-width: 800px;
-    margin: 0 auto;
-  
-    // Color background & text for light mode
-    &.light-mode {
-      background: var(--background-light);
-      --text: var(--text-dark);
-    }
-   // Color background & text for dark mode
-    &.dark-mode {
-      background: var(--background-dark);
-      --text: var(--text-light);
-    }
-    color: var(--text);
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--background);
-    color: var(--text);
-    font-size: 2rem;
-    font-family: var(--font-1);
-  }
+.page-content {
+  max-width: 800px;
+  margin: 0 auto;
 
-@mixin verticalCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  // Color background & text for light mode
+  &.light-mode {
+    background: var(--background-light);
+    --text: var(--text-dark);
+  }
+  // Color background & text for dark mode
+  &.dark-mode {
+    background: var(--background-dark);
+    --text: var(--text-light);
+  }
+  color: var(--text);
 }
 
-li {
-    list-style-type: none;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background);
+  color: var(--text);
+  font-size: 2rem;
+  font-family: var(--font-1);
+}
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // Responsive
 @media screen and (max-width: 768px) {
-    html, body {
+  html,
+  body {
     overflow-x: hidden;
-    }
+  }
 }

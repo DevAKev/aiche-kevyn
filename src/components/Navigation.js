@@ -30,25 +30,30 @@ const Navigation = () => {
       <div className="logo-container">
         <Logo />
       </div>
-      <ul>
-        <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-          <li>{language === "en" ? "HOME" : "ACCUEIL"}</li>
-        </NavLink>
+      <div className="navigation">
+        <ul>
+          <NavLink
+            to="/"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            <li>{language === "en" ? "HOME" : "ACCUEIL"}</li>
+          </NavLink>
 
-        <NavLink
-          to="/projets"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-        >
-          <li>{language === "en" ? "PROJECTS" : "PROJETS"}</li>
-        </NavLink>
+          <NavLink
+            to="/projets"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            <li>{language === "en" ? "PROJECTS" : "PROJETS"}</li>
+          </NavLink>
 
-        <NavLink
-          to="/about"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-        >
-          <li>{language === "en" ? "ABOUT" : "À PROPOS"}</li>
-        </NavLink>
-      </ul>
+          <NavLink
+            to="/about"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            <li>{language === "en" ? "ABOUT" : "À PROPOS"}</li>
+          </NavLink>
+        </ul>
+      </div>
     </div>
   );
 };

@@ -1,31 +1,105 @@
-.logo-container {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 50%;
-    box-shadow: 0 0 100px rgba(67, 29, 236, 0.963);
-    
-    // Styles communs au light et dark mode
-    // border: 1px solid #fdfdfd;
-    
-    // Light mode
-    &.light-mode {
-        background: linear-gradient(to top, rgb(149, 4, 4), rgb(245, 212, 46));
-        box-shadow: 0 0 50px rgba(210, 12, 12, 1);
-        border: 2px solid #fe2600;
-    }
-    
-    // Dark mode
-    &.dark-mode {
-        background: linear-gradient(to top, (#8a2be2), (#ee82ee), (#ff6eff));
-        box-shadow:0 0 50px (#fdb6fd);
-        border: 2px solid #b580b2;
-    }
+// ### MOBILE ###
+// Global container for the logo
+.mobile_logo-container {
+  margin: 0 80vw;
+}
+@media screen and (max-width: 300px) {
+  .mobile_logo-container {
+    margin: 0 55vw;
+  }
+}
+@media screen and (min-width: 301px) and (max-width: 700px) {
+  .mobile_logo-container {
+    margin: 0 65vw;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1023px) {
+  .mobile_logo-container {
+    margin: 0 80vw;
+  }
 }
 
-#img-logo {
-    width: 100%;
-    height: 100%;
-    border-radius: 10%;
+// Container in Logo
+.logo-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0 100px rgba(67, 29, 236, 0.963);
+
+  // Color Light mode
+  &.light-mode {
+    background: linear-gradient(to top, rgb(149, 4, 4), rgb(245, 212, 46));
+    box-shadow: 0 0 50px rgba(210, 12, 12, 1);
+    border: 2px solid #fe2600;
+  }
+
+  // Color Dark mode
+  &.dark-mode {
+    background: linear-gradient(to top, (#8a2be2), (#ee82ee), (#ff6eff));
+    box-shadow: 0 0 50px (#fdb6fd);
+    border: 2px solid #b580b2;
+  }
+}
+
+// Image logo
+#mobile_img-logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+@media (max-width: 1023px) {
+  #mobile_img-logo {
+    height: 100px;
+  }
+}
+
+// ### DESKTOP ###
+// Global container for the logo
+.desktop_logo-container {
+  margin: 0 60vw 50vh;
+}
+
+// Container in Logo
+.logo-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: flex-start;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 100px rgba(67, 29, 236, 0.963);
+
+  // Color Light mode
+  &.light-mode {
+    background: linear-gradient(to top, rgb(149, 4, 4), rgb(245, 212, 46));
+    box-shadow: 0 0 50px rgba(210, 12, 12, 1);
+    border: 2px solid #fe2600;
+  }
+
+  // Color Dark mode
+  &.dark-mode {
+    background: linear-gradient(to top, (#8a2be2), (#ee82ee), (#ff6eff));
+    box-shadow: 0 0 50px (#fdb6fd);
+    border: 2px solid #b580b2;
+  }
+}
+
+// Image logo
+#desktop_img-logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+@media (max-width: 1023px) {
+  #desktop_img-logo {
+    height: 100px;
+  }
 }

@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { useTheme } from "../hooks/ThemeContext";
 import fr_flag from "../assets/images/flags/fr_flag.png";
 import uk_flag from "../assets/images/flags/uk_flag.png";
-import Logo from "./Home/Logo";
+// import Logo from "./Home/Logo";
 
 const Navigation = () => {
   const { theme, toggleTheme, language, toggleLanguage } = useTheme();
@@ -27,10 +27,10 @@ const Navigation = () => {
           </>
         )}
       </div>
-      <div className="logo-container">
+      {/* <div className="logo-container">
         <Logo />
-      </div>
-      <div className="navigation">
+      </div> */}
+      {/* <div className="navigation">
         <ul>
           <NavLink
             to="/"
@@ -53,7 +53,7 @@ const Navigation = () => {
             <li>{language === "en" ? "ABOUT" : "À PROPOS"}</li>
           </NavLink>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

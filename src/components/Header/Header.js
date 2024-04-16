@@ -6,6 +6,7 @@ import uk_flag from "../../assets/images/flags/uk_flag.png";
 import darkModeIcon from "../../assets/images/theme/dark_emoji.png";
 import lightModeIcon from "../../assets/images/theme/light_emoji.png";
 import { NavLink } from "react-router-dom";
+import Logo from "../Home/Logo";
 
 // ### MOBILE NAVBAR ###
 const MobileNavBar = ({ isMobile }) => {
@@ -76,10 +77,30 @@ const MobileNavBar = ({ isMobile }) => {
 
 // ### DESKTOP NAVBAR ###
 const DesktopNavBar = () => {
-  const { language } = useTheme();
+  const { theme, toggleTheme, language, toggleLanguage } = useTheme();
 
   return (
-    <div className="navigation">
+    <div className={`navigation ${theme}-mode`}>
+      {/* Icons for the themes modes */}
+      <div className="desktop_theme-language_container">
+        <div className="theme-toggle" onClick={toggleTheme}>
+          {theme === "light" ? "🌚" : "🌝"}
+        </div>
+        {/* Icons for language toggles */}
+        <div className="language-toggle" onClick={toggleLanguage}>
+          {language === "en" ? (
+            <>
+              <span>EN</span>
+              <img src={uk_flag} alt="English Flag" />
+            </>
+          ) : (
+            <>
+              <span>FR</span>
+              <img src={fr_flag} alt="French Flag" />
+            </>
+          )}
+        </div>
+      </div>
       <ul>
         <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
           <li>{language === "en" ? "HOME" : "ACCUEIL"}</li>
@@ -117,6 +138,14 @@ const Header = ({ className }) => {
     <div className={`box ${className} header`}>
       <div className="box1">
         <div className="flex_row">
+          <div
+            className={
+              isMobile ? "mobile_logo-container" : "desktop_logo-container"
+            }
+          >
+            {/* Logo */}
+            <Logo />
+          </div>
           {isMobile ? <MobileNavBar isMobile={isMobile} /> : <DesktopNavBar />}
         </div>
       </div>

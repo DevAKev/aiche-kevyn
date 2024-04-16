@@ -1,4 +1,3 @@
-import Header from "../components/Header/Header";
 import Layout from "../components/Layout";
 import { useTheme } from "../hooks/ThemeContext";
 
@@ -11,7 +10,6 @@ const About = () => {
   return (
     // Use the Layout component to wrap the page content
     <Layout>
-      <Header />
       <div className="page-content">
         <h1>{titleKey}</h1>
         <br />

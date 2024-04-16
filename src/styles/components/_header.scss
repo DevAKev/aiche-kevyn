@@ -6,6 +6,8 @@
   font-family: var(--font-1);
 }
 
+// Style Logo dans _logo.scss
+
 // Mobile nav container
 .navbar {
   display: flex;
@@ -16,6 +18,7 @@
   position: fixed;
 }
 
+// Container burger menu
 .navbar__links {
   display: flex;
   flex-direction: column;
@@ -47,6 +50,7 @@
   color: var(--color-1);
 }
 
+// Mobile navbar link
 .mobile_navbarLink {
   text-align: center;
   text-decoration: none;
@@ -77,18 +81,19 @@
 
 // Dark mode & Light mode icons button
 .mobile_theme-toggle {
-  margin-left: 5vw;
+  margin-left: 4vw;
   padding-top: 5vh;
 }
 
 .mobile_theme-icon {
-  height: 5vh;
+  height: 4vh;
 }
 
+// Language toggle button
 .mobile_language-toggle {
   width: 5px;
   margin-left: 6vw;
-  color: var(--text);
+  font-family: var(--font-1);
 }
 
 .light-mode {
@@ -207,8 +212,6 @@
 .theme-toggle {
   cursor: pointer;
   width: 1vw;
-  margin-left: 4vw;
-  padding-top: 10vh;
 }
 
 .language-toggle {
@@ -279,13 +282,13 @@
 
 // Nav container
 .box {
-  position: fixed;
+  position: relative;
   z-index: 1000;
   width: 100vw;
   left: 0px;
   top: 0px;
   background-color: var(--title-color2);
-  box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.2);
   overflow: visible;
 }
 

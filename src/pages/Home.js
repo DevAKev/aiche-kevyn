@@ -9,17 +9,16 @@ import UfoEffect from "../components/Animations/UfoEffect";
 const Home = () => {
   const { language } = useTheme();
   const titleKey = language === "en" ? "Welcome" : "Bienvenue";
-  const subtitleKey =
+  const DescText =
     language === "en"
       ? "I'm AICHE Kévyn, but you can call me DevAKev"
       : "Je suis AICHE Kévyn, mais vous pouvez m'appeler DevAKev";
-
   return (
     <Layout>
       <div className="page-content">
         <h1>{titleKey}</h1>
         {/* Animation TypeWriter */}
-        <Typewriter text={subtitleKey} />
+        <Typewriter text={DescText} />
         {/* Skills section */}
         <Skills />
       </div>

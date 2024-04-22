@@ -41,12 +41,18 @@ const MobileNavBar = ({ isMobile }) => {
             À propos
           </a>
         </li>
+        <li className={`navbar__item slideInDown4`}>
+          <a href="/contact" className="mobile_navbarLink">
+            Contactez-moi
+          </a>
+        </li>
+        {/* ### AJOUTER LIENS RESEAUX SOCIAUX (VOIR https://www.onyedika.xyz/) ### */}
 
         {/* Icons for the themes modes */}
         <li className={`navbar__item slideInDown4`}>
           <div className="mobile_theme-toggle" onClick={toggleTheme}>
             <img
-              className={isMobile ? "mobile_theme-icon" : "desktop_theme-icon"}
+              className="mobile_theme-icon"
               src={theme === "light" ? darkModeIcon : lightModeIcon}
               alt="Theme Toggle Icon"
             />
@@ -83,43 +89,59 @@ const DesktopNavBar = () => {
     <div className={`navigation ${theme}-mode`}>
       {/* Icons for the themes modes */}
       <div className="desktop_theme-language_container">
-        <div className="theme-toggle" onClick={toggleTheme}>
-          {theme === "light" ? "🌚" : "🌝"}
+        <div className="desktop_theme-toggle" onClick={toggleTheme}>
+          <img
+            className="desktop_theme-icon"
+            src={theme === "light" ? darkModeIcon : lightModeIcon}
+            alt="Theme Toggle Icon"
+          />
         </div>
         {/* Icons for language toggles */}
         <div className="language-toggle" onClick={toggleLanguage}>
           {language === "en" ? (
             <>
-              <span>EN</span>
-              <img src={uk_flag} alt="English Flag" />
+              <span>FR</span>
+              <img src={fr_flag} alt="French Flag" />
             </>
           ) : (
             <>
-              <span>FR</span>
-              <img src={fr_flag} alt="French Flag" />
+              <span>EN</span>
+              <img src={uk_flag} alt="English Flag" />
             </>
           )}
         </div>
       </div>
-      <ul>
-        <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-          <li>{language === "en" ? "HOME" : "ACCUEIL"}</li>
-        </NavLink>
+      <div className="desktop_navbar_container">
+        <ul>
+          <NavLink
+            to="/"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            <li>{language === "en" ? "HOME" : "ACCUEIL"}</li>
+          </NavLink>
 
-        <NavLink
-          to="/projets"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-        >
-          <li>{language === "en" ? "PROJECTS" : "PROJETS"}</li>
-        </NavLink>
+          <NavLink
+            to="/projets"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            <li>{language === "en" ? "PROJECTS" : "PROJETS"}</li>
+          </NavLink>
 
-        <NavLink
-          to="/about"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-        >
-          <li>{language === "en" ? "ABOUT" : "À PROPOS"}</li>
-        </NavLink>
-      </ul>
+          <NavLink
+            to="/about"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            <li>{language === "en" ? "ABOUT" : "À PROPOS"}</li>
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            <li>{language === "en" ? "CONTACT" : "CONTACT"}</li>
+          </NavLink>
+        </ul>
+        {/* ### AJOUTER LIENS RESEAUX SOCIAUX (VOIR https://www.onyedika.xyz/) ### */}
+      </div>
     </div>
   );
 };

@@ -191,8 +191,7 @@
 .box,
 .flex_row,
 .login_container,
-.desktop_subtitle,
-.mobile_subtitle {
+.desktop_subtitle {
   display: flex;
 }
 
@@ -203,21 +202,38 @@
 
 // Nav elements & links
 .flex_row,
-.desktop_subtitle,
-.mobile_subtitle {
-  align-items: center;
+.desktop_subtitle {
+  // align-items: center;
   font-family: "Outfit", sans-serif;
 }
-// Dark mode & Light mode icons button
-.theme-toggle {
-  cursor: pointer;
-  width: 1vw;
+
+.desktop_theme-language_container {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: center;
 }
+// @media screen and (min-width: 1023px) and (max-width: 1100px) {
+//   .desktop_theme-language_container {
+//     margin-top: -20vh;
+//   }
+// }
+
+// Dark mode & Light mode icons button
+.desktop_theme-toggle {
+  cursor: pointer;
+  margin-left: 5.5vw;
+}
+
+// .desktop_theme-icon {
+//   height: 5vh;
+// }
 
 .language-toggle {
   cursor: pointer;
   width: 5px;
   font-size: 2rem;
+  font-family: var(--font-1);
   margin-left: 6vw;
   color: var(--text);
 }
@@ -235,14 +251,14 @@
 // Navigation
 .navigation {
   ul {
-    width: 20vw;
+    // width: 20vw;
     display: grid;
     margin: 50px;
 
     // List of navigation links
     a {
-      width: 100%;
-      text-decoration: none;
+      // width: 100%;
+      font-family: var(--font-1);
       margin: 20px;
       font-size: 2rem;
       padding: 10px;

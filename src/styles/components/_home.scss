@@ -1,50 +1,32 @@
-// Texte de présentation
-.my-desc {
-  font-size: 2rem;
-  text-align: center;
-  margin: 50px 0;
-  max-width: 400px;
-  max-height: 200px;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  @media (max-width: 860px) {
-    font-size: 1.5rem;
-  }
-}
-
-.typewriter {
+// Typewriter effect
+.typewriter-text {
+  font-size: 3.5vw;
+  white-space: pre-wrap;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
   max-width: 100%;
   width: 100%;
   overflow: hidden;
-  white-space: nowrap;
-  border-right: 0.2rem solid orange; /* Curseur de texte clignotant */
   letter-spacing: 0.5px;
 }
-
-.visible {
-  opacity: 1;
-  animation: typewriter 6.5s steps(30, end), blink-caret 1s step-end infinite; /* Effet d'écriture et curseur clignotant */
-}
-
-@keyframes typewriter {
-  from {
-    width: 0; /* (invisible) */
-  }
-  to {
-    width: 100%; /* (visible) */
+@media screen and (max-width: 280px) {
+  .typewriter-text {
+    font-size: 1.3rem;
   }
 }
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
+@media screen and (min-width: 281px) and (max-width: 350px) {
+  .typewriter-text {
+    font-size: 1.5rem;
   }
-  50% {
-    border-color: orange;
+}
+@media screen and (min-width: 351px) and (max-width: 450px) {
+  .typewriter-text {
+    font-size: 1.7rem;
   }
 }
 
+// Ufo effect
 .flying-saucer {
   width: 50vw;
   border: 1px solid orange;

@@ -63,6 +63,11 @@
 .desktop_logo-container {
   margin: 0 55vw 50vh;
 }
+@media screen and (min-width: 1300px) {
+  .desktop_logo-container {
+    margin: 0 65vw 40vh;
+  }
+}
 
 // Container in Logo
 .logo-content {

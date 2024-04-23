@@ -28,14 +28,14 @@ const MobileNavBar = ({ isMobile }) => {
             Projets
           </a>
         </li>
-        <li className={`navbar__item slideInDown2`}>
+        {/* <li className={`navbar__item slideInDown2`}>
           <a href="/ressources" className="mobile_navbarLink">
             Nos ressources
           </a>
           <a href="/prompts" className="mobile_subtitle2">
             Notre librairie de prompt
           </a>
-        </li>
+        </li> */}
         <li className={`navbar__item slideInDown3`}>
           <a href="/about" className="mobile_navbarLink">
             À propos

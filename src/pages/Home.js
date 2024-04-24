@@ -4,15 +4,25 @@ import Layout from "../components/Layout";
 import { useTheme } from "../hooks/ThemeContext";
 import Skills from "../components/Home/Skills";
 import CardsProjects from "../components/Home/CardsProjects";
-import UfoEffect from "../components/Animations/UfoEffect";
+// import UfoEffect from "../components/Animations/UfoEffect";
 
 const Home = () => {
+  // Language for the title
   const { language } = useTheme();
   const titleKey = language === "en" ? "Welcome" : "Bienvenue";
+  // Text for the Typewriter animation
   const DescText =
     language === "en"
-      ? ["I'm AICHE Kévyn,", "but you can call me", "DevAKev"]
-      : ["Je suis AICHE Kévyn,", "mais vous pouvez m'appeler", "DevAKev"];
+      ? [
+          "I'm <strong>AICHE Kévyn</strong>,",
+          "but you can call me",
+          "<strong>DevAKev</strong>",
+        ]
+      : [
+          "Je suis <strong>AICHE Kévyn</strong>,",
+          "mais vous pouvez m'appeler",
+          "<strong>DevAKev</strong>",
+        ];
   return (
     <Layout>
       <div className="page-content">
@@ -21,13 +31,17 @@ const Home = () => {
         <ReactTyped
           className="typewriter-text"
           strings={DescText}
-          typeSpeed={130}
+          typeSpeed={130} // Vitesse de frappe
+          backSpeed={20} // Vitesse de suppression
+          cursorChar="|" // Caractère du curseur
+          smartBackspace // Suppression intelligente
+          loop // Boucle
         />
         {/* Skills section */}
         <Skills />
       </div>
       {/* Animation UFO */}
-      <UfoEffect />
+      {/* <UfoEffect /> */}
       {/* Section des exemples de projets */}
       <CardsProjects />
     </Layout>

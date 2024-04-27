@@ -55,18 +55,11 @@ html::-webkit-scrollbar-thumb {
   border-radius: 2rem;
 }
 
-// Container for all the app
-.app-container {
-  max-width: 100%;
-  margin: 0 auto;
-  background-color: var(--background);
-  transition: background-color 2s, color 2s; // Time transition for dark & light mode
-}
-
 // Container for all the page content
 .page-content {
   max-width: 800px;
   margin: 0 auto;
+  overflow: hidden;
 
   // Color background & text for light mode
   &.light-mode {

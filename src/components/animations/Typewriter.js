@@ -41,6 +41,7 @@ const Typewriter = ({ text, sound }) => {
   }, [hasPlayed]); // Add hasPlayed to the dependency array
 
   return (
+    // Wrap the text Typewriter
     <div ref={textRef}>
       {/* Animation TypeWriter */}
       <ReactTyped

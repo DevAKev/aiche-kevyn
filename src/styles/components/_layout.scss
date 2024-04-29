@@ -7,10 +7,11 @@
 }
 
 .start-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  position: absolute; // ou 'fixed' si vous voulez que le bouton reste en place lors du défilement
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; // Assurez-vous que cela est supérieur à l'index z de la vidéo
 }
 
 .start-button {
@@ -18,11 +19,15 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 200px; // Définissez la largeur souhaitée pour votre bouton
-  height: 200px; // Définissez la hauteur souhaitée pour votre bouton
-  border-radius: 50px; // Arrondir les coins du bouton
+  width: 200px;
+  height: 200px;
+  transition: transform 0.1s, box-shadow 0.1s; // Transition douce pour l'effet d'enfoncement
   cursor: pointer;
+  &:hover {
+    transform: scale(1.2); // Augmentation de taille au survol
+  }
   &:active {
+    transform: scale(0.95); // Réduction de taille pour l'effet d'enfoncement
     position: relative;
     top: 4px;
     box-shadow: none;

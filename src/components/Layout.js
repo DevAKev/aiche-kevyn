@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "../hooks/ThemeContext";
 import Header from "./Header/Header";
+import MilkyWay from "./Animations/MilkyWay";
 
 const Layout = ({ children }) => {
   const { theme } = useTheme();
@@ -47,11 +48,14 @@ const Layout = ({ children }) => {
           {/* <Footer /> */}
         </>
       ) : (
-        <div className="start-container">
-          <div className="start-button" onClick={handleClick}>
-            {/* START */}
+        <>
+          <MilkyWay />
+          <div className="start-container">
+            <div className="start-button" onClick={handleClick}>
+              {/* START */}
+            </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   );

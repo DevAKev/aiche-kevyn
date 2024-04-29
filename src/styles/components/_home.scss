@@ -4,11 +4,8 @@
   white-space: pre-wrap;
   display: flex;
   justify-content: center;
-  margin: 10px;
   max-width: 100%;
-  width: 100%;
   overflow: hidden;
-  letter-spacing: 0.5px;
 }
 @media screen and (max-width: 280px) {
   .typewriter-text {
@@ -22,7 +19,7 @@
 }
 @media screen and (min-width: 351px) and (max-width: 450px) {
   .typewriter-text {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 

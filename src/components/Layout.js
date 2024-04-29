@@ -42,8 +42,10 @@ const Layout = ({ children }) => {
     <div className={`app-container ${theme}-mode`}>
       {isStarted ? (
         <>
-          {/* Header component */}
-          <Header />
+          <div className="background-img">
+            {/* Header component */}
+            <Header />
+          </div>
           <div className="content-container">{children}</div>
           {/* <Footer /> */}
         </>

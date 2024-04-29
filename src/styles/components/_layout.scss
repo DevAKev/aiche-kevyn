@@ -6,12 +6,35 @@
   transition: background-color 2s, color 2s; // Time transition for dark & light mode
 }
 
+.background-img {
+  position: relative;
+  background-image: url(../../assets/images/background/bg_1.jpeg);
+  background-size: cover;
+  background-position: center;
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  @media (max-width: 350px) {
+    min-height: 55vh;
+  }
+  @media (min-width: 351px) and (max-width: 600px) {
+    min-height: 85vh;
+  }
+  @media (min-width: 601px) and (max-width: 1023px) {
+    min-height: 100vh;
+  }
+  @media (min-width: 1023px) {
+    min-height: 180vh;
+  }
+}
+
 .start-container {
-  position: absolute; // ou 'fixed' si vous voulez que le bouton reste en place lors du défilement
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10; // Assurez-vous que cela est supérieur à l'index z de la vidéo
+  z-index: 10;
 }
 
 .start-button {

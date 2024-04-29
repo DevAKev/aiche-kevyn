@@ -19,13 +19,13 @@
     min-height: 55vh;
   }
   @media (min-width: 351px) and (max-width: 600px) {
-    min-height: 85vh;
+    min-height: 65vh;
   }
   @media (min-width: 601px) and (max-width: 1023px) {
     min-height: 100vh;
   }
   @media (min-width: 1023px) {
-    min-height: 180vh;
+    min-height: 120vh;
   }
 }
 
@@ -44,13 +44,13 @@
   background-repeat: no-repeat;
   width: 200px;
   height: 200px;
-  transition: transform 0.1s, box-shadow 0.1s; // Transition douce pour l'effet d'enfoncement
+  transition: transform 0.1s, box-shadow 0.1s; // Slow effect transition
   cursor: pointer;
   &:hover {
-    transform: scale(1.2); // Augmentation de taille au survol
+    transform: scale(1.2);
   }
   &:active {
-    transform: scale(0.95); // Réduction de taille pour l'effet d'enfoncement
+    transform: scale(0.95);
     position: relative;
     top: 4px;
     box-shadow: none;

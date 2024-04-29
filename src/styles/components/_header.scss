@@ -6,7 +6,7 @@
   font-family: var(--font-1);
 }
 
-// Style Logo dans _logo.scss
+// Style du logo dans _logo.scss
 
 // Mobile nav container
 .navbar {
@@ -207,28 +207,35 @@
   font-family: "Outfit", sans-serif;
 }
 
+// Container for theme & language toggle
 .desktop_theme-language_container {
   display: flex;
   justify-content: start;
   flex-direction: row;
   align-items: center;
 }
-// @media screen and (min-width: 1023px) and (max-width: 1100px) {
-//   .desktop_theme-language_container {
-//     margin-top: -20vh;
-//   }
-// }
 
-// Dark mode & Light mode icons button
+// Dark mode & Light mode
 .desktop_theme-toggle {
   cursor: pointer;
   margin-left: 5.5vw;
 }
 
+// Dark mode & Light mode icons button
 .desktop_theme-icon {
   height: 4vh;
 }
+.desktop_theme-icon:hover {
+  transform: scale(1.5);
+  &:active {
+    transform: scale(0.95);
+    position: relative;
+    top: 4px;
+    box-shadow: none;
+  }
+}
 
+// Language toggle button
 .language-toggle {
   cursor: pointer;
   width: 5px;
@@ -237,15 +244,48 @@
   margin-left: 6vw;
   color: var(--text);
 }
-
-.light-mode {
-  --background: var(--background-light);
-  --text: var(--text-dark);
+.language-toggle:hover {
+  transform: scale(1.2);
 }
 
-.dark-mode {
-  --background: var(--background-dark);
-  --text: var(--text-light);
+// span language
+.span-language:hover {
+  background-color: var(--text);
+  color: var(--background);
+  box-shadow: 0 0 10px var(--text);
+  border-radius: 50px;
+  transform: scale(1.2);
+  &:active {
+    transform: scale(0.95);
+    position: relative;
+    top: 4px;
+    box-shadow: none;
+  }
+}
+
+// Rapel classe light-mode et dark-mode
+// .light-mode {
+//   --background: var(--background-light);
+//   --text: var(--text-dark);
+// }
+
+// .dark-mode {
+//   --background: var(--background-dark);
+//   --text: var(--text-light);
+// }
+
+// Container for the desktop navbar
+.desktop_navbar_container {
+  width: 100%;
+  color: var(--text);
+  text-shadow: 2px 2px 4px #000000;
+}
+.desktop_navbar_container ul li:hover {
+  background-color: var(--text);
+  color: var(--background);
+  box-shadow: 0 0 10px var(--text);
+  border-radius: 50px;
+  transform: scale(1.2);
 }
 
 // Navigation
@@ -257,7 +297,7 @@
 
     // List of navigation links
     a {
-      // width: 100%;
+      width: 100%;
       font-family: var(--font-1);
       margin: 20px;
       font-size: 2rem;
@@ -304,7 +344,6 @@
   left: 0px;
   top: 0px;
   background-color: var(--title-color2);
-  // box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.2);
   overflow: visible;
 }
 
@@ -315,84 +354,3 @@
   justify-content: flex-end;
   padding: 4vh 2vw;
 }
-
-// Logo
-.logo_nav {
-  margin-right: auto;
-  width: 5vw;
-  height: 5vh;
-}
-
-// Desktop links
-.desktop_subtitle {
-  border-style: none;
-  cursor: pointer;
-  font: 400 21.239999771118164px/0.84 "Outfit", Helvetica, Arial, serif;
-  color: var(--text-color1);
-  background-color: transparent;
-}
-
-// Login container
-.login_container {
-  margin-left: 1vw;
-  margin-right: 5vw;
-  background-color: var(--title-color1);
-  border-radius: 4.8vw;
-  outline: 1px solid var(--title-color1);
-  outline-offset: -1px;
-  width: auto;
-}
-
-// Login link
-.login_subtitle {
-  color: var(--title-color2);
-  font: 600 21.239999771118164px/0.96 "Outfit", Helvetica, Arial, serif;
-  height: 21px;
-  margin: 12px 14px 13px 13px;
-  width: auto;
-}
-
-// Dropdown container
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-// Dropdown bubble
-.dropdownContent {
-  border: solid 1px #dfe5ee;
-  width: 350px;
-  flex-direction: column;
-  display: none;
-  position: absolute;
-  background-color: var(--title-color2);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-}
-
-// Dropdown links
-.dropdownContent a {
-  //   cursor: url(/assets/red-cursor.svg), auto;
-  color: var(--text-color1);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 18px;
-}
-
-// Dropdown links hover
-.dropdownContent a:hover {
-  font-weight: bold;
-}
-
-// Dropdown bubble position
-.dropdown:hover .dropdownContent {
-  display: block;
-}
-/// #### A VOIR SI ON GARDE OU PAS ####
-// EFFET POUR LE HOVER DES LIENS "SERVICES" ET "RESSOURCES"
-// .dropdownContent a:hover {
-//   background-color: #ddd;
-//   border-radius: 10px;
-// }

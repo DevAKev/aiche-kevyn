@@ -46,7 +46,7 @@ const MobileNavBar = ({ isMobile }) => {
             Contactez-moi
           </a>
         </li>
-        {/* ### AJOUTER LIENS RESEAUX SOCIAUX (VOIR https://www.onyedika.xyz/) ### */}
+        {/* ### TO DO: AJOUTER LIENS RESEAUX SOCIAUX (VOIR https://www.onyedika.xyz/) ### */}
 
         {/* Icons for the themes modes */}
         <li className={`navbar__item slideInDown4`}>
@@ -100,12 +100,12 @@ const DesktopNavBar = () => {
         <div className="language-toggle" onClick={toggleLanguage}>
           {language === "en" ? (
             <>
-              <span>FR</span>
+              <span className="span-language">FR</span>
               <img src={fr_flag} alt="French Flag" />
             </>
           ) : (
             <>
-              <span>EN</span>
+              <span className="span-language">EN</span>
               <img src={uk_flag} alt="English Flag" />
             </>
           )}
@@ -140,7 +140,7 @@ const DesktopNavBar = () => {
             <li>{language === "en" ? "CONTACT" : "CONTACT"}</li>
           </NavLink>
         </ul>
-        {/* ### AJOUTER LIENS RESEAUX SOCIAUX (VOIR https://www.onyedika.xyz/) ### */}
+        {/* ### TO DO: AJOUTER LIENS RESEAUX SOCIAUX (VOIR https://www.onyedika.xyz/) ### */}
       </div>
     </div>
   );

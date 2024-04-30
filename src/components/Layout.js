@@ -1,4 +1,3 @@
-// Layout.js
 import { useState, useEffect } from "react";
 import { useTheme } from "../hooks/ThemeContext";
 import Header from "./Header/Header";
@@ -53,10 +52,9 @@ const Layout = ({ children }) => {
       ) : (
         <>
           <MilkyWay />
+          {/* Start button */}
           <div className="start-container">
-            <div className="start-button" onClick={handleClick}>
-              {/* START */}
-            </div>
+            <div className="start-button" onClick={handleClick}></div>
           </div>
         </>
       )}

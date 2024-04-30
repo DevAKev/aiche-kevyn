@@ -14,12 +14,11 @@ const Skills = () => {
     "react",
     "nodejs",
     "php",
-    "mysql",
-    "git",
-    "github",
-    "figma",
-    "apache",
-    "filezilla",
+    // "mysql",
+    // "git",
+    // "github",
+    // "figma",
+    // "apache",
     // More skills here
   ];
 

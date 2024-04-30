@@ -3,6 +3,8 @@ import { useTheme } from "../hooks/ThemeContext";
 import Skills from "../components/Home/Skills";
 import CardsProjects from "../components/Home/CardsProjects";
 import Typewriter from "../components/Animations/Typewriter";
+import EnTypewriter from "../assets/sounds/keyboard_sound_en.m4a";
+import FrTypewriter from "../assets/sounds/keyboard_sound_fr.m4a";
 // import UfoEffect from "../components/Animations/UfoEffect";
 
 const Home = () => {
@@ -20,8 +22,7 @@ const Home = () => {
           "mais vous pouvez m'appeler",
           "<strong>DevAKev</strong>",
         ];
-  const languageSound =
-    language === "en" ? "/keyboard_sound_en.m4a" : "/keyboard_sound_fr.m4a";
+  const languageSound = language === "en" ? EnTypewriter : FrTypewriter;
 
   return (
     <Layout>

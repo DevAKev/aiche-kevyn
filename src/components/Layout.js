@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "../hooks/ThemeContext";
 import Header from "./Header/Header";
 import MilkyWay from "./Animations/MilkyWay";
+import ClickStart from "../assets/sounds/click_start.mp3";
 
 const Layout = ({ children }) => {
   const { theme } = useTheme();
@@ -10,7 +11,7 @@ const Layout = ({ children }) => {
 
   const handleClick = () => {
     // Click play sound
-    const audio = new Audio("/click_start.mp3");
+    const audio = new Audio(ClickStart);
     audio.play();
 
     // Effet d'enfoncement

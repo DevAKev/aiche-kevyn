@@ -48,8 +48,8 @@ const Typewriter = ({ text, sound }) => {
         key={restart} // Restart the animation
         className="typewriter-text"
         strings={text}
-        typeSpeed={120} // Typing speed
-        backSpeed={13} // Backspacing speed
+        typeSpeed={125} // Typing speed
+        backSpeed={19} // Backspacing speed
         cursorChar="|"
         smartBackspace
         // loop

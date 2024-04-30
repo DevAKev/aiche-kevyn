@@ -21,7 +21,7 @@ const Home = () => {
           "<strong>DevAKev</strong>",
         ];
   const languageSound =
-    language === "en" ? "/buttons_calculator.mp3" : "/keyboard_sound_fr.m4a";
+    language === "en" ? "/keyboard_sound_en.m4a" : "/keyboard_sound_fr.m4a";
 
   return (
     <Layout>

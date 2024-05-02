@@ -227,12 +227,12 @@
 }
 .desktop_theme-icon:hover {
   transform: scale(1.5);
-  &:active {
-    transform: scale(0.95);
-    position: relative;
-    top: 4px;
-    box-shadow: none;
-  }
+  // &:active {
+  //   transform: scale(0.95);
+  //   position: relative;
+  //   top: 4px;
+  //   box-shadow: none;
+  // }
 }
 
 // Language toggle button
@@ -248,8 +248,10 @@
   transform: scale(1.2);
 }
 
-// span language
-.span-language:hover {
+// General style hover
+.span-language:hover,
+.img-language:hover,
+.desktop_theme-icon:hover {
   background-color: var(--text);
   color: var(--background);
   box-shadow: 0 0 10px var(--text);

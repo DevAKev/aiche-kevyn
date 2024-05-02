@@ -101,12 +101,12 @@ const DesktopNavBar = () => {
           {language === "en" ? (
             <>
               <span className="span-language">FR</span>
-              <img src={fr_flag} alt="French Flag" />
+              <img className="img-language" src={fr_flag} alt="French Flag" />
             </>
           ) : (
             <>
               <span className="span-language">EN</span>
-              <img src={uk_flag} alt="English Flag" />
+              <img className="img-language" src={uk_flag} alt="English Flag" />
             </>
           )}
         </div>

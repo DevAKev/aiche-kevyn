@@ -13,10 +13,6 @@ const Layout = ({ children }) => {
     const audio = new Audio(ClickStart);
     audio.play();
 
-    // Effet d'enfoncement
-    const startButton = document.querySelector(".start-button");
-    startButton.style.transform = "scale(0.75)";
-
     // Loaded after 0.5 seconds
     setTimeout(() => {
       setIsStarted(true);
@@ -24,11 +20,9 @@ const Layout = ({ children }) => {
   };
 
   useEffect(() => {
-    const startButton = document.querySelector(".start-button");
+    const startButton = document.getElementById("start-button");
 
-    const handleMouseUp = () => {
-      startButton.style.transform = "scale(1)";
-    };
+    const handleMouseUp = () => {};
 
     startButton.addEventListener("mouseup", handleMouseUp);
 
@@ -54,7 +48,7 @@ const Layout = ({ children }) => {
           <MilkyWay />
           {/* Start button */}
           <div className="start-container">
-            <div className="start-button" onClick={handleClick}></div>
+            <div id="start-button" onClick={handleClick}></div>
           </div>
         </>
       )}

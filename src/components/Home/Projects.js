@@ -2,7 +2,7 @@ import { useTheme } from "../../hooks/ThemeContext";
 import garageParrotImg from "../../assets/images/projectsImages/img-Garage-Parrot.png";
 import posterImg from "../../assets/images/projectsImages/poster.png";
 
-const Cards_Projects = () => {
+const Projects = () => {
   const { language } = useTheme();
   const projectsKey = language === "en" ? "My Projects" : "Mes Projets";
 
@@ -33,7 +33,9 @@ const Cards_Projects = () => {
 
   return (
     <section className="projects-section">
-      <h3 className="my-projects-title">{projectsKey}</h3>
+      <h3 id="projets" className="my-projects-title">
+        {projectsKey}
+      </h3>
       <div className="projects-list">
         {projects.map((project, index) => (
           <div key={index} className="project">
@@ -56,4 +58,4 @@ const Cards_Projects = () => {
   );
 };
 
-export default Cards_Projects;
+export default Projects;

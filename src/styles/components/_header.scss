@@ -117,11 +117,12 @@
 .showNav .navbar__links {
   border: solid 1px #dfe5ee;
   right: 0;
-  top: 80px;
-  width: 100vw;
-  height: 88vh;
+  top: 75px;
+  width: 95vw;
+  // height: 88vh;
   visibility: visible;
   border-radius: 4.8vw 0 0 4.8vw;
+  z-index: 1000;
 }
 
 /* toggle menu */

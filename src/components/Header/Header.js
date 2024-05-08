@@ -5,7 +5,7 @@ import fr_flag from "../../assets/images/flags/fr_flag.png";
 import uk_flag from "../../assets/images/flags/uk_flag.png";
 import darkModeIcon from "../../assets/images/theme/dark_emoji.png";
 import lightModeIcon from "../../assets/images/theme/light_emoji.png";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import Logo from "../Home/Logo";
 
 // ### MOBILE NAVBAR ###
@@ -21,10 +21,10 @@ const MobileNavBar = ({ isMobile }) => {
     <nav className={`navbar ${showLinks ? "showNav" : "hideNav"}`}>
       <ul className="navbar__links">
         <li className={`navbar__item slideInDown1`}>
-          <a href="/" className="mobile_navLink_home">
+          <a href="#home" className="mobile_navLink_home">
             Accueil
           </a>
-          <a href="/projets" className="mobile_subtitle2">
+          <a href="#projets" className="mobile_subtitle2">
             Projets
           </a>
         </li>
@@ -37,15 +37,15 @@ const MobileNavBar = ({ isMobile }) => {
           </a>
         </li> */}
         <li className={`navbar__item slideInDown3`}>
-          <a href="/about" className="mobile_navbarLink">
+          <a href="#about" className="mobile_navbarLink">
             À propos
           </a>
         </li>
-        <li className={`navbar__item slideInDown4`}>
+        {/* <li className={`navbar__item slideInDown4`}>
           <a href="/contact" className="mobile_navbarLink">
             Contactez-moi
           </a>
-        </li>
+        </li> */}
         {/* ### TO DO: AJOUTER LIENS RESEAUX SOCIAUX (VOIR https://www.onyedika.xyz/) ### */}
 
         {/* Icons for the themes modes */}
@@ -113,32 +113,32 @@ const DesktopNavBar = () => {
       </div>
       <div className="desktop_navbar_container">
         <ul>
-          <NavLink
-            to="/"
+          <a
+            href="#home"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             <li>{language === "en" ? "HOME" : "ACCUEIL"}</li>
-          </NavLink>
+          </a>
 
-          <NavLink
-            to="/projets"
+          <a
+            href="#projets"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             <li>{language === "en" ? "PROJECTS" : "PROJETS"}</li>
-          </NavLink>
+          </a>
 
-          <NavLink
-            to="/about"
+          <a
+            href="#about"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             <li>{language === "en" ? "ABOUT" : "À PROPOS"}</li>
-          </NavLink>
-          <NavLink
-            to="/contact"
+          </a>
+          <a
+            href="#contact"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             <li>{language === "en" ? "CONTACT" : "CONTACT"}</li>
-          </NavLink>
+          </a>
         </ul>
         {/* ### TO DO: AJOUTER LIENS RESEAUX SOCIAUX (VOIR https://www.onyedika.xyz/) ### */}
       </div>

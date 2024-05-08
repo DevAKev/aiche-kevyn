@@ -6,7 +6,7 @@ const Logo = () => {
   const { theme } = useTheme();
   return (
     <div className={`logo-content ${theme}-mode`}>
-      <a href="/">
+      <a href="#home">
         <img
           id={isMobile ? "mobile_img-logo" : "desktop_img-logo"}
           src={logo}

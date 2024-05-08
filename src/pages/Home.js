@@ -1,15 +1,17 @@
 import Layout from "../components/Layout";
 import { useTheme } from "../hooks/ThemeContext";
 import Skills from "../components/Home/Skills";
-import CardsProjects from "../components/Home/CardsProjects";
 import Typewriter from "../components/Animations/Typewriter";
 import EnTypewriter from "../assets/sounds/keyboard_sound_en.m4a";
 import FrTypewriter from "../assets/sounds/keyboard_sound_fr.m4a";
+import About from "../components/Home/About";
+import Projects from "../components/Home/Projects";
 // import UfoEffect from "../components/Animations/UfoEffect";
 
 const Home = () => {
   const { language } = useTheme();
   const titleKey = language === "en" ? "Welcome" : "Bienvenue";
+
   const DescText =
     language === "en"
       ? [
@@ -26,17 +28,19 @@ const Home = () => {
 
   return (
     <Layout>
-      <div className="page-content">
+      <div id="home" className="page-content">
         <h1>{titleKey}</h1>
         {/* Animation TypeWriter */}
         <Typewriter text={DescText} sound={languageSound} />
         {/* Skills section */}
         <Skills />
+        {/* Projets section */}
+        <Projects />
+        {/* Animation UFO */}
+        {/* <UfoEffect /> */}
+        {/* About section */}
+        <About />
       </div>
-      {/* Animation UFO */}
-      {/* <UfoEffect /> */}
-      {/* Section des exemples de projets */}
-      <CardsProjects />
     </Layout>
   );
 };

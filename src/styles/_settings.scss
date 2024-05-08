@@ -43,6 +43,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Scroll bar */
 html::-webkit-scrollbar {
   width: 0.6rem;

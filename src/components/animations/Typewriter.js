@@ -25,9 +25,12 @@ const Typewriter = ({ text, sound }) => {
           // Restart the animation
           setRestart((prevRestart) => prevRestart + 1);
         } else if (!hasPlayed) {
-          audioRef.current.play();
-          // Update state to indicate that the sound has played
-          setHasPlayed(true);
+          // Add a delay before the sound plays
+          setTimeout(() => {
+            audioRef.current.play();
+            // Update state to indicate that the sound has played
+            setHasPlayed(true);
+          }); // (, 500) Delay
         }
       });
     });
@@ -39,6 +42,13 @@ const Typewriter = ({ text, sound }) => {
       observer.unobserve(textElement);
     };
   }, [hasPlayed]); // Add hasPlayed to the dependency array
+
+  const handleStart = () => {
+    if (!hasPlayed) {
+      audioRef.current.play();
+      setHasPlayed(true);
+    }
+  };
 
   return (
     // Wrap the text Typewriter
@@ -52,6 +62,8 @@ const Typewriter = ({ text, sound }) => {
         backSpeed={19} // Backspacing speed
         cursorChar="|"
         smartBackspace
+        // startDelay={800} // Delay before typing starts
+        onStart={handleStart} // Sync the sound with the typing
         // loop
       />
       {/* Audio element */}

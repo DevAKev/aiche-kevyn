@@ -7,6 +7,8 @@ import FrTypewriter from "../assets/sounds/keyboard_sound_fr.m4a";
 import About from "../components/Home/About";
 import Projects from "../components/Home/Projects";
 // import UfoEffect from "../components/Animations/UfoEffect";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
 
 const Home = () => {
   const { language } = useTheme();
@@ -29,9 +31,17 @@ const Home = () => {
   return (
     <Layout>
       <div id="home" className="page-content">
-        <h1>{titleKey}</h1>
-        {/* Animation TypeWriter */}
-        <Typewriter text={DescText} sound={languageSound} />
+        <ScrollAnimation
+          animateIn="animate__lightSpeedInLeft"
+          animateOnce={true}
+        >
+          <h1>{titleKey}</h1>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
+          {/* Animation TypeWriter */}
+          <Typewriter text={DescText} sound={languageSound} />
+        </ScrollAnimation>
+
         {/* Skills section */}
         <Skills />
         {/* Projets section */}

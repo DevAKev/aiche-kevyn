@@ -43,12 +43,12 @@ const Projects = () => {
 
   return (
     <section className="projects-section">
-      <h3 id="projets" className="my-projects-title">
-        {projectsKey}
-      </h3>
-      <div className="projects-list">
-        {projects.map((project, index) => (
-          <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
+      <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
+        <h3 id="projets" className="my-projects-title">
+          {projectsKey}
+        </h3>
+        <div className="projects-list">
+          {projects.map((project, index) => (
             <div key={index} className="project">
               <h4 className="project-title">{project.title}</h4>
               <p className="project-description">{project.description}</p>
@@ -78,9 +78,9 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-          </ScrollAnimation>
-        ))}
-      </div>
+          ))}
+        </div>
+      </ScrollAnimation>
     </section>
   );
 };

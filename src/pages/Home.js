@@ -9,6 +9,7 @@ import Projects from "../components/Home/Projects";
 // import UfoEffect from "../components/Animations/UfoEffect";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
+import Services from "../components/Home/Services";
 
 const Home = () => {
   const { language } = useTheme();
@@ -31,17 +32,14 @@ const Home = () => {
   return (
     <Layout>
       <div id="home" className="page-content">
-        <ScrollAnimation
-          animateIn="animate__lightSpeedInLeft"
-          animateOnce={true}
-        >
-          <h1>{titleKey}</h1>
+        <ScrollAnimation animateIn="animate__fadeInLeftBig" animateOnce={true}>
+          <h1 className="home-title">{titleKey}</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
           {/* Animation TypeWriter */}
           <Typewriter text={DescText} sound={languageSound} />
         </ScrollAnimation>
-
+        <Services />
         {/* Skills section */}
         <Skills />
         {/* Projets section */}

@@ -23,16 +23,18 @@ const Skills = () => {
   ];
 
   return (
-    <div className="about__skill-info">
-      <h3 className="my-skills-title">{skillsKey}</h3>
-      <ul className="about__skills">
-        {skills.map((skill, index) => (
-          <li key={index} className="about__skill">
-            <i className={`devicon-${skill}-plain skill-icon`}></i>
-            {skill} &nbsp;-
-          </li>
-        ))}
-      </ul>
+    <div id="skills" className="page-content">
+      <div className="about__skill-info">
+        <h3 className="my-skills-title">{skillsKey}</h3>
+        <ul className="about__skills">
+          {skills.map((skill, index) => (
+            <li key={index} className="about__skill">
+              <i className={`devicon-${skill}-plain skill-icon`}></i>
+              {skill} &nbsp;
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

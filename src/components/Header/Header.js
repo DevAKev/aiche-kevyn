@@ -9,7 +9,7 @@ import lightModeIcon from "../../assets/images/theme/light_emoji.png";
 import Logo from "../Home/Logo";
 
 // ### MOBILE NAVBAR ###
-const MobileNavBar = ({ isMobile }) => {
+const MobileNavBar = () => {
   const { theme, toggleTheme, language, toggleLanguage } = useTheme();
   const [showLinks, setShowLinks] = useState(false);
 
@@ -24,28 +24,38 @@ const MobileNavBar = ({ isMobile }) => {
           <a href="#home" className="mobile_navLink_home">
             Accueil
           </a>
+        </li>
+
+        <li className={`navbar__item slideInDown2`}>
+          <a href="#services" className="mobile_subtitle2">
+            Services
+          </a>
+        </li>
+
+        <li className={`navbar__item slideInDown2`}>
+          <a href="#skills" className="mobile_subtitle2">
+            Compétences
+          </a>
+        </li>
+
+        <li className={`navbar__item slideInDown2`}>
           <a href="#projets" className="mobile_subtitle2">
             Projets
           </a>
         </li>
-        {/* <li className={`navbar__item slideInDown2`}>
-          <a href="/ressources" className="mobile_navbarLink">
-            Nos ressources
-          </a>
-          <a href="/prompts" className="mobile_subtitle2">
-            Notre librairie de prompt
-          </a>
-        </li> */}
+
         <li className={`navbar__item slideInDown3`}>
-          <a href="#about" className="mobile_navbarLink">
+          <a href="#about" className="mobile_subtitle2">
             À propos
           </a>
         </li>
-        {/* <li className={`navbar__item slideInDown4`}>
-          <a href="/contact" className="mobile_navbarLink">
+
+        <li className={`navbar__item slideInDown4`}>
+          <a href="#contact" className="mobile_subtitle2">
             Contactez-moi
           </a>
-        </li> */}
+        </li>
+
         {/* ### TO DO: AJOUTER LIENS RESEAUX SOCIAUX (VOIR https://www.onyedika.xyz/) ### */}
 
         {/* Icons for the themes modes */}
@@ -118,6 +128,20 @@ const DesktopNavBar = () => {
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             <li>{language === "en" ? "HOME" : "ACCUEIL"}</li>
+          </a>
+
+          <a
+            href="#services"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            <li>{language === "en" ? "SERVICES" : "SERVICES"}</li>
+          </a>
+
+          <a
+            href="#skills"
+            className={(nav) => (nav.isActive ? "nav-active" : "")}
+          >
+            <li>{language === "en" ? "SKILLS" : "COMPETENCES"}</li>
           </a>
 
           <a

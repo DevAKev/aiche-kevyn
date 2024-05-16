@@ -31,21 +31,30 @@
 }
 
 .service-card {
-  background-color: #fff;
+  background-color: var(--gradient);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 20px;
   padding: 20px;
   width: calc(33% - 40px);
   transition: transform 0.3s ease-in-out;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
   }
 
   .service-icon {
     height: 64px;
     margin-bottom: 20px;
     width: 64px;
+  }
+
+  // Images icons
+  .mobile-icon,
+  .games-icon,
+  .design-icon,
+  .seo-icon,
+  .responsive-icon {
+    background-color: var(--white);
+    border-radius: 30%;
   }
 
   .service-card-title {
@@ -56,7 +65,16 @@
 
   .service-description {
     color: #666;
-    line-height: 1.5;
+    line-height: 1.2;
+  }
+  /* Light mode */
+  .light-mode & {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  }
+
+  /* Dark mode */
+  .dark-mode & {
+    box-shadow: 0 0 10px white;
   }
 }
 

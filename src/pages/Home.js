@@ -31,6 +31,7 @@ const Home = () => {
 
   return (
     <Layout>
+      <div className="background-cover"></div>
       <div id="home" className="page-content">
         <ScrollAnimation animateIn="animate__fadeInLeftBig" animateOnce={true}>
           <h1 className="home-title">{titleKey}</h1>

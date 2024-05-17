@@ -50,12 +50,12 @@ const DesktopNavBar = () => {
             <li>{language === "en" ? "SERVICES" : "SERVICES"}</li>
           </a>
 
-          <a
+          {/* <a
             href="#skills"
             className={(nav) => (nav.isActive ? "nav-active" : "")}
           >
             <li>{language === "en" ? "SKILLS" : "COMPETENCES"}</li>
-          </a>
+          </a> */}
 
           <a
             href="#projets"

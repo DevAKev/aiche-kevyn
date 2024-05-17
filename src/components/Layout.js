@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "../hooks/ThemeContext";
-import Header from "./Header/Header";
+import Header from "../components/Header/Header";
 import MilkyWay from "./Animations/MilkyWay";
 import ClickStart from "../assets/sounds/click_start.mp3";
 
@@ -34,12 +34,12 @@ const Layout = ({ children }) => {
 
   return (
     <div className={`app-container ${theme}-mode`}>
+      {isStarted && <Header />}
       {isStarted ? (
         <>
-          <div className="background-img">
-            {/* Header component */}
+          {/* <div className="background-img">
             <Header />
-          </div>
+          </div> */}
           <div className="content-container">{children}</div>
           {/* <Footer /> */}
         </>

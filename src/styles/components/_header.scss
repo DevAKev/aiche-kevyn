@@ -8,6 +8,33 @@
 
 // Style du logo dans _logo.scss
 
+// Background image header
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(78vh - 35px);
+  background-image: url("../../assets/images/background/bg_1.jpeg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  animation: curtainOpen 3s forwards;
+  @media (min-width: 1023px) {
+    height: 100vh;
+  }
+}
+
+@keyframes curtainOpen {
+  0% {
+    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
 // Mobile nav container
 .navbar {
   display: flex;

@@ -4,39 +4,53 @@
   margin: 0 auto;
   background-color: var(--background);
   transition: background-color 2s, color 2s; // Time transition for dark & light mode
+  overflow: hidden;
 }
 
-.background-img {
+// ######
+// .background-img {
+//   position: relative;
+//   background-image: url(../../assets/images/background/bg_1.jpeg);
+//   background-size: cover;
+//   background-position: center;
+//   min-width: 100%;
+//   min-height: 100vh;
+//   margin: 0 auto;
+//   overflow: hidden;
+//   animation: curtainOpen 3s forwards;
+
+//   @media (max-width: 350px) {
+//     min-height: 55vh;
+//   }
+//   @media (min-width: 351px) and (max-width: 600px) {
+//     min-height: 63vh;
+//   }
+//   @media (min-width: 601px) and (max-width: 1023px) {
+//     min-height: 93vh;
+//   }
+//   @media (min-width: 1023px) {
+//     min-height: 100vh;
+//   }
+// }
+
+// @keyframes curtainOpen {
+//   0% {
+//     clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+//   }
+//   100% {
+//     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+//   }
+// }
+
+.background-cover {
   position: relative;
-  background-image: url(../../assets/images/background/bg_1.jpeg);
-  background-size: cover;
-  background-position: center;
+  background-color: var(--background);
   min-width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   margin: 0 auto;
   overflow: hidden;
-  animation: curtainOpen 3s forwards;
-
-  @media (max-width: 350px) {
-    min-height: 55vh;
-  }
-  @media (min-width: 351px) and (max-width: 600px) {
-    min-height: 63vh;
-  }
-  @media (min-width: 601px) and (max-width: 1023px) {
-    min-height: 93vh;
-  }
   @media (min-width: 1023px) {
-    min-height: 100vh;
-  }
-}
-
-@keyframes curtainOpen {
-  0% {
-    clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
-  }
-  100% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    min-height: 5vh;
   }
 }
 

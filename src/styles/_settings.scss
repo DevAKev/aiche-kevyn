@@ -49,14 +49,14 @@ html {
 
 /* Scroll bar */
 html::-webkit-scrollbar {
-  width: 0.6rem;
+  width: 0.8vw;
 }
 html::-webkit-scrollbar-track {
   background: var(--gradient); // Color of slide track
 }
 html::-webkit-scrollbar-thumb {
   background: var(--color-3); // Color of slide button
-  border-radius: 2rem;
+  border-radius: 50px;
 }
 
 // Container for all the page content

@@ -19,7 +19,7 @@ const Services = () => {
       <ScrollAnimation
         animateIn="animate__bounceInUp"
         animateOnce={true}
-        delay={3500}
+        delay={1500}
       >
         <h1 className="services-title">{titleKey}</h1>
         <div className="services">

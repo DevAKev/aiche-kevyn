@@ -21,21 +21,19 @@
   background-position: center;
   z-index: -1;
   animation: curtainOpen 3s forwards;
-  @media screen and (min-width: 200px) {
-    height: 57vh;
+  @media screen and (min-width: 200px) and (max-width: 400px) {
+    height: 55vh;
   }
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 401px) and (max-width: 600px) {
     height: 63vh;
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 601px) and (max-width: 1023px) {
     height: 67vh;
   }
-
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 900px) and (max-width: 1099px) {
     height: 65vh;
   }
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1100px) {
     height: 90vh;
   }
 }
@@ -269,7 +267,7 @@
 
 // Dark mode & Light mode icons button
 .desktop_theme-icon {
-  height: 2.5vw;
+  height: 2vw;
   background-color: var(--text);
   color: var(--background);
   box-shadow: 0 0 10px var(--text);
@@ -323,7 +321,7 @@
   color: var(--text);
   text-shadow: 0 0 10px var(--background);
 }
-.desktop_navbar_container ul li:hover {
+.desktop_navbar_container ul a:hover {
   background-color: var(--text);
   color: var(--background);
   box-shadow: 0 0 10px var(--text);
@@ -339,7 +337,7 @@
     margin: 50px;
 
     // List of navigation links
-    a {
+    li {
       width: 100%;
       height: 5vh;
       font-family: var(--font-1);
@@ -347,6 +345,10 @@
       margin: 20px;
       font-size: 2rem;
       padding: 10px;
+      color: var(--text);
+    }
+
+    a {
       color: var(--text);
     }
     // Active link

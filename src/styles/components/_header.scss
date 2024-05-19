@@ -21,12 +21,18 @@
   background-position: center;
   z-index: -1;
   animation: curtainOpen 3s forwards;
+  @media screen and (min-width: 200px) {
+    height: 57vh;
+  }
+  @media screen and (min-width: 400px) {
+    height: 63vh;
+  }
   @media screen and (min-width: 600px) {
-    height: 70vh;
+    height: 67vh;
   }
 
   @media screen and (min-width: 900px) {
-    height: 90vh;
+    height: 65vh;
   }
 
   @media screen and (min-width: 1200px) {
@@ -264,15 +270,10 @@
 // Dark mode & Light mode icons button
 .desktop_theme-icon {
   height: 2.5vw;
-}
-.desktop_theme-icon:hover {
-  transform: scale(1.5);
-  // &:active {
-  //   transform: scale(0.95);
-  //   position: relative;
-  //   top: 4px;
-  //   box-shadow: none;
-  // }
+  background-color: var(--text);
+  color: var(--background);
+  box-shadow: 0 0 10px var(--text);
+  border-radius: 50px;
 }
 
 // Language toggle button

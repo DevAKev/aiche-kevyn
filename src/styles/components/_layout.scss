@@ -45,20 +45,21 @@
 .background-cover {
   position: relative;
   background-color: var(--background);
+  transition: background-color 2s, color 2s;
   min-width: 100%;
-  min-height: 50vh;
+  // min-height: 50vh;
   margin: 0 auto;
   overflow: hidden;
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 200px) and (max-width: 400px) {
+    min-height: calc(40vh - 35px);
+  }
+
+  @media screen and (min-width: 401px) and (max-width: 600px) {
     min-height: calc(50vh - 35px);
   }
 
-  @media screen and (min-width: 601px) and (max-width: 900px) {
+  @media screen and (min-width: 601px) and (max-width: 1023px) {
     min-height: calc(55vh - 35px);
-  }
-
-  @media screen and (min-width: 901px) and (max-width: 1023px) {
-    min-height: calc(70vh - 35px);
   }
 
   @media screen and (min-width: 1201px) {

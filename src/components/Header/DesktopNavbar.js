@@ -34,64 +34,35 @@ const DesktopNavBar = () => {
           )}
         </div>
       </div>
-      <div className="desktop_navbar_container">
+      <nav className="desktop_navbar_container">
         <ul>
-          <li>
-            <a
-              href="#home"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-            >
-              {language === "en" ? "HOME" : "ACCUEIL"}
-            </a>
-          </li>
+          <a href="#home">
+            <li>{language === "en" ? "HOME" : "ACCUEIL"}</li>
+          </a>
 
-          <li>
-            <a
-              href="#services"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-            >
-              {language === "en" ? "SERVICES" : "SERVICES"}
-            </a>
-          </li>
+          <a href="#services">
+            <li>{language === "en" ? "SERVICES" : "SERVICES"}</li>
+          </a>
 
-          {/* <li>
-            <a
-              href="#skills"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-            >
-              {language === "en" ? "SKILLS" : "COMPETENCES"}
-            </a>
-          </li> */}
+          {/* <a
+            href="#skills"
+          >
+            <li>{language === "en" ? "SKILLS" : "COMPETENCES"}</li>
+          </a> */}
 
-          <li>
-            <a
-              href="#projets"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-            >
-              {language === "en" ? "PROJECTS" : "PROJETS"}
-            </a>
-          </li>
+          <a href="#projets">
+            <li>{language === "en" ? "PROJECTS" : "PROJETS"}</li>
+          </a>
 
-          <li>
-            <a
-              href="#about"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-            >
-              {language === "en" ? "ABOUT" : "A PROPOS"}
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#contact"
-              className={(nav) => (nav.isActive ? "nav-active" : "")}
-            >
-              {language === "en" ? "CONTACT" : "CONTACT"}
-            </a>
-          </li>
+          <a href="#about">
+            <li>{language === "en" ? "ABOUT" : "À PROPOS"}</li>
+          </a>
+          <a href="#contact">
+            <li>{language === "en" ? "CONTACT" : "CONTACT"}</li>
+          </a>
         </ul>
         {/* ### TO DO: AJOUTER LIENS RESEAUX SOCIAUX (VOIR https://www.onyedika.xyz/) ### */}
-      </div>
+      </nav>
     </div>
   );
 };

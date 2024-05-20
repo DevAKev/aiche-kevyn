@@ -19,37 +19,37 @@ const MobileNavBar = () => {
       <ul className="navbar__links">
         <li className={`navbar__item slideInDown1`}>
           <a href="#home" className="mobile_navLink_home">
-            Accueil
+            {language === "en" ? "HOME" : "ACCUEIL"}
           </a>
         </li>
 
         <li className={`navbar__item slideInDown2`}>
           <a href="#services" className="mobile_subtitle2">
-            Services
+            {language === "en" ? "SERVICES" : "SERVICES"}
           </a>
         </li>
 
         <li className={`navbar__item slideInDown2`}>
           <a href="#skills" className="mobile_subtitle2">
-            Compétences
+            {language === "en" ? "SKILLS" : "COMPETENCES"}
           </a>
         </li>
 
         <li className={`navbar__item slideInDown2`}>
           <a href="#projets" className="mobile_subtitle2">
-            Projets
+            {language === "en" ? "PROJECTS" : "PROJETS"}
           </a>
         </li>
 
         <li className={`navbar__item slideInDown3`}>
           <a href="#about" className="mobile_subtitle2">
-            À propos
+            {language === "en" ? "ABOUT" : "À PROPOS"}
           </a>
         </li>
 
         <li className={`navbar__item slideInDown4`}>
           <a href="#contact" className="mobile_subtitle2">
-            Contactez-moi
+            {language === "en" ? "CONTACT" : "CONTACT"}
           </a>
         </li>
 

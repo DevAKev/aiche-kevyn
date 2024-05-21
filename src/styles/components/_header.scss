@@ -83,7 +83,7 @@
   height: auto;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
   visibility: hidden;
   transition: all 0.8s ease-out;
 }
@@ -94,15 +94,22 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--color-2);
+  color: var(--background);
+  text-shadow: 0 0 10px var(--text);
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2vh;
+  line-height: 1.5;
 }
 
 // Mobile subtitle2
 .mobile_subtitle2 {
-  font-weight: 100;
+  font-weight: bold;
   text-align: center;
+  line-height: 1.5;
   width: 100%;
-  color: var(--color-1);
+  color: var(--text);
+  text-shadow: 0 0 10px var(--background);
 }
 
 // Mobile navbar link
@@ -112,7 +119,7 @@
   color: var(--text-dark);
   display: block;
   padding: 1.5rem;
-  font-size: 6vw;
+  font-size: 2rem;
 }
 
 // Mobile login container
@@ -142,13 +149,33 @@
 
 .mobile_theme-icon {
   height: 4vh;
+  background-color: var(--white);
+  box-shadow: 0 0 10px var(--white);
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+  &:active {
+    transform: scale(0.95);
+    position: relative;
+    top: 4px;
+    box-shadow: none;
+  }
 }
 
 // Language toggle button
 .mobile_language-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 5px;
-  margin-left: 6vw;
+  font-weight: bold;
+  font-size: 2rem;
   font-family: var(--font-1);
+  margin-left: 6vw;
+  color: var(--text);
+  text-shadow: 0 0 10px var(--background);
 }
 
 .navbar__burger {
@@ -161,7 +188,7 @@
 }
 
 .showNav .navbar__links {
-  border: solid 1px var(--white);
+  border: solid 1px var(--text);
   right: 0;
   top: 75px;
   width: 99vw;

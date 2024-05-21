@@ -273,34 +273,13 @@
 // Dark mode & Light mode icons button
 .desktop_theme-icon {
   height: 2vw;
-  background-color: var(--text);
-  color: var(--background);
-  box-shadow: 0 0 10px var(--text);
+  background-color: var(--white);
+  box-shadow: 0 0 10px var(--white);
   border-radius: 50px;
-}
-
-// Language toggle button
-.language-toggle {
-  cursor: pointer;
-  width: 5px;
-  font-size: 2rem;
-  font-family: var(--font-1);
-  margin-left: 6vw;
-  color: var(--text);
-}
-.language-toggle:hover {
-  transform: scale(1.2);
-}
-
-// General style hover
-.span-language:hover,
-.img-language:hover,
-.desktop_theme-icon:hover {
-  background-color: var(--text);
-  color: var(--background);
-  box-shadow: 0 0 10px var(--text);
-  border-radius: 50px;
-  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
   &:active {
     transform: scale(0.95);
     position: relative;
@@ -309,16 +288,33 @@
   }
 }
 
-// Rapel classe light-mode et dark-mode
-// .light-mode {
-//   --background: var(--background-light);
-//   --text: var(--text-dark);
-// }
+// Language toggle button
+.language-toggle {
+  cursor: pointer;
+  width: 5px;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: var(--font-1);
+  margin-left: 6vw;
+  color: var(--text);
+  text-shadow: 0 0 10px var(--background);
+}
 
-// .dark-mode {
-//   --background: var(--background-dark);
-//   --text: var(--text-light);
-// }
+// General style hover
+.span-language:hover,
+.img-language:hover {
+  background-color: var(--background);
+  box-shadow: 0 0 10px var(--white);
+  border-radius: 50px;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+  &:active {
+    transform: scale(0.95);
+    position: relative;
+    top: 4px;
+    box-shadow: none;
+  }
+}
 
 // Container for the desktop navbar
 .desktop_navbar_container {

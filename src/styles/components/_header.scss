@@ -101,15 +101,30 @@
   margin-bottom: 2vh;
   line-height: 1.5;
 }
+@media screen and (min-width: 400px) {
+  .mobile_navLink_home {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+}
 
 // Mobile subtitle2
 .mobile_subtitle2 {
+  display: flex;
+  justify-content: start;
   font-weight: bold;
-  text-align: center;
+  font-size: 2rem;
   line-height: 1.5;
   width: 100%;
   color: var(--text);
   text-shadow: 0 0 10px var(--background);
+  margin: 2vh 0 0 5vw;
+}
+@media screen and (min-width: 400px) {
+  .mobile_subtitle2 {
+    line-height: 1.2;
+    font-size: 3.5rem;
+  }
 }
 
 // Mobile navbar link

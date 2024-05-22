@@ -10,6 +10,7 @@ import Projects from "../components/Home/Projects";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 import Services from "../components/Home/Services";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
   const { language } = useTheme();
@@ -49,6 +50,7 @@ const Home = () => {
         {/* <UfoEffect /> */}
         {/* About section */}
         <About />
+        <Footer />
       </div>
     </Layout>
   );

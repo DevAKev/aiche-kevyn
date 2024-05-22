@@ -41,7 +41,6 @@ const Layout = ({ children }) => {
             <Header />
           </div> */}
           <div className="content-container">{children}</div>
-          {/* <Footer /> */}
         </>
       ) : (
         <>

@@ -1,15 +1,62 @@
-// Text p
-p {
-    margin-left: 20px;
-    margin-right: 20px;
+// Title
+.about-title {
+  color: #3498db;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  @media screen and (max-width: 280px) {
+    font-size: 1.9rem;
+  }
+
+  @media screen and (min-width: 281px) and (max-width: 350px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 351px) and (max-width: 450px) {
+    font-size: 2.4rem;
+  }
+}
+
+// Subtitle
+.about-subtitle {
+  color: var(--text);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  @media screen and (max-width: 280px) {
     font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: 281px) and (max-width: 350px) {
+    font-size: 1.7rem;
+  }
+
+  @media screen and (min-width: 351px) and (max-width: 450px) {
+    font-size: 1.8rem;
+  }
 }
 
-// Text h1
-h1 {
-    font-weight: lighter;
-    font-size: 3rem;
-    text-align: center;
-    margin: 20px;
+// About image
+.about-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
+// Text
+.about-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  color: var(--text);
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  letter-spacing: 1px;
+}

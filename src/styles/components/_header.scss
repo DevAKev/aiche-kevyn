@@ -37,6 +37,7 @@
   z-index: -1;
   animation: curtainOpen 3s forwards;
   transition: background-image 3s ease-in-out;
+  border-radius: 0 0 80% 80% / 0 0 20% 20%;
   @media screen and (min-width: 200px) and (max-width: 400px) {
     height: 55vh;
   }

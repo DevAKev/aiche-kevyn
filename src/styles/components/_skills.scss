@@ -1,21 +1,85 @@
-// Titre des skills
-.my-skills-title {
-    color: #3498db; // Bleu vif
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 20px;
+.skills_container {
+  margin: 10px;
 }
 
-// Icones des skills
-.skill-icon {
-    margin-right: 10px;
-    margin: 20px;
+// Skills Title
+.skills-title {
+  color: #3498db;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 20px;
 }
 
-// Nom des skills
-.about__skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
+// Skills Subtitles
+.skills-subtitles {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+// Skills Scroll
+.skills-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 20px 0;
+  -webkit-overflow-scrolling: touch; /* Défilement fluide sur iOS */
+  scroll-behavior: smooth;
+}
+
+//  Scroll Webkit (Chrome, Safari)
+.skills-scroll::-webkit-scrollbar {
+  height: 1vh;
+}
+
+// Slide track
+.skills-scroll::-webkit-scrollbar-track {
+  background: var(--gradient);
+  border-radius: 50px;
+  border: 2px solid var(--text);
+  box-shadow: var(--text);
+}
+
+// Slide button
+.skills-scroll::-webkit-scrollbar-thumb {
+  background: var(--text);
+  border-radius: 50px;
+  border: 2px solid var(--text);
+}
+
+.skills-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+// Skills icons
+.skills-icon {
+  margin: 10px;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #2ecc71;
+  transition: color 0.3s ease;
+}
+
+// Skills ul
+.skills-ul {
+  width: 100%;
+  display: flex;
+}
+
+// Skills list
+.skills-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border: 1px solid var(--text);
+  box-shadow: 0 0 10px var(--text);
+  border-radius: 50px;
+  padding: 5px;
+}
+
+// Skills list hover
+.skills-li:hover .skills-icon {
+  color: #3498db;
 }

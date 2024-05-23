@@ -32,6 +32,8 @@
 .service-card {
   background-color: var(--gradient);
   border-radius: 10px;
+  border: 1px solid var(--text);
+  box-shadow: 0 0 10px var(--text);
   margin: 20px;
   padding: 20px;
   width: calc(33% - 40px);

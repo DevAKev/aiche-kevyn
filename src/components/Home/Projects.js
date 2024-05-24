@@ -7,7 +7,7 @@ import "animate.css/animate.min.css";
 
 const Projects = () => {
   const { language } = useTheme();
-  const projectsKey = language === "en" ? "My Projects" : "Mes Projets";
+  const projectsTitle = language === "en" ? "My Projects" : "Mes Projets";
 
   // Examples of a projects
   const projects = [
@@ -44,9 +44,9 @@ const Projects = () => {
   return (
     <section className="projects-section">
       <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
-        <h3 id="projets" className="my-projects-title">
-          {projectsKey}
-        </h3>
+        <h1 id="projets" className="my-projects-title">
+          {projectsTitle}
+        </h1>
         <div className="projects-list">
           {projects.map((project, index) => (
             <div key={index} className="project">

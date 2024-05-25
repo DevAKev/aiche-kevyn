@@ -1,6 +1,14 @@
 .skills_container {
   margin: 10px;
 }
+@media screen and (min-width: 1023px) {
+  .skills_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 
 // Skills Title
 .skills-title {
@@ -26,6 +34,11 @@
   padding: 20px 0;
   -webkit-overflow-scrolling: touch; /* Défilement fluide sur iOS */
   scroll-behavior: smooth;
+}
+@media screen and (min-width: 1023px) {
+  .skills-scroll {
+    overflow-x: visible;
+  }
 }
 
 //  Scroll Webkit (Chrome, Safari)
@@ -66,17 +79,28 @@
   width: 100%;
   display: flex;
 }
+@media screen and (min-width: 1023px) {
+  .skills-ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 // Skills list
 .skills-li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin: 10px;
   border: 1px solid var(--text);
   box-shadow: 0 0 10px var(--text);
   border-radius: 50px;
   padding: 5px;
+}
+@media screen and (min-width: 1023px) {
+  .skills-li {
+    padding: 0;
+  }
 }
 
 // Skills list hover

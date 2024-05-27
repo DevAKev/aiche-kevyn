@@ -34,7 +34,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--gradient);
   border-radius: 50px;
   border: 1px solid var(--text);
   box-shadow: 0 0 10px var(--text);
@@ -43,6 +42,7 @@
   width: calc(49% - 40px);
   transition: transform 0.3s ease-in-out;
   &:hover {
+    background-image: linear-gradient(to left, rgb(44, 62, 80), rgb(3, 27, 51));
     transform: scale(1.08);
   }
 
@@ -94,6 +94,13 @@
   /* Light mode */
   .light-mode & {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    &:hover {
+      background-image: linear-gradient(
+        to left,
+        rgb(236, 240, 241),
+        rgb(189, 195, 199)
+      );
+    }
   }
 
   /* Dark mode */

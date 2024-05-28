@@ -52,11 +52,7 @@ const Skills = () => {
 
   return (
     <div id="skills" className="page-content">
-      <ScrollAnimation
-        animateIn="animate__bounceInUp"
-        animateOnce={true}
-        delay={1500}
-      >
+      <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
         <div className="skills_container">
           <h1 className="skills-title">{skillsH1}</h1>
           <h2 className="skills-subtitles">Front-end :</h2>

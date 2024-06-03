@@ -41,22 +41,22 @@
   }
 }
 
-// Ufo effect
-.flying-saucer {
-  width: 50vw;
-  border: 1px solid orange;
-  position: fixed;
-  top: -100px;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: top 1s, opacity 1s;
-  @media (max-width: 860px) {
-    width: 80vw;
-  }
-}
+// // Ufo effect
+// .flying-saucer {
+//   width: 50vw;
+//   border: 1px solid orange;
+//   position: fixed;
+//   top: -100px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   opacity: 0;
+//   transition: top 1s, opacity 1s;
+//   @media (max-width: 860px) {
+//     width: 80vw;
+//   }
+// }
 
-.show-saucer {
-  top: 30vh; /* Position Ufo lorsque visible */
-  opacity: 1;
-}
+// .show-saucer {
+//   top: 30vh; /* Position Ufo lorsque visible */
+//   opacity: 1;
+// }

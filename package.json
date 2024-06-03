@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-animate-on-scroll": "^2.1.9",
     "react-dom": "^18.2.0",
@@ -15,6 +16,7 @@
     "react-typed": "^2.0.12",
     "sass": "^1.69.5",
     "tar": "^7.0.0",
+    "three": "^0.164.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

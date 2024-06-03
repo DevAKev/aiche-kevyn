@@ -1,4 +1,3 @@
-// Style pour la section des projets
 .projects-section {
   margin-top: 50px;
   text-align: center;
@@ -22,7 +21,14 @@
   padding: 20px;
   margin: 15px;
   margin-bottom: 50px;
-  box-shadow: 0 0 50px (#8a2be2);
+  box-shadow: 0 0 50px var(--white);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.5s linear, transform 0.5s linear;
+}
+
+.project-hidden {
+  display: none;
 }
 
 .project-title {

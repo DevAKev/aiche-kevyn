@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from "react";
+// import { useEffect} from "react";
 import { useTheme } from "../../hooks/ThemeContext";
 import garageParrotImg from "../../assets/images/projectsImages/img-Garage-Parrot.png";
 import posterImg from "../../assets/images/projectsImages/poster.png";
 import projectImg3 from "../../assets/images/projectsImages/screen-cat1.png";
-import { gsap } from "gsap";
-import UFOAnimation from "../Animations/UfoAnimation";
+// import { gsap } from "gsap";
 
 const Projects = () => {
   const { language } = useTheme();
   const projectsTitle = language === "en" ? "My Projects" : "Mes Projets";
-  const [ufoAnimationDone, setUfoAnimationDone] = useState(false);
 
   const projects = [
     {
@@ -38,35 +36,14 @@ const Projects = () => {
     },
   ];
 
-  useEffect(() => {
-    if (ufoAnimationDone) {
-      const projectElements = document.querySelectorAll(".project");
-
-      gsap.from(projectElements, {
-        duration: 1,
-        opacity: 0,
-        scale: 0,
-        y: -1000,
-        z: -500,
-        rotationX: -90,
-        stagger: 0.3,
-        ease: "power4.out",
-      });
-    }
-  }, [ufoAnimationDone]);
-
   return (
     <section className="projects-section">
       <h1 id="projets" className="my-projects-title">
         {projectsTitle}
       </h1>
-      <UFOAnimation onUfoAnimationDone={() => setUfoAnimationDone(true)} />
       <div className="projects-list">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className={`project ${ufoAnimationDone ? "" : "project-hidden"}`}
-          >
+          <div key={index} className="project">
             <h4 className="project-title">{project.title}</h4>
             <p className="project-description">{project.description}</p>
             <div className="project-tech">

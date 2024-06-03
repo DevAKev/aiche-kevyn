@@ -7,6 +7,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Halcom";
+  src: url("../assets/fonts/Halcom-Book-BF648a71455e035.otf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -22,6 +29,7 @@
 
   // Principal Font & Colors
   --font-1: "Array-Regular", sans-serif;
+  --font-2: "Halcom", sans-serif;
   --color-1: #6180fb;
   --color-2: salmon;
   --color-3: #282c34;

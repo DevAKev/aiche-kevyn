@@ -75,19 +75,18 @@
   .service-description {
     text-align: start;
     color: var(--text);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
+    font-family: var(--font-2); //Option: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     margin-bottom: 10px;
   }
 
   .service-description p {
-    font-weight: 300;
-    padding: 0 5px;
     margin-bottom: 1em;
+    line-height: 1.5;
   }
   @media screen and (min-width: 1023px) {
     .service-description p {
-      padding: 0 30px;
+      padding: 0 25px;
     }
   }
 

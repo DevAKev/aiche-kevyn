@@ -219,7 +219,7 @@ const Services = () => {
                 <div>
                   <p>
                     Lacking inspiration or need a professional to support you in
-                    the exploration and creation of unique visuals? 🎨
+                    the exploration and creation of unique visuals?
                   </p>
                   <p>
                     Turn your ideas into impressive visuals. I create original
@@ -234,7 +234,7 @@ const Services = () => {
                   <p>
                     With an eye for detail and a creative mind, I strive to
                     deliver content that is tailored to your needs and resonates
-                    with your target audience.
+                    with your target audience. 🎨
                   </p>
                 </div>
               ) : (
@@ -242,7 +242,7 @@ const Services = () => {
                   <p>
                     En panne d'inspiration ou besoin d'un professionnel pour
                     vous accompagner dans l'exploration et la création de
-                    visuels uniques ? 🎨
+                    visuels uniques ?
                   </p>
                   <p>
                     Transformez vos idées en graphisme impressionnants. Je crée
@@ -258,7 +258,7 @@ const Services = () => {
                   <p>
                     Avec un œil attentif aux détails et un esprit créatif, je
                     m'efforce de livrer du contenu qui soit adapté à vos besoins
-                    et qui résonne avec votre public cible.
+                    et qui résonne avec votre public cible. 🎨
                   </p>
                 </div>
               )

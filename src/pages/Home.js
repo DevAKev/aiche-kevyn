@@ -44,8 +44,10 @@ const Home = () => {
         <Services />
         {/* Skills section */}
         <Skills />
-        {/* Projets section */}
-        <Projects />
+        <div className="section-wrap">
+          {/* Projets section */}
+          <Projects />
+        </div>
         {/* Animation UFO */}
         {/* <UfoEffect /> */}
         {/* About section */}

@@ -11,6 +11,8 @@ gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
   const { language } = useTheme();
   const projectsTitle = language === "en" ? "My Projects" : "Mes Projets";
+  const projectsLink = language === "en" ? "See the site" : "Voir le site";
+  const projectsScroll = language === "en" ? "⬆️SCROLL⬇️" : "⬆️Défilez⬇️";
   // const container = useRef();
 
   useGSAP(() => {
@@ -110,7 +112,7 @@ const Projects = () => {
             <h1 className="my-projects-title">{projectsTitle}</h1>
             <div>
               <a className="project-link" href="/">
-                Voir le site
+                {projectsLink}
               </a>
             </div>
           </header>
@@ -118,7 +120,7 @@ const Projects = () => {
             <div className="outer">
               <div className="inner">
                 <div className="bg one">
-                  <h2 className="section-heading">⬆️SCROLL⬇️</h2>
+                  <h2 className="section-heading">{projectsScroll}</h2>
                 </div>
               </div>
             </div>

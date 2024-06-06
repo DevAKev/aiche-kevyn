@@ -9,6 +9,10 @@ $bg-gradient: linear-gradient(
   position: relative;
   overflow: hidden;
   margin-top: 50px;
+  border-radius: 50px;
+  @media screen and (max-width: 1024px) {
+    border-radius: 0;
+  }
 }
 
 .section-wrap {
@@ -57,9 +61,13 @@ $bg-gradient: linear-gradient(
   font-size: 2.5rem;
   color: #3498db;
   text-shadow: 2px 2px 4px #000000;
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
 }
 
 .project-link {
+  color: hsl(0, 0, 80%);
+  text-shadow: 2px 2px 4px #000000;
   text-decoration: none;
 }
 
@@ -106,7 +114,7 @@ section {
 .second {
   .bg {
     background-image: $bg-gradient,
-      url("https://images.unsplash.com/photo-1617128734662-66da6c1d3505?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzc3NTM3MA&ixlib=rb-1.2.1&q=75&w=1920");
+      url(../../assets/images/projectsImages/img-Garage-Parrot.png);
   }
 }
 

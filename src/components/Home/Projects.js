@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
   const { language } = useTheme();
   const projectsTitle = language === "en" ? "My Projects" : "Mes Projets";
-  const projectsLink = language === "en" ? "See the site" : "Voir le site";
+  const projectsLink = language === "en" ? "Click to see" : "Cliquez pour voir";
   const projectsScroll = language === "en" ? "⬆️SCROLL⬇️" : "⬆️Défilez⬇️";
   // const container = useRef();
 
@@ -110,11 +110,6 @@ const Projects = () => {
           {/* <div className="section-wrap"> */}
           <header className="projects-header">
             <h1 className="my-projects-title">{projectsTitle}</h1>
-            <div>
-              <a className="project-link" href="/">
-                {projectsLink}
-              </a>
-            </div>
           </header>
           <section className="first">
             <div className="outer">
@@ -130,6 +125,14 @@ const Projects = () => {
               <div className="inner">
                 <div className="bg">
                   <h2 className="section-heading">Garage Parrot</h2>
+                  <div className="project-link-container">
+                    <a
+                      className="project-link"
+                      href="http://garageparrot.les-amis-de-la-montagne.go.yj.fr"
+                    >
+                      {projectsLink}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -139,6 +142,11 @@ const Projects = () => {
               <div className="inner">
                 <div className="bg">
                   <h2 className="section-heading">Andragogy</h2>
+                  <div className="project-link-container">
+                    <a className="project-link" href="https://andragogy.fr/">
+                      {projectsLink}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -147,7 +155,15 @@ const Projects = () => {
             <div className="outer">
               <div className="inner">
                 <div className="bg">
-                  <h2 className="section-heading">Projet 3</h2>
+                  <h2 className="section-heading">Web Agency</h2>
+                  <div className="project-link-container">
+                    <a
+                      className="project-link"
+                      href="https://devakev.github.io/Web-Agency/"
+                    >
+                      {projectsLink}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -157,6 +173,11 @@ const Projects = () => {
               <div className="inner">
                 <div className="bg">
                   <h2 className="section-heading">Projet 4</h2>
+                  <div className="project-link-container">
+                    <a className="project-link" href="/">
+                      {projectsLink}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

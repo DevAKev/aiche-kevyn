@@ -61,11 +61,22 @@ $bg-gradient: linear-gradient(
   font-size: 2.5rem;
   color: #3498db;
   text-shadow: 2px 2px 4px #000000;
+}
+
+.project-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1000;
   backdrop-filter: blur(5px);
   border-radius: 50px;
+  margin-bottom: 50px;
 }
 
 .project-link {
+  background-image: var(--gradient);
+  border-radius: 50px;
   color: hsl(0, 0, 80%);
   text-shadow: 2px 2px 4px #000000;
   text-decoration: none;
@@ -121,7 +132,7 @@ section {
 .third {
   .bg {
     background-image: $bg-gradient,
-      url(https://images.unsplash.com/photo-1617438817509-70e91ad264a5?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzU2MDk4Mg&ixlib=rb-1.2.1&q=75&w=1920);
+      url(../../assets/images/projectsImages/app-andragogy.png);
   }
 }
 

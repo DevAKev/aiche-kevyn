@@ -1,10 +1,7 @@
 import { useTheme } from "../../hooks/ThemeContext";
-// import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-// import { Observer } from "gsap/Observer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,7 +10,6 @@ const Projects = () => {
   const projectsTitle = language === "en" ? "My Projects" : "Mes Projets";
   const projectsLink = language === "en" ? "Click to see" : "Cliquez pour voir";
   const projectsScroll = language === "en" ? "⬆️SCROLL⬇️" : "⬆️Défilez⬇️";
-  // const container = useRef();
 
   useGSAP(() => {
     let sections = document.querySelectorAll("section"),
@@ -25,12 +21,12 @@ const Projects = () => {
       wrap = gsap.utils.wrap(0, sections.length),
       animating;
 
-    // Parcourez chaque titre
+    // Parcourir chaque titre
     headings.forEach((heading) => {
-      // Divisez le texte du titre en caractères individuels
+      // Divise le titre en caractères individuels
       let chars = heading.textContent.split("");
 
-      // Enveloppez chaque caractère dans un élément span
+      // Enveloppe chaque caractère dans un élément span
       heading.innerHTML = chars
         .map(
           (char) =>
@@ -105,9 +101,7 @@ const Projects = () => {
   return (
     <>
       <div id="projets" className="page-content">
-        {/* ref={container} */}
         <div className="projects-container">
-          {/* <div className="section-wrap"> */}
           <header className="projects-header">
             <h1 className="my-projects-title">{projectsTitle}</h1>
           </header>
@@ -172,7 +166,24 @@ const Projects = () => {
             <div className="outer">
               <div className="inner">
                 <div className="bg">
-                  <h2 className="section-heading">Projet 4</h2>
+                  <h2 className="section-heading">Les amis de la montagne</h2>
+                  <div className="project-link-container">
+                    <a
+                      className="project-link"
+                      href="https://devakev.github.io/Deploiement/"
+                    >
+                      {projectsLink}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="sixt">
+            <div className="outer">
+              <div className="inner">
+                <div className="bg">
+                  <h2 className="section-heading">Projet 5</h2>
                   <div className="project-link-container">
                     <a className="project-link" href="/">
                       {projectsLink}
@@ -182,7 +193,6 @@ const Projects = () => {
               </div>
             </div>
           </section>
-          {/* </div> */}
         </div>
       </div>
     </>

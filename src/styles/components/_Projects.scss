@@ -1,7 +1,7 @@
 $bg-gradient: linear-gradient(
   180deg,
-  rgba(0, 0, 0, 0.6) 0%,
-  rgba(0, 0, 0, 0.3) 100%
+  rgba(0, 0, 0, 0.1) 0%,
+  rgba(0, 0, 0, 1.5) 100%
 );
 
 .projects-container {
@@ -37,12 +37,12 @@ $bg-gradient: linear-gradient(
 }
 
 .section-heading {
-  font-size: clamp(1rem, 7vw, 5rem);
+  display: block;
+  font-size: clamp(1rem, 9vw, 5rem);
   font-weight: 400;
   text-shadow: 2px 2px 4px #000000;
   text-align: center;
   flex-wrap: wrap;
-  letter-spacing: 0.5em;
   margin-right: -0.5em;
   color: hsl(0, 0, 80%);
   width: 90vw;
@@ -53,6 +53,10 @@ $bg-gradient: linear-gradient(
   display: inline-block;
   opacity: 0;
   transform: translateY(100%);
+  -webkit-text-stroke: 1px goldenrod;
+  @media screen and (max-width: 450px) {
+    -webkit-text-stroke: 0.5px goldenrod;
+  }
 }
 
 .my-projects-title {
@@ -103,7 +107,6 @@ section {
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 0;
     background-size: cover;
     overflow: hidden;
 
@@ -143,6 +146,13 @@ section {
 }
 
 .fifth {
+  .bg {
+    background-image: $bg-gradient,
+      url(../../assets/images/projectsImages/site-asso-montagne.png);
+  }
+}
+
+.sixt {
   .bg {
     background-image: $bg-gradient,
       url("https://images.unsplash.com/photo-1617141636403-f511e2d5dc17?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxODAzMjc4Mw&ixlib=rb-1.2.1&q=75w=1920");

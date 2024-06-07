@@ -105,7 +105,6 @@ section {
     width: 100%;
     top: 0;
     background-size: cover;
-    background-position: center;
     overflow: hidden;
 
     .section-heading {
@@ -139,7 +138,7 @@ section {
 .fourth {
   .bg {
     background-image: $bg-gradient,
-      url(https://images.unsplash.com/photo-1617412327653-c29093585207?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzU2MDgzMQ&ixlib=rb-1.2.1&q=75&w=1920);
+      url(../../assets/images/projectsImages/app-webagency.png);
   }
 }
 

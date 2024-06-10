@@ -31,10 +31,6 @@ $bg-gradient: linear-gradient(
   z-index: 999;
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(0.66rem, 2vw, 1rem);
-  letter-spacing: 0.5em;
-  @media screen and (max-width: 450px) {
-    letter-spacing: 0.2em;
-  }
 }
 
 .section-heading {

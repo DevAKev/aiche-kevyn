@@ -5,14 +5,17 @@ $bg-gradient: linear-gradient(
 );
 
 .projects-container {
+  border: 1px solid var(--text);
+  box-shadow: 0 0 10px var(--text);
   height: 68vh;
   position: relative;
   overflow: hidden;
+  margin: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 50px;
   @media screen and (max-width: 1024px) {
-    border-radius: 0;
+    border-radius: 50px;
   }
 }
 

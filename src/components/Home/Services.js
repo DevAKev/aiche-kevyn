@@ -6,8 +6,6 @@ import MobileIcon from "../../assets/images/icons/mobiles.png";
 import GraphicDesignIcon from "../../assets/images/icons/design.png";
 import SEOIcon from "../../assets/images/icons/seo.png";
 import ResponsiveIcon from "../../assets/images/icons/responsive.png";
-import ScrollAnimation from "react-animate-on-scroll";
-import "animate.css/animate.min.css";
 
 const Services = () => {
   const { language } = useTheme();
@@ -15,126 +13,119 @@ const Services = () => {
 
   return (
     <div id="services" className="page-content">
-      <ScrollAnimation
-        animateIn="animate__bounceInUp"
-        animateOnce={true}
-        delay={1500}
-      >
-        <h1 className="services-title">{servicesTitle}</h1>
-        <div className="services">
-          {/* Web development card */}
-          <ServiceCard
-            title={language === "en" ? "Web Development" : "Développement Web"}
-            description={
-              language === "en" ? (
-                <div>
-                  <p>
-                    Are you looking for a web developer to propel your business
-                    into the world of the internet?
-                  </p>
-                  <p>
-                    I design custom websites that serve as a showcase digital to
-                    your business. Increase your visibility and attract new
-                    customers.
-                  </p>
-                  <p>
-                    Whether you are an SME, a large company or an NGO, I am here
-                    to meet your needs. By choosing my services, you are
-                    investing in the growth of your business.
-                  </p>
-                  <p>Ready for the take-off to online success ? 🚀</p>
-                  <p>Contact me today to discuss your web development needs.</p>
-                </div>
-              ) : (
-                <div>
-                  <p>
-                    Vous cherchez un développeur web pour propulser votre
-                    entreprise dans l'univers d'internet ?
-                  </p>
-                  <p>
-                    Je conçois des sites web sur mesure qui servent de vitrine
-                    digitale à votre entreprise. Augmentez votre visibilité en
-                    ligne et attirez de nouveaux clients.
-                  </p>
-                  <p>
-                    Que vous soyez une PME, une grande entreprise ou une ONG, je
-                    suis là pour répondre à vos besoins. En choisissant mes
-                    services, vous investissez dans la croissance de votre
-                    entreprise.
-                  </p>
-                  <p>Prêt à décoller vers le succès en ligne ? 🚀</p>
-                  <p>
-                    Contactez-moi dès aujourd’hui pour discuter de vos besoins
-                    en développement web.
-                  </p>
-                </div>
-              )
-            }
-            icon={<WebIcon />}
-          />
+      <h1 className="services-title">{servicesTitle}</h1>
+      <div className="services">
+        {/* Web development card */}
+        <ServiceCard
+          title={language === "en" ? "Web Development" : "Développement Web"}
+          description={
+            language === "en" ? (
+              <div>
+                <p>
+                  Are you looking for a web developer to propel your business
+                  into the world of the internet?
+                </p>
+                <p>
+                  I design custom websites that serve as a showcase digital to
+                  your business. Increase your visibility and attract new
+                  customers.
+                </p>
+                <p>
+                  Whether you are an SME, a large company or an NGO, I am here
+                  to meet your needs. By choosing my services, you are investing
+                  in the growth of your business.
+                </p>
+                <p>Ready for the take-off to online success ? 🚀</p>
+                <p>Contact me today to discuss your web development needs.</p>
+              </div>
+            ) : (
+              <div>
+                <p>
+                  Vous cherchez un développeur web pour propulser votre
+                  entreprise dans l'univers d'internet ?
+                </p>
+                <p>
+                  Je conçois des sites web sur mesure qui servent de vitrine
+                  digitale à votre entreprise. Augmentez votre visibilité en
+                  ligne et attirez de nouveaux clients.
+                </p>
+                <p>
+                  Que vous soyez une PME, une grande entreprise ou une ONG, je
+                  suis là pour répondre à vos besoins. En choisissant mes
+                  services, vous investissez dans la croissance de votre
+                  entreprise.
+                </p>
+                <p>Prêt à décoller vers le succès en ligne ? 🚀</p>
+                <p>
+                  Contactez-moi dès aujourd’hui pour discuter de vos besoins en
+                  développement web.
+                </p>
+              </div>
+            )
+          }
+          icon={<WebIcon />}
+        />
 
-          {/* Mobile development card */}
-          <ServiceCard
-            title={
-              language === "en" ? "Mobile Development" : "Développement Mobile"
-            }
-            description={
-              language === "en" ? (
-                <div>
-                  <p>
-                    Do you want to reach your targets on all mobile devices?
-                  </p>
-                  <p>
-                    Unlock the full potential of your business with customized
-                    mobile apps, user-friendly, visually appealing, and
-                    optimized to rank well in app store searches.
-                  </p>
-                  <p>
-                    Take a mobile-first approach to connect with your customers
-                    intuitively and more personally, right at your fingertips.
-                  </p>
-                  <p>
-                    Together, let's turn your vision into reality. Let yourself
-                    be guided through the vastness of the web and broaden your
-                    digital perspectives.🌠
-                  </p>
-                </div>
-              ) : (
-                <div>
-                  <p>
-                    Vous souhaitez atteindre vos cibles sur tous les appareils
-                    mobiles ?
-                  </p>
-                  <p>
-                    Libérez tout le potentiel de votre entreprise avec des
-                    applications mobiles personnalisées, conviviales,
-                    visuellement attrayantes et optimisées pour bien se classer
-                    dans les recherches des magasins d’applications.
-                  </p>
-                  <p>
-                    Adoptez une approche mobile-first pour vous connecter avec
-                    vos clients de manière intuitive et plus personnelle,
-                    directement à portée de main.
-                  </p>
-                  <p>
-                    Ensemble, transformons votre vision en réalité. Laissez vous
-                    guider à travers l'immensité du web et élargissez vos
-                    perspectives numérique. 🌠
-                  </p>
-                </div>
-              )
-            }
-            icon={
-              <img
-                className="mobile-icon"
-                src={MobileIcon}
-                alt="Icône de développement mobile"
-              />
-            }
-          />
+        {/* Mobile development card */}
+        <ServiceCard
+          title={
+            language === "en" ? "Mobile Development" : "Développement Mobile"
+          }
+          description={
+            language === "en" ? (
+              <div>
+                <p>Do you want to reach your targets on all mobile devices?</p>
+                <p>
+                  Unlock the full potential of your business with customized
+                  mobile apps, user-friendly, visually appealing, and optimized
+                  to rank well in app store searches.
+                </p>
+                <p>
+                  Take a mobile-first approach to connect with your customers
+                  intuitively and more personally, right at your fingertips.
+                </p>
+                <p>
+                  Together, let's turn your vision into reality. Let yourself be
+                  guided through the vastness of the web and broaden your
+                  digital perspectives.🌠
+                </p>
+              </div>
+            ) : (
+              <div>
+                <p>
+                  Vous souhaitez atteindre vos cibles sur tous les appareils
+                  mobiles ?
+                </p>
+                <p>
+                  Libérez tout le potentiel de votre entreprise avec des
+                  applications mobiles personnalisées, conviviales, visuellement
+                  attrayantes et optimisées pour bien se classer dans les
+                  recherches des magasins d’applications.
+                </p>
+                <p>
+                  Adoptez une approche mobile-first pour vous connecter avec vos
+                  clients de manière intuitive et plus personnelle, directement
+                  à portée de main.
+                </p>
+                <p>
+                  Ensemble, transformons votre vision en réalité. Laissez vous
+                  guider à travers l'immensité du web et élargissez vos
+                  perspectives numérique. 🌠
+                </p>
+              </div>
+            )
+          }
+          icon={
+            <img
+              className="mobile-icon"
+              src={MobileIcon}
+              alt="Icône de développement mobile"
+            />
+          }
+        />
 
-          {/* Games development card */}
-          {/* <ServiceCard
+        {/* Games development card */}
+        {/* <ServiceCard
             title={
               language === "en"
                 ? "Mobile Games Development"
@@ -200,193 +191,191 @@ const Services = () => {
             }
           /> */}
 
-          {/* Graphic & design card */}
-          <ServiceCard
-            title={language === "en" ? "Graphic Design" : "Design Graphique"}
-            description={
-              language === "en" ? (
-                <div>
-                  <p>
-                    Are you lacking inspiration? Do you need assistance in
-                    exploring and creating unique visuals?
-                  </p>
-                  <p>
-                    Turn your ideas into extraordinary, innovative, and
-                    effective graphics to convey your message and captivate your
-                    users.
-                  </p>
-                  <p>
-                    A design that reflects your image and effectively promotes
-                    your brand identity? It's possible! I offer a wide range of
-                    services to help your company stand out.
-                  </p>
-                  <p>
-                    With a keen eye for detail and a creative mindset, I strive
-                    to deliver content that is tailored to your preferences and
-                    resonates with your target audience. 🎨
-                  </p>
-                </div>
-              ) : (
-                <div>
-                  <p>
-                    En panne d'inspiration ? Vous souhaitez un accompagnement
-                    dans l'exploration et la création de visuels uniques ?
-                  </p>
-                  <p>
-                    Transformez vos idées en graphisme hors du commun, innovant
-                    et efficace pour transmettre votre message et séduire vos
-                    utilisateurs.
-                  </p>
-                  <p>
-                    Un design qui vous ressemble et qui permet de promouvoir
-                    efficacement l'identité de votre marque ? C'est possible !
-                    Je propose une large gamme de services pour aider votre
-                    entreprise à se démarquer.
-                  </p>
-                  <p>
-                    Avec un œil attentif aux détails et un esprit créatif, je
-                    m'efforce de livrer du contenu qui soit adapté à vos envies
-                    et qui résonne avec votre public cible. 🎨
-                  </p>
-                </div>
-              )
-            }
-            icon={
-              <img
-                className="design-icon"
-                src={GraphicDesignIcon}
-                alt="Graphic design icon"
-              />
-            }
-          />
+        {/* Graphic & design card */}
+        <ServiceCard
+          title={language === "en" ? "Graphic Design" : "Design Graphique"}
+          description={
+            language === "en" ? (
+              <div>
+                <p>
+                  Are you lacking inspiration? Do you need assistance in
+                  exploring and creating unique visuals?
+                </p>
+                <p>
+                  Turn your ideas into extraordinary, innovative, and effective
+                  graphics to convey your message and captivate your users.
+                </p>
+                <p>
+                  A design that reflects your image and effectively promotes
+                  your brand identity? It's possible! I offer a wide range of
+                  services to help your company stand out.
+                </p>
+                <p>
+                  With a keen eye for detail and a creative mindset, I strive to
+                  deliver content that is tailored to your preferences and
+                  resonates with your target audience. 🎨
+                </p>
+              </div>
+            ) : (
+              <div>
+                <p>
+                  En panne d'inspiration ? Vous souhaitez un accompagnement dans
+                  l'exploration et la création de visuels uniques ?
+                </p>
+                <p>
+                  Transformez vos idées en graphisme hors du commun, innovant et
+                  efficace pour transmettre votre message et séduire vos
+                  utilisateurs.
+                </p>
+                <p>
+                  Un design qui vous ressemble et qui permet de promouvoir
+                  efficacement l'identité de votre marque ? C'est possible ! Je
+                  propose une large gamme de services pour aider votre
+                  entreprise à se démarquer.
+                </p>
+                <p>
+                  Avec un œil attentif aux détails et un esprit créatif, je
+                  m'efforce de livrer du contenu qui soit adapté à vos envies et
+                  qui résonne avec votre public cible. 🎨
+                </p>
+              </div>
+            )
+          }
+          icon={
+            <img
+              className="design-icon"
+              src={GraphicDesignIcon}
+              alt="Graphic design icon"
+            />
+          }
+        />
 
-          {/* SEO card */}
-          <ServiceCard
-            title={
-              language === "en"
-                ? "Optimization of natural referencing (SEO)"
-                : "Optimisation du référencement naturel (SEO)"
-            }
-            description={
-              language === "en" ? (
-                <div>
-                  <p>
-                    Enhance your online presence and shine in the darkness of
-                    the internet through an effective natural search engine
-                    optimization strategy.
-                  </p>
-                  <p>
-                    Specialized in improving natural rankings for search
-                    engines, I help your company achieve the visibility it
-                    deserves. With the right SEO strategies, your website can
-                    climb in search results, attract more traffic, and convert
-                    more visitors into customers
-                  </p>
-                  <p>
-                    Let's discuss your SEO needs and together enhance your
-                    online visibility to put your business at the forefront of
-                    search results. ✨
-                  </p>
-                </div>
-              ) : (
-                <div>
-                  <p>
-                    Augmentez votre présence en ligne et brillez dans
-                    l'obscurité du net grâce à une stratégie d’optimisation du
-                    référencement naturel efficace.
-                  </p>
-                  <p>
-                    Spécialisé dans l'amélioration du classement naturel pour
-                    les moteurs de recherche, j'aide votre entreprise à obtenir
-                    la visibilité qu'elle mérite. Avec les bonnes stratégies den
-                    SEO, votre site web peut grimper dans les résultats de
-                    recherche, attirer plus de trafic et convertir plus de
-                    visiteurs en clients.
-                  </p>
-                  <p>
-                    Discutons de vos besoins en SEO et boostons ensemble votre
-                    visibilité en ligne pour mettre votre entreprise au premier
-                    plan des résultats de recherche. ✨
-                  </p>
-                </div>
-              )
-            }
-            icon={
-              <img
-                className="seo-icon"
-                src={SEOIcon}
-                alt="Icône pour l'optimisation du réfèrencement naturel"
-              />
-            }
-          />
+        {/* SEO card */}
+        <ServiceCard
+          title={
+            language === "en"
+              ? "Optimization of natural referencing (SEO)"
+              : "Optimisation du référencement naturel (SEO)"
+          }
+          description={
+            language === "en" ? (
+              <div>
+                <p>
+                  Enhance your online presence and shine in the darkness of the
+                  internet through an effective natural search engine
+                  optimization strategy.
+                </p>
+                <p>
+                  Specialized in improving natural rankings for search engines,
+                  I help your company achieve the visibility it deserves. With
+                  the right SEO strategies, your website can climb in search
+                  results, attract more traffic, and convert more visitors into
+                  customers
+                </p>
+                <p>
+                  Let's discuss your SEO needs and together enhance your online
+                  visibility to put your business at the forefront of search
+                  results. ✨
+                </p>
+              </div>
+            ) : (
+              <div>
+                <p>
+                  Augmentez votre présence en ligne et brillez dans l'obscurité
+                  du net grâce à une stratégie d’optimisation du référencement
+                  naturel efficace.
+                </p>
+                <p>
+                  Spécialisé dans l'amélioration du classement naturel pour les
+                  moteurs de recherche, j'aide votre entreprise à obtenir la
+                  visibilité qu'elle mérite. Avec les bonnes stratégies den SEO,
+                  votre site web peut grimper dans les résultats de recherche,
+                  attirer plus de trafic et convertir plus de visiteurs en
+                  clients.
+                </p>
+                <p>
+                  Discutons de vos besoins en SEO et boostons ensemble votre
+                  visibilité en ligne pour mettre votre entreprise au premier
+                  plan des résultats de recherche. ✨
+                </p>
+              </div>
+            )
+          }
+          icon={
+            <img
+              className="seo-icon"
+              src={SEOIcon}
+              alt="Icône pour l'optimisation du réfèrencement naturel"
+            />
+          }
+        />
 
-          {/* Responsive design card */}
-          <ServiceCard
-            title={
-              language === "en"
-                ? "Adapting to Responsive Design"
-                : "Adaptation au Design Réactif"
-            }
-            description={
-              language === "en" ? (
-                <div>
-                  <p>
-                    Experience smooth navigation on all devices with my
-                    responsive design services.
-                  </p>
-                  <p>
-                    Specializing in website adaptation, I make sure they offer
-                    optimal appearance and functionality on all screen sizes,
-                    from desktops to tablets and mobile phones.
-                  </p>
-                  <p>
-                    In the digital age, a responsive design isn't just an option
-                    — It's a necessity. Don't let your website get left behind.
-                    Let's work together to create a web experience that your
-                    users will love, no matter what device they're on.
-                  </p>
-                  <p>
-                    Contact me here today to discuss your responsive design
-                    needs and ensure optimal navigation for your users. 📲
-                  </p>
-                </div>
-              ) : (
-                <div>
-                  <p>
-                    Expérimentez une navigation fluide sur tous les appareils
-                    grâce à mes services de design réactif.
-                  </p>
-                  <p>
-                    Spécialisé dans l'adaptation des sites web, je m'assure
-                    qu'ils offrent une apparence et une fonctionnalité optimales
-                    sur toutes les tailles d'écran, des ordinateurs de bureau
-                    aux tablettes et téléphones mobiles.
-                  </p>
-                  <p>
-                    À l'ère du numérique, un design réactif n'est pas seulement
-                    une option — C'est une nécessité. Ne laissez pas votre site
-                    web être laissé pour compte. Travaillons ensemble pour créer
-                    une expérience web que vos utilisateurs adoreront, quel que
-                    soit l'appareil qu'ils utilisent.
-                  </p>
-                  <p>
-                    Contactez-moi dès aujourd'hui pour discuter de vos besoins
-                    en design réactif et garantir une navigation optimale à vos
-                    utilisateurs. 📲
-                  </p>
-                </div>
-              )
-            }
-            icon={
-              <img
-                className="responsive-icon"
-                src={ResponsiveIcon}
-                alt="Icône d'adaptation au design réactif"
-              />
-            }
-          />
-        </div>
-      </ScrollAnimation>
+        {/* Responsive design card */}
+        <ServiceCard
+          title={
+            language === "en"
+              ? "Adapting to Responsive Design"
+              : "Adaptation au Design Réactif"
+          }
+          description={
+            language === "en" ? (
+              <div>
+                <p>
+                  Experience smooth navigation on all devices with my responsive
+                  design services.
+                </p>
+                <p>
+                  Specializing in website adaptation, I make sure they offer
+                  optimal appearance and functionality on all screen sizes, from
+                  desktops to tablets and mobile phones.
+                </p>
+                <p>
+                  In the digital age, a responsive design isn't just an option —
+                  It's a necessity. Don't let your website get left behind.
+                  Let's work together to create a web experience that your users
+                  will love, no matter what device they're on.
+                </p>
+                <p>
+                  Contact me here today to discuss your responsive design needs
+                  and ensure optimal navigation for your users. 📲
+                </p>
+              </div>
+            ) : (
+              <div>
+                <p>
+                  Expérimentez une navigation fluide sur tous les appareils
+                  grâce à mes services de design réactif.
+                </p>
+                <p>
+                  Spécialisé dans l'adaptation des sites web, je m'assure qu'ils
+                  offrent une apparence et une fonctionnalité optimales sur
+                  toutes les tailles d'écran, des ordinateurs de bureau aux
+                  tablettes et téléphones mobiles.
+                </p>
+                <p>
+                  À l'ère du numérique, un design réactif n'est pas seulement
+                  une option — C'est une nécessité. Ne laissez pas votre site
+                  web être laissé pour compte. Travaillons ensemble pour créer
+                  une expérience web que vos utilisateurs adoreront, quel que
+                  soit l'appareil qu'ils utilisent.
+                </p>
+                <p>
+                  Contactez-moi dès aujourd'hui pour discuter de vos besoins en
+                  design réactif et garantir une navigation optimale à vos
+                  utilisateurs. 📲
+                </p>
+              </div>
+            )
+          }
+          icon={
+            <img
+              className="responsive-icon"
+              src={ResponsiveIcon}
+              alt="Icône d'adaptation au design réactif"
+            />
+          }
+        />
+      </div>
     </div>
   );
 };

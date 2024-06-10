@@ -41,17 +41,38 @@ const Home = () => {
           {/* Animation TypeWriter */}
           <Typewriter text={DescText} sound={languageSound} />
         </ScrollAnimation>
-        <Services />
-        {/* Skills section */}
-        <Skills />
-        <div className="section-wrap">
+        <ScrollAnimation
+          animateIn="animate__bounceInUp"
+          animateOnce={true}
+          delay={1000}
+        >
+          {/* Services section */}
+          <Services />
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__zoomInDown" animateOnce={true}>
+          {/* Skills section */}
+          <Skills />
+        </ScrollAnimation>
+        <ScrollAnimation
+          animateIn="animate__zoomInUp"
+          animateOnce={true}
+          delay={1000}
+        >
           {/* Projets section */}
-          <Projects />
-        </div>
+          <div className="section-wrap">
+            <Projects />
+          </div>
+        </ScrollAnimation>
         {/* Animation UFO */}
         {/* <UfoEffect /> */}
-        {/* About section */}
-        <About />
+        <ScrollAnimation
+          animateIn="animate__flipInY"
+          animateOnce={true}
+          delay={1000}
+        >
+          {/* About section */}
+          <About />
+        </ScrollAnimation>
         <Footer />
       </div>
     </Layout>

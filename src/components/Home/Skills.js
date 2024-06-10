@@ -1,6 +1,4 @@
 import { useTheme } from "../../hooks/ThemeContext";
-import ScrollAnimation from "react-animate-on-scroll";
-import "animate.css/animate.min.css";
 
 const Skills = () => {
   const { language } = useTheme();
@@ -52,44 +50,42 @@ const Skills = () => {
 
   return (
     <div id="skills" className="page-content">
-      <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
-        <div className="skills_container">
-          <h1 className="skills-title">{skillsH1}</h1>
-          <h2 className="skills-subtitles">Front-end :</h2>
-          <div className="skills-scroll">
-            <ul className="skills-ul">
-              {frontEndSkills.map((skill, index) => (
-                <li key={index} className="skills-li">
-                  <i className={`devicon-${skill}-plain skills-icon`}></i>
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <h2 className="skills-subtitles">Back-end :</h2>
-          <div className="skills-scroll">
-            <ul className="skills-ul">
-              {backEndSkills.map((skill, index) => (
-                <li key={index} className="skills-li">
-                  <i className={`devicon-${skill}-plain skills-icon`}></i>
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <h2 className="skills-subtitles">Outils :</h2>
-          <div className="skills-scroll">
-            <ul className="skills-ul">
-              {tools.map((tool, index) => (
-                <li key={index} className="skills-li">
-                  <i className={`devicon-${tool}-plain skills-icon`}></i>
-                  {tool}
-                </li>
-              ))}
-            </ul>
-          </div>
+      <div className="skills_container">
+        <h1 className="skills-title">{skillsH1}</h1>
+        <h2 className="skills-subtitles">Front-end :</h2>
+        <div className="skills-scroll">
+          <ul className="skills-ul">
+            {frontEndSkills.map((skill, index) => (
+              <li key={index} className="skills-li">
+                <i className={`devicon-${skill}-plain skills-icon`}></i>
+                {skill}
+              </li>
+            ))}
+          </ul>
         </div>
-      </ScrollAnimation>
+        <h2 className="skills-subtitles">Back-end :</h2>
+        <div className="skills-scroll">
+          <ul className="skills-ul">
+            {backEndSkills.map((skill, index) => (
+              <li key={index} className="skills-li">
+                <i className={`devicon-${skill}-plain skills-icon`}></i>
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <h2 className="skills-subtitles">Outils :</h2>
+        <div className="skills-scroll">
+          <ul className="skills-ul">
+            {tools.map((tool, index) => (
+              <li key={index} className="skills-li">
+                <i className={`devicon-${tool}-plain skills-icon`}></i>
+                {tool}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

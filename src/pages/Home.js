@@ -53,11 +53,7 @@ const Home = () => {
           {/* Skills section */}
           <Skills />
         </ScrollAnimation>
-        <ScrollAnimation
-          animateIn="animate__zoomInUp"
-          animateOnce={true}
-          delay={1000}
-        >
+        <ScrollAnimation animateIn="animate__heartBeat" animateOnce={true}>
           {/* Projets section */}
           <div className="section-wrap">
             <Projects />
@@ -66,9 +62,9 @@ const Home = () => {
         {/* Animation UFO */}
         {/* <UfoEffect /> */}
         <ScrollAnimation
-          animateIn="animate__flipInY"
+          animateIn="animate__fadeInRightBig"
           animateOnce={true}
-          delay={1000}
+          delay={300}
         >
           {/* About section */}
           <About />

@@ -160,7 +160,7 @@
 // Dark mode & Light mode icons button
 .mobile_theme-toggle {
   margin-left: 4vw;
-  padding-top: 5vh;
+  margin-top: 2vh;
 }
 
 .mobile_theme-icon {
@@ -208,7 +208,7 @@
   right: 0;
   top: 75px;
   width: 99vw;
-  height: 80vh;
+  height: 89vh;
   visibility: visible;
   border-radius: 4.8vw 0 0 4.8vw;
   z-index: 1000;
@@ -278,6 +278,37 @@
   transition: all 1.3s ease-out;
 }
 
+// Social media container
+.mobile_socials-title {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-1);
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--text);
+  text-shadow: 0 0 10px var(--background);
+  margin-top: 5px;
+}
+
+.social-links {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+.mobile_socials-container {
+  background-color: #d5e7f8;
+  height: 65px;
+  padding: 19px;
+  box-shadow: 0 0 8px black;
+  border-radius: 50px;
+}
+// Social media icons
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+// ############################
 // #### DESKTOP NAVIGATION ####
 // General styles
 .box,

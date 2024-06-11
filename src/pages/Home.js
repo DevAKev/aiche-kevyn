@@ -49,7 +49,7 @@ const Home = () => {
           {/* Services section */}
           <Services />
         </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__zoomInDown" animateOnce={true}>
+        <ScrollAnimation animateIn="animate__fadeInLeftBig" animateOnce={true}>
           {/* Skills section */}
           <Skills />
         </ScrollAnimation>

@@ -489,21 +489,21 @@
   writing-mode: vertical-rl;
   font-family: var(--font-1);
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   box-shadow: 0 0 10px var(--text);
   background: #d5e7f8;
   border: 1px solid var(--text);
   border-radius: 50px;
-  margin: 2px;
+  padding: 2px;
   position: fixed;
   top: 50%;
-  left: 50px;
+  left: 35px;
   transform: translateY(-50%) rotate(180deg);
 }
 
 .desktop-socials-links {
   background-color: #d5e7f8;
-  width: 50px;
+  width: 40px;
   border-radius: 50px;
   border: 1px solid var(--text);
   box-shadow: 0 0 8px var(--text);
@@ -524,6 +524,6 @@
   width: 32px;
   height: 32px;
   &:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
   }
 }

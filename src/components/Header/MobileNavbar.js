@@ -102,14 +102,15 @@ const MobileNavBar = () => {
           </div>
         </li>
 
-        {/* Social Media Icons */}
-        <p className="mobile_socials-title">
-          {language === "en" ? "Follow me" : "Suivez moi"}
-        </p>
-        <div className="navbar__social-links social-links">
+        {/* Socials Media Icons */}
+
+        <div className="navbar__socials-links socials-links">
           {socialsLinks.map((link, index) => (
             <li key={index} className={`navbar__item slideInDown${index + 5}`}>
               <div className="mobile_socials-container">
+                <p className="mobile_socials-title">
+                  {language === "en" ? "Follow me" : "Suivez moi"}
+                </p>
                 <a
                   href={link.url}
                   target="_blank"
@@ -118,7 +119,7 @@ const MobileNavBar = () => {
                   onMouseOut={handleMouseOut}
                 >
                   <link.icon
-                    className={`social-icon ${
+                    className={`socials-icon ${
                       isHovered === index ? theme : ""
                     }`}
                     alt={`${link.name} Icon`}

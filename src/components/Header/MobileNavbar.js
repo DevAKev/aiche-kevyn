@@ -80,6 +80,7 @@ const MobileNavBar = () => {
         <li className={`navbar__item slideInDown4`}>
           <div className="mobile_theme-toggle" onClick={toggleTheme}>
             <img
+              loading="lazy"
               className="mobile_theme-icon"
               src={theme === "light" ? darkModeIcon : lightModeIcon}
               alt="Theme Toggle Icon"
@@ -91,26 +92,25 @@ const MobileNavBar = () => {
             {language === "en" ? (
               <>
                 <span>FR</span>
-                <img src={fr_flag} alt="French Flag" />
+                <img loading="lazy" src={fr_flag} alt="French Flag" />
               </>
             ) : (
               <>
                 <span>EN</span>
-                <img src={uk_flag} alt="English Flag" />
+                <img loading="lazy" src={uk_flag} alt="English Flag" />
               </>
             )}
           </div>
         </li>
 
-        {/* Socials Media Icons */}
-
+        {/* Social Media Icons */}
+        <p className="mobile_socials-title">
+          {language === "en" ? "Follow me" : "Suivez moi"}
+        </p>
         <div className="navbar__socials-links socials-links">
           {socialsLinks.map((link, index) => (
             <li key={index} className={`navbar__item slideInDown${index + 5}`}>
               <div className="mobile_socials-container">
-                <p className="mobile_socials-title">
-                  {language === "en" ? "Follow me" : "Suivez moi"}
-                </p>
                 <a
                   href={link.url}
                   target="_blank"
@@ -119,6 +119,7 @@ const MobileNavBar = () => {
                   onMouseOut={handleMouseOut}
                 >
                   <link.icon
+                    loading="lazy"
                     className={`socials-icon ${
                       isHovered === index ? theme : ""
                     }`}

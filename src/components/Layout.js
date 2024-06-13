@@ -37,9 +37,6 @@ const Layout = ({ children }) => {
       {isStarted && <Header />}
       {isStarted ? (
         <>
-          {/* <div className="background-img">
-            <Header />
-          </div> */}
           <div className="content-container">{children}</div>
         </>
       ) : (
@@ -47,7 +44,12 @@ const Layout = ({ children }) => {
           <MilkyWay />
           {/* Start button */}
           <div className="start-container">
-            <div id="start-button" onClick={handleClick}></div>
+            <button
+              alt="Start button"
+              loading="lazy"
+              id="start-button"
+              onClick={handleClick}
+            ></button>
           </div>
         </>
       )}

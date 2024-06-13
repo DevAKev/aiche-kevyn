@@ -11,14 +11,14 @@
   --background: var(--background-light);
   --text: var(--text-dark);
   --shadow-color: var(--background);
-  --background-image: url("../../assets/images/background/carina_nebula.png");
+  --background-image: url("../../assets/images/background/background-1-carina-nebula.png");
 }
 
 .dark-mode {
   --background: var(--background-dark);
   --text: var(--text-light);
   --shadow-color: var(--background);
-  --background-image: url("../../assets/images/background/tarantula_nebula.png");
+  --background-image: url("../../assets/images/background/background-2-tarantula-nebula.png");
 }
 
 // Style du logo dans _logo.scss

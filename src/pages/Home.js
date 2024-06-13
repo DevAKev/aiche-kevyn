@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <Layout>
       <div className="background-cover"></div>
-      <div id="home" className="page-content">
+      <main id="home" className="page-content">
         <ScrollAnimation animateIn="animate__fadeInLeftBig" animateOnce={true}>
           <h1 className="home-title">{titleKey}</h1>
         </ScrollAnimation>
@@ -69,8 +69,8 @@ const Home = () => {
           {/* About section */}
           <About />
         </ScrollAnimation>
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </Layout>
   );
 };

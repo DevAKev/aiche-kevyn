@@ -16,7 +16,7 @@ const Header = ({ className }) => {
   }, []);
 
   return (
-    <div className={`box ${className} header`}>
+    <header className={`box ${className} header`}>
       <div className="box1">
         <div className="flex_row">
           <div
@@ -30,7 +30,7 @@ const Header = ({ className }) => {
           {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

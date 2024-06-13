@@ -8,8 +8,8 @@ import uk_flag from "../../assets/images/flags/uk_flag.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 // Socials Icons
-import { ReactComponent as FbIcon } from "../../assets/images/socials/facebook.svg";
-import { ReactComponent as TwitIcon } from "../../assets/images/socials/twitter.svg";
+import { ReactComponent as FbIcon } from "../../assets/images/socials/facebook-icon.svg";
+import { ReactComponent as TwitIcon } from "../../assets/images/socials/twitter-icon.svg";
 import { ReactComponent as InstaIcon } from "../../assets/images/socials/instagram-icon.svg";
 import { ReactComponent as LinkIcon } from "../../assets/images/socials/linkedin-icon.svg";
 import { ReactComponent as GitIcon } from "../../assets/images/socials/github-icon.svg";

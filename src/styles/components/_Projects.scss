@@ -14,9 +14,6 @@ $bg-gradient: linear-gradient(
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 50px;
-  @media screen and (max-width: 1024px) {
-    border-radius: 50px;
-  }
 }
 
 .section-wrap {

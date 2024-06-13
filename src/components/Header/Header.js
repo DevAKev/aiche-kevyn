@@ -21,7 +21,7 @@ const Header = ({ className }) => {
         <div className="flex_row">
           <div
             className={
-              isMobile ? "mobile_logo-container" : "desktop_logo-container"
+              isMobile ? "mobile-logo-container" : "desktop-logo-container"
             }
           >
             {/* Logo */}

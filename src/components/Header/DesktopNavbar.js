@@ -51,6 +51,7 @@ const DesktopNavBar = () => {
               rel="noopener noreferrer"
             >
               <link.icon
+                loading="lazy"
                 className="desktop-socials-icon"
                 alt={`${link.name} Icon`}
               />
@@ -62,6 +63,7 @@ const DesktopNavBar = () => {
         <div className="desktop_theme-language_container">
           <div className="desktop_theme-toggle" onClick={toggleTheme}>
             <img
+              loading="lazy"
               className="desktop_theme-icon"
               src={theme === "light" ? darkModeIcon : lightModeIcon}
               alt="Theme Toggle Icon"
@@ -72,12 +74,18 @@ const DesktopNavBar = () => {
             {language === "en" ? (
               <>
                 <span className="span-language">FR</span>
-                <img className="img-language" src={fr_flag} alt="French Flag" />
+                <img
+                  loading="lazy"
+                  className="img-language"
+                  src={fr_flag}
+                  alt="French Flag"
+                />
               </>
             ) : (
               <>
                 <span className="span-language">EN</span>
                 <img
+                  loading="lazy"
                   className="img-language"
                   src={uk_flag}
                   alt="English Flag"

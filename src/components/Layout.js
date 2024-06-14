@@ -3,10 +3,14 @@ import { useTheme } from "../hooks/ThemeContext";
 import Header from "../components/Header/Header";
 import MilkyWay from "./Animations/MilkyWay";
 import ClickStart from "../assets/sounds/click_start.mp3";
+import Socials from "./Home/Socials";
+import MobileNavBar from "./Header/MobileNavbar";
+import DownIcon from "../assets/images/icons/go-down.png";
 
 const Layout = ({ children }) => {
   const { theme } = useTheme();
   const [isStarted, setIsStarted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleClick = () => {
     // Click play sound
@@ -32,12 +36,32 @@ const Layout = ({ children }) => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 1023);
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleScroll = () => {
+    window.scrollBy(0, window.innerHeight);
+  };
+
   return (
     <div className={`app-container ${theme}-mode`}>
       {isStarted && <Header />}
+      {!isMobile && <Socials />}
       {isStarted ? (
         <>
           <div className="content-container">{children}</div>
+          <div className="scroll-icon-container">
+            <img
+              className="down-icon"
+              src={DownIcon}
+              alt="Scroll down"
+              onClick={handleScroll}
+            />
+          </div>
         </>
       ) : (
         <>
@@ -45,6 +69,7 @@ const Layout = ({ children }) => {
           {/* Start button */}
           <div className="start-container">
             <button
+              type="button"
               alt="Start button"
               loading="lazy"
               id="start-button"
@@ -53,8 +78,11 @@ const Layout = ({ children }) => {
           </div>
         </>
       )}
+      {isStarted && isMobile && <MobileNavBar />}
     </div>
   );
 };
 
 export default Layout;
+
+// #### TODO : MODIFIER BOUTON DOWN POUR AMELIORER L'ACCESSIBILITE ET SEO ####

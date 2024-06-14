@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
-// import { NavLink } from "react-router-dom";
 import Logo from "../Home/Logo";
-import MobileNavBar from "./MobileNavbar";
 import DesktopNavBar from "./DesktopNavbar";
 
 // Header Component
@@ -27,7 +25,7 @@ const Header = ({ className }) => {
             {/* Logo */}
             <Logo />
           </div>
-          {isMobile ? <MobileNavBar /> : <DesktopNavBar />}
+          {!isMobile && <DesktopNavBar />}
         </div>
       </div>
     </header>

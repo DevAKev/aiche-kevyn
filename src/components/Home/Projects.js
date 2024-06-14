@@ -102,9 +102,9 @@ const Projects = () => {
     <>
       <div id="projets" className="page-content">
         <div className="projects-container">
-          <header className="projects-header">
+          <div className="projects-header">
             <h1 className="my-projects-title">{projectsTitle}</h1>
-          </header>
+          </div>
           <section className="first">
             <div className="outer">
               <div className="inner">

@@ -7,31 +7,6 @@
   overflow: hidden;
 }
 
-.background-cover {
-  position: relative;
-  background-color: var(--background);
-  transition: background-color 2s, color 2s;
-  min-width: 100%;
-  // min-height: 50vh;
-  margin: 0 auto;
-  overflow: hidden;
-  @media screen and (min-width: 200px) and (max-width: 400px) {
-    min-height: calc(40vh - 35px);
-  }
-
-  @media screen and (min-width: 401px) and (max-width: 600px) {
-    min-height: calc(50vh - 35px);
-  }
-
-  @media screen and (min-width: 601px) and (max-width: 1023px) {
-    min-height: calc(55vh - 35px);
-  }
-
-  @media screen and (min-width: 1201px) {
-    min-height: calc(18vh - 35px);
-  }
-}
-
 .start-container {
   position: absolute;
   top: 50%;
@@ -62,5 +37,32 @@
     position: relative;
     top: 4px;
     box-shadow: none;
+  }
+}
+
+// Down icon
+// Container
+.scroll-icon-container {
+  background-color: white;
+  border-radius: 40px;
+  padding: 10px;
+  border: 2px solid var(--background);
+  box-shadow: 0 0 10px 0 var(--background);
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 9998;
+  transform: translateX(-50%);
+}
+
+// Icon
+.down-icon {
+  color: var(--text);
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
   }
 }

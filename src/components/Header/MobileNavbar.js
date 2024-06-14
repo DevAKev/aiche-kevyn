@@ -64,20 +64,20 @@ const MobileNavBar = () => {
           </a>
         </li>
 
-        <li className={`navbar__item slideInDown3`}>
+        <li className={`navbar__item slideInDown2`}>
           <a href="#about" className="mobile_subtitle2">
             {language === "en" ? "ABOUT" : "À PROPOS"}
           </a>
         </li>
 
-        <li className={`navbar__item slideInDown4`}>
+        <li className={`navbar__item slideInDown2`}>
           <a href="#contact" className="mobile_subtitle2">
             {language === "en" ? "CONTACT" : "CONTACT"}
           </a>
         </li>
 
         {/* Icons for the themes modes */}
-        <li className={`navbar__item slideInDown4`}>
+        <li className={`navbar__item slideInDown3`}>
           <div className="mobile_theme-toggle" onClick={toggleTheme}>
             <img
               loading="lazy"
@@ -104,32 +104,37 @@ const MobileNavBar = () => {
         </li>
 
         {/* Social Media Icons */}
-        <p className="mobile_socials-title">
-          {language === "en" ? "Follow me" : "Suivez moi"}
-        </p>
-        <div className="navbar__socials-links socials-links">
-          {socialsLinks.map((link, index) => (
-            <li key={index} className={`navbar__item slideInDown${index + 5}`}>
-              <div className="mobile_socials-container">
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onMouseOver={() => handleMouseOver(index)}
-                  onMouseOut={handleMouseOut}
-                >
-                  <link.icon
-                    loading="lazy"
-                    className={`socials-icon ${
-                      isHovered === index ? theme : ""
-                    }`}
-                    alt={`${link.name} Icon`}
-                  />
-                </a>
-              </div>
-            </li>
-          ))}
-        </div>
+        <li className={`navbar__item slideInDown4`}>
+          <p className="mobile_socials-title">
+            {language === "en" ? "Follow me" : "Suivez moi"}
+          </p>
+          <div className="navbar__socials-links socials-links">
+            {socialsLinks.map((link, index) => (
+              <li
+                key={index}
+                className={`navbar__item slideInDown${index + 5}`}
+              >
+                <div className="mobile_socials-container">
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onMouseOver={() => handleMouseOver(index)}
+                    onMouseOut={handleMouseOut}
+                  >
+                    <link.icon
+                      loading="lazy"
+                      className={`socials-icon ${
+                        isHovered === index ? theme : ""
+                      }`}
+                      alt={`${link.name} Icon`}
+                    />
+                  </a>
+                </div>
+              </li>
+            ))}
+          </div>
+        </li>
       </ul>
 
       <button onClick={handleShowLinks} className="navbar__burger">

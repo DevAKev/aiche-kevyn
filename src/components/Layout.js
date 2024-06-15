@@ -91,5 +91,3 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
-
-// #### TODO : MODIFIER BOUTON DOWN POUR AMELIORER L'ACCESSIBILITE ET SEO ####

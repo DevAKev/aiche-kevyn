@@ -22,7 +22,7 @@ const Socials = () => {
 
   return (
     //   Socials Media Icons
-    <div className="desktop_socials-container">
+    <nav className="desktop_socials-container">
       <p className="desktop_socials-title">
         {language === "en" ? "Follow me" : "Suivez moi"}
       </p>
@@ -43,7 +43,7 @@ const Socials = () => {
           </a>
         ))}
       </div>
-    </div>
+    </nav>
   );
 };
 

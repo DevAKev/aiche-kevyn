@@ -123,6 +123,7 @@ const Projects = () => {
                     <a
                       className="project-link"
                       href="http://garageparrot.les-amis-de-la-montagne.go.yj.fr"
+                      rel="noopener noreferrer"
                     >
                       {projectsLink}
                     </a>
@@ -137,7 +138,11 @@ const Projects = () => {
                 <div className="bg">
                   <h2 className="section-heading">Andragogy</h2>
                   <div className="project-link-container">
-                    <a className="project-link" href="https://andragogy.fr/">
+                    <a
+                      className="project-link"
+                      href="https://andragogy.fr/"
+                      rel="noopener noreferrer"
+                    >
                       {projectsLink}
                     </a>
                   </div>
@@ -154,6 +159,7 @@ const Projects = () => {
                     <a
                       className="project-link"
                       href="https://devakev.github.io/Web-Agency/"
+                      rel="noopener noreferrer"
                     >
                       {projectsLink}
                     </a>
@@ -171,6 +177,7 @@ const Projects = () => {
                     <a
                       className="project-link"
                       href="https://devakev.github.io/Deploiement/"
+                      rel="noopener noreferrer"
                     >
                       {projectsLink}
                     </a>

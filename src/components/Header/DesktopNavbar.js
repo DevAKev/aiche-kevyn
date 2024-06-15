@@ -1,10 +1,10 @@
 import { useTheme } from "../../hooks/ThemeContext";
 // Theme Icons
-import darkModeIcon from "../../assets/images/theme/dark_emoji.png";
-import lightModeIcon from "../../assets/images/theme/light_emoji.png";
+import darkModeIcon from "../../assets/images/theme/dark-emoji.webp";
+import lightModeIcon from "../../assets/images/theme/light-emoji.webp";
 // Language Icons
-import fr_flag from "../../assets/images/flags/fr_flag.png";
-import uk_flag from "../../assets/images/flags/uk_flag.png";
+import fr_flag from "../../assets/images/flags/fr-flag.webp";
+import uk_flag from "../../assets/images/flags/uk-flag.webp";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 

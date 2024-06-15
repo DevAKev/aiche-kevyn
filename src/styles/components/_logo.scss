@@ -1,4 +1,15 @@
 // ### MOBILE ###
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
 // Global container for the logo
 .mobile-logo-container {
   margin: 0 80%;
@@ -21,6 +32,7 @@
 
 // Container in Logo
 .company-logo-container {
+  animation: pulse 4s infinite;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -35,20 +47,21 @@
   &.light-mode {
     background: linear-gradient(to top, rgb(149, 4, 4), rgb(245, 212, 46));
     box-shadow: 0 0 50px rgba(210, 12, 12, 1);
-    border: 2px solid #fe2600;
+    border: 1px solid #fe2600;
   }
 
   // Color Dark mode
   &.dark-mode {
     background: linear-gradient(to top, (#8a2be2), (#ee82ee), (#ff6eff));
     box-shadow: 0 0 50px (#fdb6fd);
-    border: 2px solid #b580b2;
+    border: 1px solid #b580b2;
   }
 }
 
 // Image logo
 #mobile-logo,
 #desktop-logo {
+  animation: pulse 4s infinite;
   width: 100%;
   height: 100%;
   border-radius: 10%;

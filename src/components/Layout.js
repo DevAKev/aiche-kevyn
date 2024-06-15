@@ -5,7 +5,6 @@ import MilkyWay from "./Animations/MilkyWay";
 import ClickStart from "../assets/sounds/click_start.mp3";
 import Socials from "./Home/Socials";
 import MobileNavBar from "./Header/MobileNavbar";
-import DownIcon from "../assets/images/icons/go-down.png";
 
 const Layout = ({ children }) => {
   const { theme } = useTheme();
@@ -48,19 +47,25 @@ const Layout = ({ children }) => {
   };
 
   return (
-    <div className={`app-container ${theme}-mode`}>
+    <main className={`app-container ${theme}-mode`}>
       {isStarted && <Header />}
-      {!isMobile && <Socials />}
+      {!isMobile && (
+        <nav>
+          <Socials />
+        </nav>
+      )}
       {isStarted ? (
         <>
           <div className="content-container">{children}</div>
           <div className="scroll-icon-container">
-            <img
+            <button
+              aria-label="Scroll down"
               className="down-icon"
-              src={DownIcon}
+              type="button"
               alt="Scroll down"
+              loading="lazy"
               onClick={handleScroll}
-            />
+            ></button>
           </div>
         </>
       ) : (
@@ -69,6 +74,8 @@ const Layout = ({ children }) => {
           {/* Start button */}
           <div className="start-container">
             <button
+              aria-label="Start button"
+              className="start-button"
               type="button"
               alt="Start button"
               loading="lazy"
@@ -79,7 +86,7 @@ const Layout = ({ children }) => {
         </>
       )}
       {isStarted && isMobile && <MobileNavBar />}
-    </div>
+    </main>
   );
 };
 

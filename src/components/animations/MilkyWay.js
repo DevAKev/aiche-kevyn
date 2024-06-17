@@ -1,4 +1,4 @@
-import BgVideo from "../../assets/videos/milky_way.mp4";
+import BgVideo from "../../assets/videos/milky_way.webm";
 const MilkyWay = () => {
   // Error management
   const handleError = (event) => {

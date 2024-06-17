@@ -1,6 +1,11 @@
-// .page-content {
-//   padding: 20px;
-// }
+@keyframes shine {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
 
 .services-title {
   color: #3498db;
@@ -8,6 +13,7 @@
   text-align: center;
   font-weight: bold;
   margin-top: 50px;
+  text-shadow: 2px 2px 2px var(--text);
 
   @media screen and (max-width: 280px) {
     font-size: 1.9rem;
@@ -30,6 +36,14 @@
 }
 
 .service-card {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shine 2s linear infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,7 +56,6 @@
   width: calc(49% - 40px);
   transition: transform 0.3s ease-in-out;
   &:hover {
-    background-image: linear-gradient(to left, rgb(44, 62, 80), rgb(3, 27, 51));
     transform: scale(1.08);
   }
 
@@ -70,12 +83,14 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 30px;
+    text-shadow: 2px 2px 2px var(--color-3);
   }
 
   .service-description {
     text-align: start;
     color: var(--text);
     font-family: var(--font-2); //Option: Arial, Helvetica, sans-serif;
+    font-weight: 600;
     font-size: 1rem;
     margin-bottom: 10px;
   }
@@ -93,13 +108,14 @@
   /* Light mode */
   .light-mode & {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-    &:hover {
-      background-image: linear-gradient(
-        to left,
-        rgb(236, 240, 241),
-        rgb(189, 195, 199)
-      );
-    }
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(225, 245, 249),
+      transparent
+    );
+    background-size: 200% 100%;
+    animation: shine 5s linear infinite;
   }
 
   /* Dark mode */

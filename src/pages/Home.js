@@ -11,6 +11,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 import Services from "../components/Home/Services";
 import Footer from "../components/Footer/Footer";
+import Contact from "../components/Home/Contact";
 
 const Home = () => {
   const { language } = useTheme();
@@ -68,6 +69,7 @@ const Home = () => {
           {/* About section */}
           <About />
         </ScrollAnimation>
+        <Contact />
       </main>
       <Footer />
     </Layout>

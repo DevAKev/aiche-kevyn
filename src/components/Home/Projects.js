@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
   const { language } = useTheme();
   const projectsTitle = language === "en" ? "My Projects" : "Mes Projets";
-  const projectsLink = language === "en" ? "Click to see" : "Cliquez pour voir";
+  const projectsLink = language === "en" ? "Go" : "Voir";
   const projectsScroll = language === "en" ? "⬆️SCROLL⬇️" : "⬆️Défilez⬇️";
 
   useGSAP(() => {

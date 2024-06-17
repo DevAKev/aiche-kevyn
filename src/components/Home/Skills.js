@@ -52,38 +52,40 @@ const Skills = () => {
     <div id="skills" className="page-content">
       <div className="skills_container">
         <h1 className="skills-title">{skillsH1}</h1>
-        <h2 className="skills-subtitles">Front-end :</h2>
-        <div className="skills-scroll">
-          <ul className="skills-ul">
-            {frontEndSkills.map((skill, index) => (
-              <li key={index} className="skills-li">
-                <i className={`devicon-${skill}-plain skills-icon`}></i>
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <h2 className="skills-subtitles">Back-end :</h2>
-        <div className="skills-scroll">
-          <ul className="skills-ul">
-            {backEndSkills.map((skill, index) => (
-              <li key={index} className="skills-li">
-                <i className={`devicon-${skill}-plain skills-icon`}></i>
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <h2 className="skills-subtitles">Outils :</h2>
-        <div className="skills-scroll">
-          <ul className="skills-ul">
-            {tools.map((tool, index) => (
-              <li key={index} className="skills-li">
-                <i className={`devicon-${tool}-plain skills-icon`}></i>
-                {tool}
-              </li>
-            ))}
-          </ul>
+        <div className="skills-container-slider">
+          <h2 className="skills-subtitles">Front-end :</h2>
+          <div className="skills-scroll">
+            <ul className="skills-ul">
+              {frontEndSkills.map((skill, index) => (
+                <li key={index} className="skills-li">
+                  <i className={`devicon-${skill}-plain skills-icon`}></i>
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <h2 className="skills-subtitles">Back-end :</h2>
+          <div className="skills-scroll">
+            <ul className="skills-ul">
+              {backEndSkills.map((skill, index) => (
+                <li key={index} className="skills-li">
+                  <i className={`devicon-${skill}-plain skills-icon`}></i>
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <h2 className="skills-subtitles">Outils :</h2>
+          <div className="skills-scroll">
+            <ul className="skills-ul">
+              {tools.map((tool, index) => (
+                <li key={index} className="skills-li">
+                  <i className={`devicon-${tool}-plain skills-icon`}></i>
+                  {tool}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -1,6 +1,26 @@
 .skills_container {
   margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
 }
+.skills_container::before,
+.skills_container::after {
+  content: "";
+  position: absolute;
+  top: 131px;
+  bottom: 0;
+  width: 20px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.25), var(--text));
+}
+
+.skills_container::before {
+  left: 0;
+  transform: scaleX(-1);
+}
+.skills_container::after {
+  right: 0;
+}
+
 @media screen and (min-width: 1023px) {
   .skills_container {
     display: flex;
@@ -35,36 +55,41 @@
   padding: 20px 0;
   -webkit-overflow-scrolling: touch; /* Défilement fluide sur iOS */
   scroll-behavior: smooth;
+  scrollbar-width: thin;
 }
 @media screen and (min-width: 1023px) {
   .skills-scroll {
     overflow-x: visible;
   }
+  .skills_container::before,
+  .skills_container::after {
+    display: none;
+  }
 }
 
-//  Scroll Webkit (Chrome, Safari)
-.skills-scroll::-webkit-scrollbar {
-  height: 1vh;
-}
+// //  Scroll Webkit (Chrome, Safari)
+// .skills-scroll::-webkit-scrollbar {
+//   height: 5vh;
+// }
 
-// Slide track
-.skills-scroll::-webkit-scrollbar-track {
-  background: var(--gradient);
-  border-radius: 50px;
-  border: 2px solid var(--text);
-  box-shadow: var(--text);
-}
+// // Slide track
+// .skills-scroll::-webkit-scrollbar-track {
+//   background: var(--gradient);
+//   border-radius: 50px;
+//   border: 2px solid var(--text);
+//   box-shadow: var(--text);
+// }
 
-// Slide button
-.skills-scroll::-webkit-scrollbar-thumb {
-  background: var(--text);
-  border-radius: 50px;
-  border: 2px solid var(--text);
-}
+// // Slide button
+// .skills-scroll::-webkit-scrollbar-thumb {
+//   background: var(--text);
+//   border-radius: 50px;
+//   border: 2px solid var(--text);
+// }
 
-.skills-scroll::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+// .skills-scroll::-webkit-scrollbar-thumb:hover {
+//   background: #555;
+// }
 
 // Skills icons
 .skills-icon {

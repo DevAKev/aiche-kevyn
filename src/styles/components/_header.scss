@@ -53,6 +53,19 @@ header {
   }
 }
 
+.progress-bar {
+  height: 5px;
+  width: 0%;
+  background: var(--gradient);
+  box-shadow: 0 0 10px var(--text);
+  position: fixed;
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: width 0.2s ease;
+}
+
 // Mobile nav container
 .navbar {
   display: flex;

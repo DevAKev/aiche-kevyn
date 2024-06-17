@@ -13,22 +13,36 @@ const Header = ({ className }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Progress Bar
+  window.onscroll = function () {
+    var winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    var height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("progress-bar").style.width = scrolled + "%";
+  };
+
   return (
-    <header className={`box ${className} header`}>
-      <div className="box1">
-        <div className="flex_row">
-          <div
-            className={
-              isMobile ? "mobile-logo-container" : "desktop-logo-container"
-            }
-          >
-            {/* Logo */}
-            <Logo />
+    <>
+      <div id="progress-bar" className="progress-bar"></div>
+      <header className={`box ${className} header`}>
+        <div className="box1">
+          <div className="flex_row">
+            <div
+              className={
+                isMobile ? "mobile-logo-container" : "desktop-logo-container"
+              }
+            >
+              {/* Logo */}
+              <Logo />
+            </div>
+            {!isMobile && <DesktopNavBar />}
           </div>
-          {!isMobile && <DesktopNavBar />}
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 };
 

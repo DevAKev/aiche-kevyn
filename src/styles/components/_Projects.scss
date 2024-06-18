@@ -60,7 +60,7 @@ $bg-gradient: linear-gradient(
   margin-top: 50px;
   font-family: var(--font-1);
   font-size: 2.5rem;
-  color: #3498db;
+  color: var(--title-1);
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -85,7 +85,7 @@ $bg-gradient: linear-gradient(
   padding: 0px 8px;
   &:hover {
     transform: scale(1.5);
-    color: #3498db;
+    color: var(--title-1);
   }
 }
 

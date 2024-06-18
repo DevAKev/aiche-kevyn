@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "../../hooks/ThemeContext";
 // Theme Icons
 import darkModeIcon from "../../assets/images/theme/dark-emoji.webp";
@@ -29,7 +29,7 @@ const MobileNavBar = () => {
   const socialsLinks = [
     {
       name: "Gmail",
-      url: "mailto:kevynpro7700@gmail.com?subject=Demande de collaboration / Proposition de projet&body=Bonjour Kévyn,",
+      url: "mailto:kevynpro7700@gmail.com?subject=Demande de renseignement / Proposition de projet&body=Bonjour Kévyn,",
       icon: GmailIcon,
     },
     { name: "GitHub", url: "https://github.com/DevAKev", icon: GitIcon },
@@ -42,6 +42,23 @@ const MobileNavBar = () => {
     { name: "Twitter", url: "https://www.twitter.com/", icon: TwitIcon },
     { name: "Instagram", url: "https://www.instagram.com/", icon: InstaIcon },
   ];
+
+  // Close the mobile menu when clicking outside
+  useEffect(() => {
+    const closeMobileMenu = (e) => {
+      if (!e.target.closest(".navbar")) {
+        setShowLinks(false);
+      }
+    };
+
+    document.body.addEventListener("click", closeMobileMenu);
+    document.body.addEventListener("touchstart", closeMobileMenu);
+
+    return () => {
+      document.body.removeEventListener("click", closeMobileMenu);
+      document.body.removeEventListener("touchstart", closeMobileMenu);
+    };
+  }, []);
 
   return (
     <nav className={`navbar ${showLinks ? "showNav" : "hideNav"}`}>

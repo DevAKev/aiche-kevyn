@@ -1,11 +1,14 @@
 .footer {
+  position: relative;
   background-color: var(--background);
   box-shadow: 0 0 8px var(--text);
   padding: 20px;
   text-align: center;
   width: 100%;
-  z-index: 1000;
+  height: 100%;
+  z-index: 5;
   border-radius: 80% 80% 0 0 / 20% 20% 0 0;
+  border: 1px solid var(--text);
 }
 
 .footer-container-text {

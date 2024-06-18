@@ -97,10 +97,18 @@ body {
   font-family: var(--font-1);
 }
 
-@mixin verticalCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// @mixin verticalCenter {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// Desactivate animations for users who prefer reduced motion
+@media (prefers-reduced-motion: reduce) {
+  .animated {
+    animation: none;
+    transition: none;
+  }
 }
 
 // Responsive

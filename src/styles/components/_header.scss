@@ -41,9 +41,14 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: fadeIn 3s ease-in forwards, curtainOpen 2s ease-in-out;
+  animation: fadeIn 2s ease-in forwards, curtainOpen 2s ease-in-out;
   transition: background-image 3s ease-in-out;
   border-radius: 0 0 80% 80% / 0 0 20% 20%;
+}
+@media screen and (min-width: 1023px) {
+  header {
+    border-radius: 0 0 50% 50% / 0 0 30% 30%;
+  }
 }
 @keyframes curtainOpen {
   0% {

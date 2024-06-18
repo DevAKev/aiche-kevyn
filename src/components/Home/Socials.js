@@ -5,19 +5,21 @@ import { ReactComponent as TwitIcon } from "../../assets/images/socials/twitter-
 import { ReactComponent as InstaIcon } from "../../assets/images/socials/instagram-icon.svg";
 import { ReactComponent as LinkIcon } from "../../assets/images/socials/linkedin-icon.svg";
 import { ReactComponent as GitIcon } from "../../assets/images/socials/github-icon.svg";
+import { ReactComponent as GmailIcon } from "../../assets/images/socials/gmail-icon.svg";
 
 const Socials = () => {
   const { language } = useTheme();
   const socialsLinks = [
-    { name: "Facebook", url: "https://www.facebook.com/", icon: FbIcon },
-    { name: "Twitter", url: "https://www.twitter.com/", icon: TwitIcon },
-    { name: "Instagram", url: "https://www.instagram.com/", icon: InstaIcon },
+    { name: "Gmail", url: "mailto:kevynpro7700@gmail.com", icon: GmailIcon },
+    { name: "GitHub", url: "https://github.com/DevAKev", icon: GitIcon },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/kévyn-aiche",
       icon: LinkIcon,
     },
-    { name: "GitHub", url: "https://github.com/DevAKev", icon: GitIcon },
+    { name: "Facebook", url: "https://www.facebook.com/", icon: FbIcon },
+    { name: "Twitter", url: "https://www.twitter.com/", icon: TwitIcon },
+    { name: "Instagram", url: "https://www.instagram.com/", icon: InstaIcon },
   ];
 
   return (

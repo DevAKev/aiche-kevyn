@@ -510,6 +510,7 @@ header {
   left: 41px;
   transform: translateY(-50%) rotate(180deg);
   z-index: 9999;
+  animation: slideInLeft 1s ease-out;
 }
 
 .desktop-socials-links {

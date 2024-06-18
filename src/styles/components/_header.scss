@@ -105,16 +105,16 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--background);
+  color: var(--title-1);
   text-shadow: 2px 2px 2px var(--color-3);
   font-weight: bold;
   font-size: 2.5rem;
-  margin-bottom: 2vh;
   line-height: 1.5;
+  letter-spacing: 2px;
 }
 @media screen and (min-width: 400px) {
   .mobile_navLink_home {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.2;
   }
 }
@@ -124,12 +124,18 @@ header {
   display: flex;
   justify-content: start;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   width: 100%;
   color: var(--text);
   text-shadow: 2px 2px 2px var(--color-3);
   margin: 2vh 0 0 5vw;
+  &:hover {
+    transform: scale(1.2);
+    background-color: var(--color-1);
+    border-radius: 50px;
+    width: 50vw;
+  }
 }
 @media screen and (min-width: 600px) {
   .mobile_subtitle2 {
@@ -151,7 +157,7 @@ header {
 // Dark mode & Light mode icons button
 .mobile_theme-toggle {
   margin-left: 4vw;
-  margin-top: 2vh;
+  margin-top: 5vh;
 }
 
 .mobile_theme-icon {
@@ -281,8 +287,8 @@ header {
 // Container
 .mobile_socials-container {
   background-color: #d5e7f8;
-  height: 65px;
-  padding: 19px;
+  height: 55px;
+  padding: 10px;
   box-shadow: 0 0 8px black;
   border-radius: 50px;
 }
@@ -297,6 +303,7 @@ header {
   color: var(--text);
   text-shadow: 2px 2px 2px var(--color-3);
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 // Icons

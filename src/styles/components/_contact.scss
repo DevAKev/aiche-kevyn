@@ -1,3 +1,15 @@
+@keyframes pulse {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+
 .bg-video-contact {
   position: absolute;
   width: 100%;
@@ -6,6 +18,8 @@
   max-width: 1200px;
   object-fit: cover;
   overflow: hidden;
+  border-top: 1px solid var(--text);
+  box-shadow: 0 0 10px var(--text);
 }
 
 .contact-container {
@@ -22,7 +36,6 @@
   font-family: var(--font-1);
   color: var(--white);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  -webkit-text-stroke: 1px goldenrod;
   @media screen and (max-width: 768px) {
     font-size: 3rem;
   }
@@ -40,34 +53,58 @@
   }
 }
 
-.contact-form {
+.socials-container {
+  border: 1px solid var(--white);
+  box-shadow: 0 0 10px var(--white);
+  backdrop-filter: blur(5px);
+  border-radius: 50px;
+  animation: pulse 4s infinite;
+}
+
+.bottom-socials-links {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 500px;
-  @media screen and (max-width: 768px) {
-    max-width: 300px;
-  }
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 50px;
-  border: none;
-  outline: none;
-}
-
-.contact-form button {
-  padding: 10px;
-  border-radius: 50px;
-  border: none;
-  background-color: #4caf50;
-  color: white;
+.bottom-socials-icon {
+  background-color: var(--white);
+  border-radius: 5px;
+  margin: 2px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 }
 
-.contact-form button:hover {
-  background-color: #45a049;
-}
+// .contact-form {
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+//   max-width: 500px;
+//   @media screen and (max-width: 768px) {
+//     max-width: 300px;
+//   }
+// }
+
+// .contact-form input,
+// .contact-form textarea {
+//   padding: 10px;
+//   margin-bottom: 10px;
+//   border-radius: 50px;
+//   border: none;
+//   outline: none;
+// }
+
+// .contact-form button {
+//   padding: 10px;
+//   border-radius: 50px;
+//   border: none;
+//   background-color: #4caf50;
+//   color: white;
+//   cursor: pointer;
+// }
+
+// .contact-form button:hover {
+//   background-color: #45a049;
+// }

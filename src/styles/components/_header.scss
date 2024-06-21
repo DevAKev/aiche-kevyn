@@ -90,7 +90,7 @@ header {
   flex-direction: column;
   position: fixed;
   right: -100vw;
-  width: 0;
+  width: 100%;
   height: auto;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.75);
@@ -160,8 +160,15 @@ header {
   margin-top: 5vh;
 }
 
+.flag-icon {
+  height: 28px;
+  width: 28px;
+  margin-left: 5px;
+}
+
 .mobile_theme-icon {
-  height: 4vh;
+  height: 28px;
+  width: 28px;
   background-color: var(--white);
   box-shadow: 0 0 10px var(--white);
   border-radius: 50px;
@@ -350,6 +357,7 @@ header {
 
 // Dark mode & Light mode icons button
 .desktop_theme-icon {
+  width: 2vw;
   height: 2vw;
   background-color: var(--white);
   box-shadow: 0 0 10px var(--white);
@@ -376,6 +384,11 @@ header {
   margin-left: 6vw;
   color: var(--text);
   text-shadow: 0 0 10px var(--background);
+}
+
+.img-language {
+  width: 2vw;
+  height: 2vw;
 }
 
 // General style hover

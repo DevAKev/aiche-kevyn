@@ -34,41 +34,57 @@ const Home = () => {
   return (
     <Layout>
       <main id="home" className="page-content">
-        <ScrollAnimation animateIn="animate__fadeInLeftBig" animateOnce={true}>
-          <h1 className="home-title">{titleKey}</h1>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
-          {/* Animation TypeWriter */}
-          <Typewriter text={DescText} sound={languageSound} />
-        </ScrollAnimation>
-        <ScrollAnimation
-          animateIn="animate__bounceInUp"
-          animateOnce={true}
-          delay={1000}
-        >
-          {/* Services section */}
-          <Services />
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__fadeInLeftBig" animateOnce={true}>
-          {/* Skills section */}
-          <Skills />
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__heartBeat" animateOnce={true}>
-          {/* Projets section */}
-          <div className="section-wrap">
-            <Projects />
-          </div>
-        </ScrollAnimation>
-        {/* Animation UFO */}
-        {/* <UfoEffect /> */}
-        <ScrollAnimation
-          animateIn="animate__fadeInRightBig"
-          animateOnce={true}
-          delay={300}
-        >
-          {/* About section */}
-          <About />
-        </ScrollAnimation>
+        <div className="scroll-animation-container">
+          <ScrollAnimation
+            animateIn="animate__fadeInLeftBig"
+            animateOnce={true}
+          >
+            <h1 className="home-title">{titleKey}</h1>
+          </ScrollAnimation>
+        </div>
+        <div className="scroll-animation-container">
+          <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
+            {/* Animation TypeWriter */}
+            <Typewriter text={DescText} sound={languageSound} />
+          </ScrollAnimation>
+        </div>
+        <div className="scroll-animation-container">
+          <ScrollAnimation
+            animateIn="animate__bounceInUp"
+            animateOnce={true}
+            delay={600}
+          >
+            {/* Services section */}
+            <Services />
+          </ScrollAnimation>
+        </div>
+        <div className="scroll-animation-container">
+          <ScrollAnimation
+            animateIn="animate__fadeInLeftBig"
+            animateOnce={true}
+          >
+            {/* Skills section */}
+            <Skills />
+          </ScrollAnimation>
+        </div>
+        <div className="scroll-animation-container">
+          <ScrollAnimation animateIn="animate__heartBeat" animateOnce={true}>
+            {/* Projets section */}
+            <div className="section-wrap">
+              <Projects />
+            </div>
+          </ScrollAnimation>
+        </div>
+        <div className="scroll-animation-container">
+          <ScrollAnimation
+            animateIn="animate__fadeInRightBig"
+            animateOnce={true}
+            delay={300}
+          >
+            {/* About section */}
+            <About />
+          </ScrollAnimation>
+        </div>
         <Contact />
       </main>
       <Footer />

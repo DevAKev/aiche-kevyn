@@ -115,12 +115,22 @@ const MobileNavBar = () => {
             {language === "en" ? (
               <>
                 <span>FR</span>
-                <img loading="lazy" src={fr_flag} alt="French Flag" />
+                <img
+                  loading="lazy"
+                  className="flag-icon"
+                  src={fr_flag}
+                  alt="French Flag"
+                />
               </>
             ) : (
               <>
                 <span>EN</span>
-                <img loading="lazy" src={uk_flag} alt="English Flag" />
+                <img
+                  loading="lazy"
+                  className="flag-icon"
+                  src={uk_flag}
+                  alt="English Flag"
+                />
               </>
             )}
           </div>

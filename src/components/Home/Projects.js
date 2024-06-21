@@ -2,13 +2,15 @@ import { useTheme } from "../../hooks/ThemeContext";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ProjectSection from "../Projects/ProjectSection";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   const { language } = useTheme();
   const projectsTitle = language === "en" ? "My Projects" : "Mes Projets";
-  const projectsLink = language === "en" ? "Go" : "Voir";
+  const projectsLink =
+    language === "en" ? "Click to view" : "Cliquer pour voir";
   const projectsScroll = language === "en" ? "⬆️SCROLL⬇️" : "⬆️Défilez⬇️";
 
   useGSAP(() => {
@@ -105,101 +107,48 @@ const Projects = () => {
           <div className="projects-header">
             <h1 className="my-projects-title">{projectsTitle}</h1>
           </div>
-          <section className="first">
-            <div className="outer">
-              <div className="inner">
-                <div className="bg one">
-                  <h2 className="section-heading">{projectsScroll}</h2>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="second">
-            <div className="outer">
-              <div className="inner">
-                <div className="bg">
-                  <h2 className="section-heading">Garage Parrot</h2>
-                  <div className="project-link-container">
-                    <a
-                      className="project-link"
-                      href="http://garageparrot.les-amis-de-la-montagne.go.yj.fr"
-                      rel="noopener noreferrer"
-                    >
-                      {projectsLink}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="third">
-            <div className="outer">
-              <div className="inner">
-                <div className="bg">
-                  <h2 className="section-heading">Andragogy</h2>
-                  <div className="project-link-container">
-                    <a
-                      className="project-link"
-                      href="https://andragogy.fr/"
-                      rel="noopener noreferrer"
-                    >
-                      {projectsLink}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="fourth">
-            <div className="outer">
-              <div className="inner">
-                <div className="bg">
-                  <h2 className="section-heading">Web Agency</h2>
-                  <div className="project-link-container">
-                    <a
-                      className="project-link"
-                      href="https://devakev.github.io/Web-Agency/"
-                      rel="noopener noreferrer"
-                    >
-                      {projectsLink}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="fifth">
-            <div className="outer">
-              <div className="inner">
-                <div className="bg">
-                  <h2 className="section-heading">Les amis de la montagne</h2>
-                  <div className="project-link-container">
-                    <a
-                      className="project-link"
-                      href="https://devakev.github.io/Deploiement/"
-                      rel="noopener noreferrer"
-                    >
-                      {projectsLink}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="sixt">
-            <div className="outer">
-              <div className="inner">
-                <div className="bg">
-                  <h2 className="section-heading">Projet 5</h2>
-                  <div className="project-link-container">
-                    <a className="project-link" href="/">
-                      {projectsLink}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+
+          <ProjectSection className="first" title={projectsScroll} link="#" />
+
+          <ProjectSection
+            loading="lazy"
+            className="second"
+            title="Garage Parrot"
+            link="http://garageparrot.les-amis-de-la-montagne.go.yj.fr"
+            projectsLink={projectsLink}
+          />
+
+          <ProjectSection
+            loading="lazy"
+            className="third"
+            title="Andragogy"
+            link="https://andragogy.fr/"
+            projectsLink={projectsLink}
+          />
+
+          <ProjectSection
+            loading="lazy"
+            className="fourth"
+            title="Web Agency"
+            link="https://devakev.github.io/Web-Agency/"
+            projectsLink={projectsLink}
+          />
+
+          <ProjectSection
+            loading="lazy"
+            className="fifth"
+            title="Les amis de la montagne"
+            link="https://devakev.github.io/Deploiement/"
+            projectsLink={projectsLink}
+          />
+
+          <ProjectSection
+            loading="lazy"
+            className="sixt"
+            title="Projet 5"
+            link="#"
+            projectsLink={projectsLink}
+          />
         </div>
       </div>
     </>

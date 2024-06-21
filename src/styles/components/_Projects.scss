@@ -1,6 +1,6 @@
 $bg-gradient: linear-gradient(
   180deg,
-  rgba(0, 0, 0, 0.1) 0%,
+  rgba(0, 0, 0, 0) 0%,
   rgba(0, 0, 0, 1.5) 100%
 );
 
@@ -76,7 +76,7 @@ $bg-gradient: linear-gradient(
 }
 
 .project-link {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background-image: var(--gradient);
   border-radius: 50px;
   color: hsl(0, 0, 80%);

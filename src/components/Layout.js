@@ -57,15 +57,17 @@ const Layout = ({ children }) => {
       {isStarted ? (
         <>
           <div className="content-container">{children}</div>
-          <div className="scroll-icon-container">
-            <button
-              aria-label="Scroll down"
-              className="down-icon"
-              type="button"
-              alt="Scroll down"
-              loading="lazy"
-              onClick={handleScroll}
-            ></button>
+          <div className="animation-container">
+            <div className="scroll-icon-container">
+              <button
+                aria-label="Scroll down"
+                className="down-icon"
+                type="button"
+                alt="Scroll down"
+                loading="lazy"
+                onClick={handleScroll}
+              ></button>
+            </div>
           </div>
         </>
       ) : (

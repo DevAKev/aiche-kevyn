@@ -12,6 +12,28 @@ const Projects = () => {
   const projectsLink =
     language === "en" ? "Click to view" : "Cliquer pour voir";
   const projectsScroll = language === "en" ? "⬆️SCROLL⬇️" : "⬆️Défilez⬇️";
+  const projectsDesc = {
+    project1: {
+      en: "Final training project, website for managing a garage and resale of used vehicles.",
+      fr: "Projet de fin de formation, site web de gestion d'un garage et revente de véhicules d'occasion.",
+    },
+    project2: {
+      en: "Realization carried out during my final internship for an organization offering training.",
+      fr: "Réalisation effectuée durant mon stage de fin d'étude pour un organisme proposant des formations.",
+    },
+    project3: {
+      en: "Website for a web agency.",
+      fr: "Site web pour une agence web.",
+    },
+    project4: {
+      en: "Website for a non-profit organization.",
+      fr: "Site web pour une association à but non lucratif.",
+    },
+    project5: {
+      en: "...",
+      fr: "...",
+    },
+  };
 
   useGSAP(() => {
     let sections = document.querySelectorAll("section"),
@@ -103,43 +125,82 @@ const Projects = () => {
   return (
     <>
       <div id="projets" className="page-content">
+        <h1 className="my-projects-title">{projectsTitle}</h1>
         <div className="projects-container">
-          <div className="projects-header">
-            <h1 className="my-projects-title">{projectsTitle}</h1>
-          </div>
+          {/* <div className="projects-header"></div> */}
 
-          <ProjectSection className="first" title={projectsScroll} link="#" />
+          <ProjectSection
+            loading="lazy"
+            className="first"
+            title={projectsScroll}
+          />
 
+          {/* - Garage Parrot - */}
           <ProjectSection
             loading="lazy"
             className="second"
             title="Garage Parrot"
             link="http://garageparrot.les-amis-de-la-montagne.go.yj.fr"
             projectsLink={projectsLink}
+            description={projectsDesc.project1[language]}
+            technologies={[
+              "figma",
+              "trello",
+              "html5",
+              "css3",
+              "javascript",
+              "jquery",
+              "php",
+              "mysql",
+              "bootstrap",
+              "npm",
+              "git",
+              "apache",
+              "filezilla",
+            ]}
           />
 
+          {/* - Andragogy - */}
           <ProjectSection
             loading="lazy"
             className="third"
             title="Andragogy"
             link="https://andragogy.fr/"
             projectsLink={projectsLink}
+            description={projectsDesc.project2[language]}
+            technologies={[
+              "figma",
+              "trello",
+              "html5",
+              "css3",
+              "sass",
+              "javascript",
+              "react",
+              "vitejs",
+              "axios",
+            ]}
           />
 
+          {/* - Web Agency - */}
           <ProjectSection
             loading="lazy"
             className="fourth"
             title="Web Agency"
             link="https://devakev.github.io/Web-Agency/"
             projectsLink={projectsLink}
+            description={projectsDesc.project3[language]}
+            technologies={["figma", "trello", "html5", "css3"]}
           />
 
+          {/* - Asso / Les amis de la montagne - */}
           <ProjectSection
             loading="lazy"
             className="fifth"
             title="Les amis de la montagne"
             link="https://devakev.github.io/Deploiement/"
             projectsLink={projectsLink}
+            description={projectsDesc.project4[language]}
+            technologies={["figma", "trello", "html5", "css3"]}
           />
 
           <ProjectSection
@@ -156,82 +217,3 @@ const Projects = () => {
 };
 
 export default Projects;
-// ########################################################
-// ##### TODO : Nettoyer le code, modifier les images des projets et les liens #####
-// ########################################################
-
-// import { useEffect} from "react";
-// import { useTheme } from "../../hooks/ThemeContext";
-// import garageParrotImg from "../../assets/images/projectsImages/img-Garage-Parrot.png";
-// import posterImg from "../../assets/images/projectsImages/poster.png";
-// import projectImg3 from "../../assets/images/projectsImages/screen-cat1.png";
-// // import { gsap } from "gsap";
-
-// const Projects = () => {
-//   const { language } = useTheme();
-//   const projectsTitle = language === "en" ? "My Projects" : "Mes Projets";
-
-//   const projects = [
-//     {
-//       title: "Garage Parrot",
-//       description:
-//         "Projet de fin de formation, site web de gestion d'un garage et revente de véhicules d'occasion.",
-//       technologies: ["html5", "css3", "javascript", "jquery", "php", "mysql"],
-//       poster: garageParrotImg,
-//       link: "google.com",
-//     },
-//     {
-//       title: "Andragogy",
-//       description:
-//         "Projet de fin de formation, site web de gestion d'un garage et revente de véhicules d'occasion.",
-//       technologies: ["react", "nodejs", "mongodb"],
-//       poster: posterImg,
-//       link: "google.com",
-//     },
-//     {
-//       title: "Project 3",
-//       description:
-//         "Projet de fin de formation, site web de gestion d'un garage et revente de véhicules d'occasion.",
-//       technologies: ["python", "django", "postgresql"],
-//       poster: projectImg3,
-//       link: "google.com",
-//     },
-//   ];
-
-//   return (
-//     <section className="projects-section">
-//       <h1 id="projets" className="my-projects-title">
-//         {projectsTitle}
-//       </h1>
-//       <div className="projects-list">
-//         {projects.map((project, index) => (
-//           <div key={index} className="project">
-//             <h4 className="project-title">{project.title}</h4>
-//             <p className="project-description">{project.description}</p>
-//             <div className="project-tech">
-//               {project.technologies.map((tech, techIndex) => (
-//                 <i
-//                   key={techIndex}
-//                   className={`devicon-${tech}-plain project-tech-icon`}
-//                 ></i>
-//               ))}
-//             </div>
-//             <div className="project-preview">
-//               <img id="imgProjects" src={project.poster} alt={project.title} />
-//               <a
-//                 className="project-link"
-//                 href={project.link}
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//               >
-//                 Voir le projet
-//               </a>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Projects;

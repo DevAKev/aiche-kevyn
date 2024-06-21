@@ -62,43 +62,37 @@ const MobileNavBar = () => {
 
   return (
     <nav className={`navbar ${showLinks ? "showNav" : "hideNav"}`}>
-      <ul className="navbar__links">
+      <ul className={`navbar__links ${showLinks ? "visible" : "hidden"}`}>
         <li className={`navbar__item slideInDown1`}>
           <a href="#home" className="mobile_navLink_home">
             {language === "en" ? "HOME" : "ACCUEIL"}
           </a>
         </li>
-
         <li className={`navbar__item slideInDown2`}>
           <a href="#services" className="mobile_subtitle2">
             {language === "en" ? "SERVICES" : "SERVICES"}
           </a>
         </li>
-
         <li className={`navbar__item slideInDown2`}>
           <a href="#skills" className="mobile_subtitle2">
             {language === "en" ? "SKILLS" : "COMPETENCES"}
           </a>
         </li>
-
         <li className={`navbar__item slideInDown2`}>
           <a href="#projets" className="mobile_subtitle2">
             {language === "en" ? "PROJECTS" : "PROJETS"}
           </a>
         </li>
-
         <li className={`navbar__item slideInDown2`}>
           <a href="#about" className="mobile_subtitle2">
             {language === "en" ? "ABOUT" : "À PROPOS"}
           </a>
         </li>
-
         <li className={`navbar__item slideInDown2`}>
           <a href="#contact" className="mobile_subtitle2">
             {language === "en" ? "CONTACT" : "CONTACT"}
           </a>
         </li>
-
         {/* Icons for the themes modes */}
         <li className={`navbar__item slideInDown3`}>
           <div className="mobile_theme-toggle" onClick={toggleTheme}>
@@ -135,7 +129,6 @@ const MobileNavBar = () => {
             )}
           </div>
         </li>
-
         {/* Social Media Icons */}
         <li className={`navbar__item slideInDown4`}>
           <p className="mobile_socials-title">

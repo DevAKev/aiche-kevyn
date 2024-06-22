@@ -69,11 +69,11 @@ const MobileFooter = () => {
             <a href="#services" className="mobile-menu-link">
               {menuLink.services}
             </a>
-            <li className="mobile-menu-item">
-              <a href="#skills" className="mobile-menu-link">
-                {menuLink.skills}
-              </a>
-            </li>
+          </li>
+          <li className="mobile-menu-item">
+            <a href="#skills" className="mobile-menu-link">
+              {menuLink.skills}
+            </a>
           </li>
           <li className="mobile-menu-item">
             <a href="#projects" className="mobile-menu-link">
@@ -85,11 +85,6 @@ const MobileFooter = () => {
               {menuLink.about}
             </a>
           </li>
-          {/* <li className="mobile-menu-item">
-            <a href="#contact" className="mobile-menu-link">
-              {menuLink.contact}
-            </a>
-          </li> */}
         </ul>
       </div>
       <div className="mobile-contact-container">

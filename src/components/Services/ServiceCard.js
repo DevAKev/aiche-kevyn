@@ -28,7 +28,7 @@ const ServiceCard = ({ title, description, icon }) => {
     <div className="service-card" ref={cardRef}>
       <div className="service-icon">{icon}</div>
       <h2 className="service-card-title">{title}</h2>
-      <p className="service-description">{description}</p>
+      <div className="service-description">{description}</div>
     </div>
   );
 };

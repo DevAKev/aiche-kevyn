@@ -134,7 +134,7 @@ const MobileNavBar = () => {
           <p className="mobile_socials-title">
             {language === "en" ? "Follow me" : "Suivez moi"}
           </p>
-          <div className="navbar__socials-links socials-links">
+          <ul className="navbar__socials-links socials-links">
             {socialsLinks.map((link, index) => (
               <li
                 key={index}
@@ -159,7 +159,7 @@ const MobileNavBar = () => {
                 </div>
               </li>
             ))}
-          </div>
+          </ul>
         </li>
       </ul>
 

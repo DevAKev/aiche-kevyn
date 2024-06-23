@@ -4,14 +4,13 @@ const MobileFooter = () => {
   const { language } = useTheme();
   const searchBtn =
     language === "en"
-      ? "I'm looking for a developer"
-      : "Je cherche un développeur";
+      ? "Let's discuss your project"
+      : "Discutons de votre projet";
 
   const footerText =
     language === "en"
-      ? "This website is a personal project created by Kevyn Aiche...."
-      : "Ce site web est un projet personnel créé par Kevyn Aiche....";
-
+      ? "Building websites and mobile applications to boost your online presence and optimize your business performance"
+      : "Réalisation de sites web et d'applications mobiles pour booster votre présence en ligne et optimiser les performances de votre entreprise";
   const menuLink =
     language === "en"
       ? {
@@ -39,7 +38,7 @@ const MobileFooter = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer>
+    <footer className="mobile-footer">
       <div className="mobile-btn-container">
         <button className="mobile-search-button">
           <a
@@ -87,7 +86,7 @@ const MobileFooter = () => {
           </li>
         </ul>
       </div>
-      <div className="mobile-contact-container">
+      {/* <div className="mobile-contact-container">
         <ul className="mobile-contact-list">
           <li className="mobile-contact-item">
             <span>Paris, France</span>
@@ -100,7 +99,7 @@ const MobileFooter = () => {
             </span>
           </li>
         </ul>
-      </div>
+      </div> */}
 
       <div className="mobile-copyright-container">
         <h2 className="mobile-copyright">

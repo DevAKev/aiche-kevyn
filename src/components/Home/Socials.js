@@ -6,11 +6,17 @@ import { ReactComponent as InstaIcon } from "@assets/images/socials/instagram-ic
 import { ReactComponent as LinkIcon } from "@assets/images/socials/linkedin-icon.svg";
 import { ReactComponent as GitIcon } from "@assets/images/socials/github-icon.svg";
 import { ReactComponent as GmailIcon } from "@assets/images/socials/gmail-icon.svg";
+import { ReactComponent as WhatsIcon } from "@assets/images/socials/whatsapp-icon.svg";
 
 const Socials = () => {
   const { language } = useTheme();
   const socialsLinks = [
     { name: "Gmail", url: "mailto:kevynpro7700@gmail.com", icon: GmailIcon },
+    {
+      name: "WhatsApp",
+      url: "https://wa.me/33760050343",
+      icon: WhatsIcon,
+    },
     { name: "GitHub", url: "https://github.com/DevAKev", icon: GitIcon },
     {
       name: "LinkedIn",

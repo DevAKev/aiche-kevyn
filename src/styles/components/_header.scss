@@ -304,9 +304,10 @@ header {
 
 // Container
 .mobile_socials-container {
-  background-color: #d5e7f8;
+  // background-color: #d5e7f8;
   height: 55px;
-  padding: 10px;
+  padding: 5px;
+  margin-right: 2vw;
   box-shadow: 0 0 8px black;
   border-radius: 50px;
 }
@@ -326,6 +327,7 @@ header {
 
 // Icons
 .socials-icon {
+  margin-top: 10px;
   width: 24px;
   height: 24px;
 }

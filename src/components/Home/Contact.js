@@ -1,5 +1,5 @@
 import { useTheme } from "@hooks/ThemeContext";
-import videoBg from "@assets/videos/background-video-contact.webm";
+import videoBg from "@assets/videos/contact-background-video.webm";
 import { ReactComponent as FbIcon } from "@assets/images/socials/facebook-icon.svg";
 import { ReactComponent as TwitIcon } from "@assets/images/socials/twitter-icon.svg";
 import { ReactComponent as InstaIcon } from "@assets/images/socials/instagram-icon.svg";

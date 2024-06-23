@@ -1,4 +1,4 @@
-import BgVideo from "@assets/videos/milky_way.webm";
+import BgVideo from "@assets/videos/start-background-video-milky-way.webm";
 const MilkyWay = () => {
   // Error management
   const handleError = (event) => {
@@ -12,9 +12,8 @@ const MilkyWay = () => {
         muted
         className="background-video"
         onError={handleError}
-        loading="lazy"
       >
-        <source src={BgVideo} type="video/mp4" loading="lazy" />
+        <source src={BgVideo} type="video/webm" loading="lazy" />
         Votre navigateur ne supporte pas cette vidéo.
       </video>
     </div>

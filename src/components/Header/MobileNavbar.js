@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
-import { useTheme } from "../../hooks/ThemeContext";
+import { useTheme } from "@hooks/ThemeContext";
 // Theme Icons
-import darkModeIcon from "../../assets/images/theme/dark-emoji.webp";
-import lightModeIcon from "../../assets/images/theme/light-emoji.webp";
+import darkModeIcon from "@assets/images/theme/dark-emoji.webp";
+import lightModeIcon from "@assets/images/theme/light-emoji.webp";
 // Language Icons
-import fr_flag from "../../assets/images/flags/fr-flag.webp";
-import uk_flag from "../../assets/images/flags/uk-flag.webp";
+import fr_flag from "@assets/images/flags/fr-flag.webp";
+import uk_flag from "@assets/images/flags/uk-flag.webp";
 // Socials Icons
-import { ReactComponent as FbIcon } from "../../assets/images/socials/facebook-icon.svg";
-import { ReactComponent as TwitIcon } from "../../assets/images/socials/twitter-icon.svg";
-import { ReactComponent as InstaIcon } from "../../assets/images/socials/instagram-icon.svg";
-import { ReactComponent as LinkIcon } from "../../assets/images/socials/linkedin-icon.svg";
-import { ReactComponent as GitIcon } from "../../assets/images/socials/github-icon.svg";
-import { ReactComponent as GmailIcon } from "../../assets/images/socials/gmail-icon.svg";
+import { ReactComponent as FbIcon } from "@assets/images/socials/facebook-icon.svg";
+import { ReactComponent as TwitIcon } from "@assets/images/socials/twitter-icon.svg";
+import { ReactComponent as InstaIcon } from "@assets/images/socials/instagram-icon.svg";
+import { ReactComponent as LinkIcon } from "@assets/images/socials/linkedin-icon.svg";
+import { ReactComponent as GitIcon } from "@assets/images/socials/github-icon.svg";
+import { ReactComponent as GmailIcon } from "@assets/images/socials/gmail-icon.svg";
 
 // ### MOBILE NAVBAR ###
 const MobileNavBar = () => {

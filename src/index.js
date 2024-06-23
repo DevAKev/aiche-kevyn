@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import "./styles/index.scss";
+import "@styles/index.scss";
 
 // Désactiver le clic droit
 // document.addEventListener("contextmenu", (event) => event.preventDefault());

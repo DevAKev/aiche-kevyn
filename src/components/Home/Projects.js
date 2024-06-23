@@ -1,8 +1,8 @@
-import { useTheme } from "../../hooks/ThemeContext";
+import { useTheme } from "@hooks/ThemeContext";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ProjectSection from "../Projects/ProjectSection";
+import ProjectSection from "@components/Projects/ProjectSection";
 
 gsap.registerPlugin(ScrollTrigger);
 

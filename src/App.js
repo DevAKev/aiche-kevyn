@@ -1,7 +1,7 @@
 // Principal files of the app
-import { ThemeProvider } from "./hooks/ThemeContext";
-import Home from "./pages/Home";
-// import StarRain from "./components/Animations/StarRain";
+import { ThemeProvider } from "@hooks/ThemeContext";
+import Home from "@pages/Home";
+// import StarRain from "@components/Animations/StarRain";
 
 // Principal component
 const App = () => {
@@ -19,11 +19,11 @@ export default App;
 // ##########WITH ROUTER FOR MORE PAGE##################"""
 // Principal files of the app
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { ThemeProvider } from "./hooks/ThemeContext";
-// import Home from "./pages/Home";
-// import Projets from "./pages/Projets";
-// import About from "./pages/About";
-// // import StarRain from "./components/Animations/StarRain";
+// import { ThemeProvider } from "@hooks/ThemeContext";
+// import Home from "@pages/Home";
+// import Projets from "@pages/Projets";
+// import About from "@pages/About";
+// // import StarRain from "@components/Animations/StarRain";
 
 // // Principal component
 // const App = () => {

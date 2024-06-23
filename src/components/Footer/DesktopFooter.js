@@ -1,4 +1,4 @@
-import { useTheme } from "../../hooks/ThemeContext";
+import { useTheme } from "@hooks/ThemeContext";
 
 const DesktopFooter = () => {
   const { language } = useTheme();

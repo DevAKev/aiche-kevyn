@@ -1,5 +1,5 @@
-import { useTheme } from "../../hooks/ThemeContext";
-import DevImg from "../../assets/images/about/dev-web.png";
+import { useTheme } from "@hooks/ThemeContext";
+import DevImg from "@assets/images/about/dev-web.png";
 
 // Component to display the about page
 const About = () => {

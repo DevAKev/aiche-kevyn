@@ -1,11 +1,11 @@
-import { useTheme } from "../../hooks/ThemeContext";
+import { useTheme } from "@hooks/ThemeContext";
 // Socials Icons
-import { ReactComponent as FbIcon } from "../../assets/images/socials/facebook-icon.svg";
-import { ReactComponent as TwitIcon } from "../../assets/images/socials/twitter-icon.svg";
-import { ReactComponent as InstaIcon } from "../../assets/images/socials/instagram-icon.svg";
-import { ReactComponent as LinkIcon } from "../../assets/images/socials/linkedin-icon.svg";
-import { ReactComponent as GitIcon } from "../../assets/images/socials/github-icon.svg";
-import { ReactComponent as GmailIcon } from "../../assets/images/socials/gmail-icon.svg";
+import { ReactComponent as FbIcon } from "@assets/images/socials/facebook-icon.svg";
+import { ReactComponent as TwitIcon } from "@assets/images/socials/twitter-icon.svg";
+import { ReactComponent as InstaIcon } from "@assets/images/socials/instagram-icon.svg";
+import { ReactComponent as LinkIcon } from "@assets/images/socials/linkedin-icon.svg";
+import { ReactComponent as GitIcon } from "@assets/images/socials/github-icon.svg";
+import { ReactComponent as GmailIcon } from "@assets/images/socials/gmail-icon.svg";
 
 const Socials = () => {
   const { language } = useTheme();

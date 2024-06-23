@@ -1,11 +1,11 @@
-import { useTheme } from "../../hooks/ThemeContext";
-import ServiceCard from "../../components/Services/ServiceCard";
-import { ReactComponent as WebIcon } from "../../assets/images/icons/website.svg";
-import MobileIcon from "../../assets/images/icons/mobiles.png";
-// import GamesIcon from "../../assets/images/icons/games.png";
-import GraphicDesignIcon from "../../assets/images/icons/design.png";
-import SEOIcon from "../../assets/images/icons/seo.png";
-import ResponsiveIcon from "../../assets/images/icons/responsive.png";
+import { useTheme } from "@hooks/ThemeContext";
+import ServiceCard from "@components/Services/ServiceCard";
+import { ReactComponent as WebIcon } from "@assets/images/icons/website.svg";
+import MobileIcon from "@assets/images/icons/mobiles.png";
+// import GamesIcon from "@assets/images/icons/games.png";
+import GraphicDesignIcon from "@assets/images/icons/design.png";
+import SEOIcon from "@assets/images/icons/seo.png";
+import ResponsiveIcon from "@assets/images/icons/responsive.png";
 
 const Services = () => {
   const { language } = useTheme();

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { useTheme } from "../hooks/ThemeContext";
-import Header from "../components/Header/Header";
-import MilkyWay from "./Animations/MilkyWay";
-import ClickStart from "../assets/sounds/click_start.mp3";
-import Socials from "./Home/Socials";
-import MobileNavBar from "./Header/MobileNavbar";
+import { useTheme } from "@hooks/ThemeContext";
+import Header from "@components/Header/Header";
+import MilkyWay from "@components/Animations/MilkyWay";
+import ClickStart from "@assets/sounds/click_start.mp3";
+import Socials from "@components/Home/Socials";
+import MobileNavBar from "@components/Header/MobileNavbar";
 
 const Layout = ({ children }) => {
   const { theme } = useTheme();

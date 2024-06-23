@@ -1,17 +1,17 @@
-import Layout from "../components/Layout";
-import { useTheme } from "../hooks/ThemeContext";
-import Skills from "../components/Home/Skills";
-import Typewriter from "../components/Animations/Typewriter";
-import EnTypewriter from "../assets/sounds/keyboard_sound_en.m4a";
-import FrTypewriter from "../assets/sounds/keyboard_sound_fr.m4a";
-import About from "../components/Home/About";
-import Projects from "../components/Home/Projects";
-// import UfoEffect from "../components/Animations/UfoEffect";
+import Layout from "@components/Layout";
+import { useTheme } from "@hooks/ThemeContext";
+import Skills from "@components/Home/Skills";
+import Typewriter from "@components/Animations/Typewriter";
+import EnTypewriter from "@assets/sounds/keyboard_sound_en.m4a";
+import FrTypewriter from "@assets/sounds/keyboard_sound_fr.m4a";
+import About from "@components/Home/About";
+import Projects from "@components/Home/Projects";
+// import UfoEffect from "@components/Animations/UfoEffect";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
-import Services from "../components/Home/Services";
-import Footer from "../components/Footer/Footer";
-import Contact from "../components/Home/Contact";
+import Services from "@components/Home/Services";
+import Footer from "@components/Footer/Footer";
+import Contact from "@components/Home/Contact";
 
 const Home = () => {
   const { language } = useTheme();

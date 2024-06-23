@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import MobileFooter from "./MobileFooter";
-import DesktopFooter from "./DesktopFooter";
+import MobileFooter from "@components/Footer/MobileFooter";
+import DesktopFooter from "@components/Footer/DesktopFooter";
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState(false);

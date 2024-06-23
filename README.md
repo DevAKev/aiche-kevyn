@@ -68,3 +68,83 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Alias Path :
+
+- @assets: src/assets
+- @components: src/components
+- @hooks: src/hooks
+- @pages: src/pages
+- @styles: src/styles
+
+### Description
+
+This configuration file uses the customize-cra library to add aliases to the Webpack configuration.
+
+### Usage
+
+To use this configuration file, you need to install the customize-cra package:
+
+```sh
+npm install customize-cra
+```
+
+Then, add the following line to your package.json file:
+
+```json
+"scripts": {
+  "start": "react-app-rewired start",
+  "build": "react-app-rewired build",
+  "test": "react-app-rewired test",
+  "eject": "react-scripts eject"
+}
+```
+
+Finally, create a config-overrides.js file at the root of your project and paste the code above.
+
+### How It Works
+
+This configuration file uses the override function from customize-cra to add aliases to the Webpack configuration.
+The addWebpackAlias function allows you to define aliases for specific paths in your project.
+In this example, we define aliases for the assets, components, hooks, pages, and styles directories.
+This allows you to import files from these directories using the aliases instead of the full path.
+For example, instead of writing:
+
+```javascript
+import Header from "../../components/Header/Header";
+```
+
+You can write:
+
+```javascript
+import Header from "@components/Header/Header";
+```
+
+This makes the code cleaner and easier to read, especially in larger projects.
+
+### Note
+
+This configuration file assumes that your project has the following directory structure:
+
+```
+src/
+├── assets/
+├── components/
+├── hooks/
+├── pages/
+├── styles/
+```
+
+If your project has a different directory structure, you can modify the aliases in the addWebpackAlias function to match your project's structure.
+For example, if your components are located in the src/app/components directory, you can change the alias for components to:
+
+```javascript
+"@components": path.resolve(__dirname, "src/app/components"),
+```
+
+This will allow you to import components using the @components alias.
+
+### Resources
+
+- [customize-cra](https://www.npmjs.com/package/customize-cra)
+- [Webpack resolve alias](https://webpack.js.org/configuration/resolve/#resolvealias)

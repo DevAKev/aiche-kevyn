@@ -1,5 +1,5 @@
-import { useTheme } from "../../hooks/ThemeContext";
-import logo from "../../assets/images/logo/devakev-logo.webp";
+import { useTheme } from "@hooks/ThemeContext";
+import logo from "@assets/images/logo/devakev-logo.webp";
 
 const Logo = () => {
   const isMobile = window.innerWidth < 1023;

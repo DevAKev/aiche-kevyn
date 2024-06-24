@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "@hooks/ThemeContext";
 import Header from "@components/Header/Header";
 import MilkyWay from "@components/Animations/MilkyWay";
+import StartBtn from "@assets/images/buttons/start-button.webp";
 import ClickStart from "@assets/sounds/click_start.mp3";
 import Socials from "@components/Home/Socials";
 import MobileNavBar from "@components/Header/MobileNavbar";
@@ -74,15 +75,39 @@ const Layout = ({ children }) => {
         <>
           <MilkyWay />
           {/* Start button */}
-          <div className="start-container">
+          <div
+            className="start-container"
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              zIndex: 10,
+              width: "200px",
+              height: "200px",
+              animation: "fadeIn 2s",
+            }}
+          >
             <button
               aria-label="Start button"
               className="start-button"
               type="button"
               alt="Start button"
-              loading="lazy"
               id="start-button"
-              onClick={handleClick}
+              onClick={() => requestAnimationFrame(handleClick)}
+              style={{
+                backgroundImage: `url(${StartBtn})`,
+                backgroundSize: "contain",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundColor: "transparent",
+                borderStyle: "none",
+                borderRadius: "50px",
+                width: "100%",
+                height: "80%",
+                transition: "transform 0.1s, box-shadow 0.1s",
+                cursor: "pointer",
+              }}
             ></button>
           </div>
         </>

@@ -1,12 +1,12 @@
 // ### MOBILE ###
 .mobile-footer {
   position: relative;
+  top: 70px;
   background-color: var(--background);
   box-shadow: 0 0 8px var(--text);
   padding: 20px;
   text-align: center;
   width: 100%;
-  height: 100%;
   z-index: 5;
   border-radius: 80% 80% 0 0 / 20% 20% 0 0;
   border-top: 1px solid var(--text);
@@ -73,7 +73,7 @@
   justify-content: center;
   text-align: center;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--text);
 }
 
@@ -82,7 +82,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 5px;
+  margin: 20px;
 }
 
 .mobile-menu-title {
@@ -126,11 +126,10 @@
 // ### DESKTOP ###
 .desktop-footer {
   display: flex;
-  flex-direction: column;
   position: relative;
+  top: 70px;
   background-color: var(--background);
   box-shadow: 0 0 8px var(--text);
-  padding: 20px;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -169,7 +168,7 @@
   justify-content: center;
   text-align: center;
   padding: 10px;
-  font-size: 1.8rem;
+  font-size: 1rem;
   color: var(--text);
   text-align: start;
   margin-bottom: 50px;
@@ -211,14 +210,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 50px;
   // position: relative;
   // bottom: 250px;
 }
 
 .desktop-menu-title {
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: var(--text);
-  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .desktop-menu-list .desktop-menu-item {
@@ -229,7 +229,7 @@
 
 .desktop-menu-link {
   color: var(--text);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 
@@ -260,12 +260,16 @@
 }
 
 .desktop-copyright-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
   border-top: 1px solid var(--text);
   padding-top: 10px;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .desktop-copyright {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--text);
 }

@@ -86,12 +86,12 @@ const DesktopFooter = () => {
               {menuLink.about}
             </a>
           </li>
+          <div className="desktop-copyright-container">
+            <h2 className="desktop-copyright">
+              {copyright} {year}
+            </h2>
+          </div>
         </ul>
-      </div>
-      <div className="desktop-copyright-container">
-        <h2 className="desktop-copyright">
-          {copyright} {year}
-        </h2>
       </div>
     </footer>
   );

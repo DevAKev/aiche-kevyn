@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/aiche-kevyn/static/css/main.fd1a8910.css",
+    "main.css": "/aiche-kevyn/static/css/main.2c1f0a2f.css",
     "main.js": "/aiche-kevyn/static/js/main.819c24c5.js",
     "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.11d800bff9025c6c0511.webm",
     "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.06471532856dad49dac6.webm",
@@ -33,11 +33,11 @@
     "static/media/uk-flag.webp": "/aiche-kevyn/static/media/uk-flag.ced837668c686208d614.webp",
     "static/media/website.svg": "/aiche-kevyn/static/media/website.c6ce0256e4043de47b08172548ca9800.svg",
     "static/media/fr-flag.webp": "/aiche-kevyn/static/media/fr-flag.a53d47c539fa79d5cc41.webp",
-    "main.fd1a8910.css.map": "/aiche-kevyn/static/css/main.fd1a8910.css.map",
+    "main.2c1f0a2f.css.map": "/aiche-kevyn/static/css/main.2c1f0a2f.css.map",
     "main.819c24c5.js.map": "/aiche-kevyn/static/js/main.819c24c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd1a8910.css",
+    "static/css/main.2c1f0a2f.css",
     "static/js/main.819c24c5.js"
   ]
 }

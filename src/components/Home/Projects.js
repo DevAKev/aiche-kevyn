@@ -110,7 +110,7 @@ const Projects = () => {
     }
 
     ScrollTrigger.observe({
-      target: ".section-wrap",
+      target: ".projects-container",
       type: "wheel,touch,pointer",
       wheelSpeed: -1,
       onDown: () => !animating && gotoSection(currentIndex - 1, -1),
@@ -197,7 +197,7 @@ const Projects = () => {
             loading="lazy"
             className="fifth"
             title="Les amis de la montagne"
-            link="https://devakev.github.io/Deploiement/"
+            link="https://devakev.github.io/les.amis.de.la.montagne.fr/"
             projectsLink={projectsLink}
             description={projectsDesc.project4[language]}
             technologies={["figma", "trello", "html5", "css3"]}

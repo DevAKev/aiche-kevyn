@@ -19,6 +19,7 @@ const ProjectSection = ({
     "react",
     "filezilla",
     "trello",
+    "reactrouter",
   ];
 
   return (

@@ -30,6 +30,10 @@ const Projects = () => {
       fr: "Site web pour une association à but non lucratif.",
     },
     project5: {
+      en: "Website to learn the names of the Countries, flags and cities of the World.",
+      fr: "Site web pour apprendre les noms des Pays, drapeaux et villes du Monde.",
+    },
+    project6: {
       en: "...",
       fr: "...",
     },
@@ -203,13 +207,32 @@ const Projects = () => {
             technologies={["figma", "trello", "html5", "css3"]}
           />
 
+          {/* - Countries & Flags app  - */}
           <ProjectSection
             loading="lazy"
-            className="sixt"
-            title="Projet 5"
+            className="sixth"
+            title="Drapeaux du Monde"
+            link="https://devakev.github.io/REACT-APP-COUNTRIES1/"
+            projectsLink={projectsLink}
+            description={projectsDesc.project5[language]}
+            technologies={[
+              "figma",
+              "trello",
+              "html5",
+              "css3",
+              "react",
+              "axios",
+              "reactrouter",
+            ]}
+          />
+
+          {/* <ProjectSection
+            loading="lazy"
+            className="seventh"
+            title="Projet 6"
             link="#"
             projectsLink={projectsLink}
-          />
+          /> */}
         </div>
       </div>
     </>

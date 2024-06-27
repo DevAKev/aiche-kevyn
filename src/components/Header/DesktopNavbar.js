@@ -57,28 +57,38 @@ const DesktopNavBar = () => {
         <nav className="desktop_navbar_container">
           <ul>
             <a href="#home">
-              <li>{language === "en" ? "HOME" : "ACCUEIL"}</li>
+              <li className="desktop_navbar_link">
+                {language === "en" ? "HOME" : "ACCUEIL"}
+              </li>
             </a>
 
             <a href="#services">
-              <li>{language === "en" ? "SERVICES" : "SERVICES"}</li>
+              <li className="desktop_navbar_link">
+                {language === "en" ? "SERVICES" : "SERVICES"}
+              </li>
             </a>
 
             {/* <a
             href="#skills"
           >
-            <li>{language === "en" ? "SKILLS" : "COMPETENCES"}</li>
+            <li className="desktop_navbar_link" >{language === "en" ? "SKILLS" : "COMPETENCES"}</li>
           </a> */}
 
             <a href="#projets">
-              <li>{language === "en" ? "PROJECTS" : "PROJETS"}</li>
+              <li className="desktop_navbar_link">
+                {language === "en" ? "PROJECTS" : "PROJETS"}
+              </li>
             </a>
 
             <a href="#about">
-              <li>{language === "en" ? "ABOUT" : "À PROPOS"}</li>
+              <li className="desktop_navbar_link">
+                {language === "en" ? "ABOUT" : "À PROPOS"}
+              </li>
             </a>
             <a href="#contact">
-              <li>{language === "en" ? "CONTACT" : "CONTACT"}</li>
+              <li className="desktop_navbar_link">
+                {language === "en" ? "CONTACT" : "CONTACT"}
+              </li>
             </a>
           </ul>
         </nav>

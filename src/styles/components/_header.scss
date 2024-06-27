@@ -356,6 +356,7 @@ header {
 
 // Container for theme & language toggle
 .desktop_theme-language_container {
+  margin-right: 50px;
   display: flex;
   justify-content: start;
   flex-direction: row;
@@ -390,11 +391,22 @@ header {
 // Language toggle button
 .language-toggle {
   cursor: pointer;
-  width: 5px;
   font-weight: bold;
   font-size: 2rem;
   font-family: var(--font-1);
   margin-left: 6vw;
+  color: var(--text);
+  text-shadow: 0 0 10px var(--background);
+}
+
+.span-language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2vw;
+  height: 2vw;
+  font-weight: bold;
+  font-size: 1em;
   color: var(--text);
   text-shadow: 0 0 10px var(--background);
 }
@@ -422,17 +434,29 @@ header {
 
 // Container for the desktop navbar
 .desktop_navbar_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   color: var(--text);
-  text-shadow: 0 0 10px var(--background);
+  text-shadow: 1px 2px 1px var(--background);
 }
-.desktop_navbar_container ul li:hover {
-  background-color: var(--text);
-  color: var(--background);
-  box-shadow: 0 0 10px var(--text);
-  border-radius: 50px;
-  transform: scale(1.2);
+
+.desktop_navbar_link {
+  transition: all 0.7s ease-in-out;
+  &:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text);
+    color: var(--background);
+    box-shadow: 0 0 10px var(--text);
+    border-radius: 50px;
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+  }
 }
+
 // Navigation
 .navigation {
   ul {
@@ -451,33 +475,33 @@ header {
       color: var(--text);
     }
     // Active link
-    .nav-active {
-      position: relative;
-      // Animation for the active link
-      &::after {
-        content: "";
-        height: 8px;
-        width: 0;
-        background: var(--gradient);
-        position: absolute;
-        border-radius: 10px;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-animation: anim 0.3s ease forwards;
-        animation: anim 0.5s ease forwards;
-        @-webkit-keyframes anim {
-          to {
-            width: 100%;
-          }
-        }
-        @keyframes anim {
-          to {
-            width: 100%;
-          }
-        }
-      }
-    }
+    // .nav-active {
+    //   position: relative;
+    //   // Animation for the active link
+    //   &::after {
+    //     content: "";
+    //     height: 8px;
+    //     width: 0;
+    //     background: var(--gradient);
+    //     position: absolute;
+    //     border-radius: 10px;
+    //     bottom: 0px;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     -webkit-animation: anim 0.3s ease forwards;
+    //     animation: anim 0.5s ease forwards;
+    //     @-webkit-keyframes anim {
+    //       to {
+    //         width: 100%;
+    //       }
+    //     }
+    //     @keyframes anim {
+    //       to {
+    //         width: 100%;
+    //       }
+    //     }
+    //   }
+    // }
   }
 }
 

@@ -150,5 +150,5 @@ This will allow you to import components using the @components alias.
 - [Webpack resolve alias](https://webpack.js.org/configuration/resolve/#resolvealias)
 
 
-### Voir le portfolio 🚀
-[https://devakev.github.io/aiche-kevyn](https://devakev.github.io/aiche-kevyn) 
+### [Voir le portfolio](https://devakev.github.io/aiche-kevyn) 🚀
+ 

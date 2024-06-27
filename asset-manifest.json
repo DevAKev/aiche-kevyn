@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/aiche-kevyn/static/css/main.586efa13.css",
-    "main.js": "/aiche-kevyn/static/js/main.ab42895b.js",
-    "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.11d800bff9025c6c0511.webm",
-    "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.06471532856dad49dac6.webm",
+    "main.css": "/aiche-kevyn/static/css/main.c253e3b4.css",
+    "main.js": "/aiche-kevyn/static/js/main.e8f1d93b.js",
+    "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.1cee1d85e3e721ed9e7f.webm",
+    "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.1d870e31667b9c7daadf.webm",
     "static/media/background-3-nebula-webb.webp": "/aiche-kevyn/static/media/background-3-nebula-webb.94a8922508cf3a2f2571.webp",
     "static/media/dev-web.png": "/aiche-kevyn/static/media/dev-web.a5926e769fbfa5db504d.png",
     "static/media/background-1-carina-nebula.webp": "/aiche-kevyn/static/media/background-1-carina-nebula.d10d52fb24d18bef7f58.webp",
@@ -16,7 +16,7 @@
     "static/media/preview-garage-parrot.webp": "/aiche-kevyn/static/media/preview-garage-parrot.3df998726f07b619d4dd.webp",
     "static/media/preview-react-countries-app.webp": "/aiche-kevyn/static/media/preview-react-countries-app.0d698bdeebade07ce967.webp",
     "static/media/Halcom-Book-BF648a71455e035.otf": "/aiche-kevyn/static/media/Halcom-Book-BF648a71455e035.a42971f122707907bfaa.otf",
-    "static/media/start-button.webp": "/aiche-kevyn/static/media/start-button.a71d9be481d0869f955a.webp",
+    "static/media/start-button.webp": "/aiche-kevyn/static/media/start-button.15364590731218eb7c9c.webp",
     "static/media/preview-webagency.webp": "/aiche-kevyn/static/media/preview-webagency.9f0c9320ca8dfb808e6c.webp",
     "static/media/devakev-logo.webp": "/aiche-kevyn/static/media/devakev-logo.aa8957d8cd42ee81f3a3.webp",
     "static/media/go-down.webp": "/aiche-kevyn/static/media/go-down.77ce5016c47c031a3dbc.webp",
@@ -34,11 +34,11 @@
     "static/media/uk-flag.webp": "/aiche-kevyn/static/media/uk-flag.ced837668c686208d614.webp",
     "static/media/website.svg": "/aiche-kevyn/static/media/website.c6ce0256e4043de47b08172548ca9800.svg",
     "static/media/fr-flag.webp": "/aiche-kevyn/static/media/fr-flag.a53d47c539fa79d5cc41.webp",
-    "main.586efa13.css.map": "/aiche-kevyn/static/css/main.586efa13.css.map",
-    "main.ab42895b.js.map": "/aiche-kevyn/static/js/main.ab42895b.js.map"
+    "main.c253e3b4.css.map": "/aiche-kevyn/static/css/main.c253e3b4.css.map",
+    "main.e8f1d93b.js.map": "/aiche-kevyn/static/js/main.e8f1d93b.js.map"
   },
   "entrypoints": [
-    "static/css/main.586efa13.css",
-    "static/js/main.ab42895b.js"
+    "static/css/main.c253e3b4.css",
+    "static/js/main.e8f1d93b.js"
   ]
 }

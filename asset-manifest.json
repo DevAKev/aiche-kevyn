@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aiche-kevyn/static/css/main.455606c6.css",
-    "main.js": "/aiche-kevyn/static/js/main.6ce22f4b.js",
+    "main.css": "/aiche-kevyn/static/css/main.586efa13.css",
+    "main.js": "/aiche-kevyn/static/js/main.ab42895b.js",
     "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.11d800bff9025c6c0511.webm",
     "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.06471532856dad49dac6.webm",
     "static/media/background-3-nebula-webb.webp": "/aiche-kevyn/static/media/background-3-nebula-webb.94a8922508cf3a2f2571.webp",
@@ -34,11 +34,11 @@
     "static/media/uk-flag.webp": "/aiche-kevyn/static/media/uk-flag.ced837668c686208d614.webp",
     "static/media/website.svg": "/aiche-kevyn/static/media/website.c6ce0256e4043de47b08172548ca9800.svg",
     "static/media/fr-flag.webp": "/aiche-kevyn/static/media/fr-flag.a53d47c539fa79d5cc41.webp",
-    "main.455606c6.css.map": "/aiche-kevyn/static/css/main.455606c6.css.map",
-    "main.6ce22f4b.js.map": "/aiche-kevyn/static/js/main.6ce22f4b.js.map"
+    "main.586efa13.css.map": "/aiche-kevyn/static/css/main.586efa13.css.map",
+    "main.ab42895b.js.map": "/aiche-kevyn/static/js/main.ab42895b.js.map"
   },
   "entrypoints": [
-    "static/css/main.455606c6.css",
-    "static/js/main.6ce22f4b.js"
+    "static/css/main.586efa13.css",
+    "static/js/main.ab42895b.js"
   ]
 }

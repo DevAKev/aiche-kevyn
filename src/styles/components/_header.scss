@@ -223,7 +223,8 @@ header {
 }
 
 .showNav .navbar__links {
-  border: solid 1px var(--text);
+  border: solid 0.5px var(--text);
+  box-shadow: 0 0 10px var(--text);
   right: 0;
   top: 10vh;
   width: 99vw;

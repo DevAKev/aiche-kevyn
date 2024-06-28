@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aiche-kevyn/static/css/main.a7616ab8.css",
-    "main.js": "/aiche-kevyn/static/js/main.22f09c39.js",
+    "main.css": "/aiche-kevyn/static/css/main.29ce23a4.css",
+    "main.js": "/aiche-kevyn/static/js/main.f8a9b1b1.js",
     "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.1cee1d85e3e721ed9e7f.webm",
     "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.1d870e31667b9c7daadf.webm",
     "static/media/background-3-nebula-webb.webp": "/aiche-kevyn/static/media/background-3-nebula-webb.94a8922508cf3a2f2571.webp",
@@ -20,7 +20,6 @@
     "static/media/start-button.webp": "/aiche-kevyn/static/media/start-button.15364590731218eb7c9c.webp",
     "static/media/preview-webagency.webp": "/aiche-kevyn/static/media/preview-webagency.9f0c9320ca8dfb808e6c.webp",
     "static/media/devakev-logo.webp": "/aiche-kevyn/static/media/devakev-logo.aa8957d8cd42ee81f3a3.webp",
-    "static/media/go-down.webp": "/aiche-kevyn/static/media/go-down.77ce5016c47c031a3dbc.webp",
     "static/media/click_start.mp3": "/aiche-kevyn/static/media/click_start.616f1cec9d0ab6a769db.mp3",
     "static/media/instagram-icon.svg": "/aiche-kevyn/static/media/instagram-icon.c0113239bc87d217189205448af0e84a.svg",
     "static/media/whatsapp-icon.svg": "/aiche-kevyn/static/media/whatsapp-icon.da3ab0e46837b32d98d964adbffb7e0f.svg",
@@ -35,11 +34,11 @@
     "static/media/uk-flag.webp": "/aiche-kevyn/static/media/uk-flag.ced837668c686208d614.webp",
     "static/media/website.svg": "/aiche-kevyn/static/media/website.c6ce0256e4043de47b08172548ca9800.svg",
     "static/media/fr-flag.webp": "/aiche-kevyn/static/media/fr-flag.a53d47c539fa79d5cc41.webp",
-    "main.a7616ab8.css.map": "/aiche-kevyn/static/css/main.a7616ab8.css.map",
-    "main.22f09c39.js.map": "/aiche-kevyn/static/js/main.22f09c39.js.map"
+    "main.29ce23a4.css.map": "/aiche-kevyn/static/css/main.29ce23a4.css.map",
+    "main.f8a9b1b1.js.map": "/aiche-kevyn/static/js/main.f8a9b1b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7616ab8.css",
-    "static/js/main.22f09c39.js"
+    "static/css/main.29ce23a4.css",
+    "static/js/main.f8a9b1b1.js"
   ]
 }

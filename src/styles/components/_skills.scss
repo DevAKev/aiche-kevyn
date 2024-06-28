@@ -46,7 +46,7 @@
 
 // Skills Subtitles
 .skills-subtitles {
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center;
   margin-top: 30px;
 }
@@ -120,18 +120,22 @@
 
 // Skills list
 .skills-li {
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 5px;
   border: 1px solid var(--text);
   box-shadow: 0 0 10px var(--text);
   border-radius: 50px;
-  padding: 5px;
+  padding: 10px;
+  font-family: var(--font-2);
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 1023px) {
   .skills-li {
-    padding: 0;
+    margin: 10px;
   }
 }
 

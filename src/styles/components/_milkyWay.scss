@@ -5,6 +5,12 @@
   align-items: center;
   height: 100vh;
 }
+// Loading image
+.video-container.loading {
+  background-image: url("../../assets/images/background/preload-start-img.webp");
+  background-size: cover;
+  background-position: center;
+}
 
 // Loading animation
 .loading-spinner {

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import BgVideo from "@assets/videos/start-background-video-milky-way.webm";
 
 const MilkyWay = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   // Error management
   const handleError = (event) => {
@@ -12,13 +12,13 @@ const MilkyWay = () => {
   useEffect(() => {
     const video = document.querySelector(".background-video");
     video.oncanplaythrough = () => {
-      setIsLoaded(true);
+      setIsVideoLoaded(true);
     };
   }, []);
 
   return (
-    <div className="video-container">
-      {!isLoaded && <div className="loading-spinner"></div>}
+    <div className={`video-container ${!isVideoLoaded ? "loading" : ""}`}>
+      {!isVideoLoaded && <div className="loading-spinner"></div>}
       <video
         autoPlay
         loop

@@ -94,9 +94,13 @@ header {
   height: auto;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   visibility: hidden;
   transition: opacity 0.5s ease, height 0.5s ease;
+}
+.dark-mode .navbar__links {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
 }
 
 .visible {
@@ -139,7 +143,7 @@ header {
   line-height: 1.5;
   width: 100%;
   color: var(--text);
-  text-shadow: 1px 2px 1px var(--color-3);
+  text-shadow: 1px 2px 1px grey;
   margin: 2vh 0 0 5vw;
   &:hover {
     transform: scale(1.2);

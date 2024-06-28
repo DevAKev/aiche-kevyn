@@ -3,6 +3,9 @@ import { useTheme } from "@hooks/ThemeContext";
 const Skills = () => {
   const { language } = useTheme();
   const skillsH1 = language === "en" ? "My Skills" : "Mes Compétences";
+  const skillsTools = language === "en" ? "Tools" : "Outils";
+  const skillsSystems =
+    language === "en" ? "Systems & Browsers" : "Systèmes & Navigateurs";
 
   // Front-end skills
   const frontEndSkills = [
@@ -11,8 +14,8 @@ const Skills = () => {
     "sass",
     "javascript",
     "jquery",
+    "vitejs",
     "react",
-    "nextjs",
     "vuejs",
     "bootstrap",
     "tailwindcss",
@@ -25,19 +28,23 @@ const Skills = () => {
     "nodejs",
     "php",
     "mysql",
+    "sqlite",
     "python",
+    "bash",
+    "nginx",
+    "apache",
+    "mariadb",
+    "postman",
     // More back-end skills
   ];
 
   // Tools skills
   const tools = [
+    "axios",
     "git",
     "webpack",
     "github",
     "figma",
-    "apache",
-    "nginx",
-    "bash",
     "trello",
     "slack",
     "photoshop",
@@ -45,6 +52,19 @@ const Skills = () => {
     "xd",
     "vscode",
     "filezilla",
+    // More tools
+  ];
+
+  // Operating systems skills
+  const systems = [
+    "windows11",
+    "firefox",
+    "chrome",
+    "edge",
+    "safari",
+    "opera",
+    "android",
+    "raspberrypi",
     // More tools
   ];
 
@@ -58,7 +78,9 @@ const Skills = () => {
             <ul className="skills-ul">
               {frontEndSkills.map((skill, index) => (
                 <li key={index} className="skills-li">
-                  <i className={`devicon-${skill}-plain skills-icon`}></i>
+                  <i
+                    className={`devicon-${skill}-plain colored skills-icon`}
+                  ></i>
                   {skill}
                 </li>
               ))}
@@ -69,19 +91,36 @@ const Skills = () => {
             <ul className="skills-ul">
               {backEndSkills.map((skill, index) => (
                 <li key={index} className="skills-li">
-                  <i className={`devicon-${skill}-plain skills-icon`}></i>
+                  <i
+                    className={`devicon-${skill}-plain colored skills-icon`}
+                  ></i>
                   {skill}
                 </li>
               ))}
             </ul>
           </div>
-          <h2 className="skills-subtitles">Outils :</h2>
+          <h2 className="skills-subtitles">{skillsTools} :</h2>
           <div className="skills-scroll">
             <ul className="skills-ul">
               {tools.map((tool, index) => (
                 <li key={index} className="skills-li">
-                  <i className={`devicon-${tool}-plain skills-icon`}></i>
+                  <i
+                    className={`devicon-${tool}-plain colored skills-icon`}
+                  ></i>
                   {tool}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <h2 className="skills-subtitles">{skillsSystems} :</h2>
+          <div className="skills-scroll">
+            <ul className="skills-ul">
+              {systems.map((system, index) => (
+                <li key={index} className="skills-li">
+                  <i
+                    className={`devicon-${system}-plain colored skills-icon`}
+                  ></i>
+                  {system}
                 </li>
               ))}
             </ul>

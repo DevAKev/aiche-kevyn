@@ -308,12 +308,15 @@ header {
 
 // Container
 .mobile_socials-container {
-  // background-color: #d5e7f8;
   height: 55px;
   padding: 5px;
   margin-right: 2vw;
-  box-shadow: 0 0 8px black;
+  box-shadow: 0 0 5px var(--text);
   border-radius: 50px;
+}
+.dark-mode .mobile_socials-container {
+  background-color: var(--text);
+  backdrop-filter: blur(5px);
 }
 
 // Title

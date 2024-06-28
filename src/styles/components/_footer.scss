@@ -8,12 +8,12 @@
   text-align: center;
   width: 100%;
   z-index: 5;
-  border-radius: 80% 80% 0 0 / 20% 20% 0 0;
+  // border-radius: 80% 80% 0 0 / 20% 20% 0 0;
   border-top: 1px solid var(--text);
 }
-@media screen and (min-width: 1023px) {
+@media screen and (max-width: 500px) {
   .mobile-footer {
-    border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+    border-radius: 65% 65% 0 0 / 40% 40% 0 0;
   }
 }
 
@@ -134,15 +134,15 @@
   width: 100%;
   height: 100%;
   z-index: 5;
-  border-radius: 80% 80% 0 0 / 20% 20% 0 0;
+  // border-radius: 80% 80% 0 0 / 20% 20% 0 0;
   border-top: 1px solid var(--text);
   margin-top: 100px;
 }
-@media screen and (min-width: 1023px) {
-  .desktop-footer {
-    border-radius: 50% 50% 0 0 / 30% 30% 0 0;
-  }
-}
+// @media screen and (max-width: 500px) {
+//   .desktop-footer {
+//     border-radius: 0 0 80% 80% / 0 0 20% 20%;
+//   }
+// }
 
 .desktop-btn-container {
   width: 35%;

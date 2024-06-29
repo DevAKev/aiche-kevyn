@@ -15,12 +15,18 @@
 // Loading animation
 .loading-spinner {
   position: absolute;
+  top: 38%;
   border: 16px solid #f3f3f3;
   border-top: 16px solid var(--title-1);
   border-radius: 50%;
   width: 120px;
   height: 120px;
   animation: spin 1s linear infinite;
+}
+@media screen and (max-width: 768px) {
+  .loading-spinner {
+    top: 33%;
+  }
 }
 @keyframes spin {
   0% {

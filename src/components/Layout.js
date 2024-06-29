@@ -11,6 +11,8 @@ const Layout = ({ children }) => {
   const { theme } = useTheme();
   const [isStarted, setIsStarted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const { language } = useTheme();
+  const year = new Date().getFullYear();
 
   const handleClick = () => {
     // Click play sound
@@ -109,6 +111,13 @@ const Layout = ({ children }) => {
                 cursor: "pointer",
               }}
             ></button>
+          </div>
+
+          {/* Copyright */}
+          <div className="footer-layout">
+            {language === "en"
+              ? `Designed & Built From Scratch With ❤️ By DevAKev © ${year}`
+              : `Conçu & Développé de A à Z avec ❤️ Par DevAKev © ${year}`}
           </div>
         </>
       )}

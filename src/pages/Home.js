@@ -48,6 +48,15 @@ const Home = () => {
             <Typewriter text={DescText} sound={languageSound} />
           </ScrollAnimation>
         </div>
+
+        <div className="scroll-animation-container">
+          <ScrollAnimation animateIn="animate__heartBeat" animateOnce={true}>
+            {/* Projets section */}
+            <div className="section-wrap">
+              <Projects />
+            </div>
+          </ScrollAnimation>
+        </div>
         <div className="scroll-animation-container">
           <ScrollAnimation
             animateIn="animate__bounceInUp"
@@ -67,14 +76,7 @@ const Home = () => {
             <Skills />
           </ScrollAnimation>
         </div>
-        <div className="scroll-animation-container">
-          <ScrollAnimation animateIn="animate__heartBeat" animateOnce={true}>
-            {/* Projets section */}
-            <div className="section-wrap">
-              <Projects />
-            </div>
-          </ScrollAnimation>
-        </div>
+
         <div className="scroll-animation-container">
           <ScrollAnimation
             animateIn="animate__fadeInRightBig"

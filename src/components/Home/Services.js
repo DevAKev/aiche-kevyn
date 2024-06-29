@@ -152,7 +152,7 @@ const Services = () => {
                     transformons votre vision en réalité.
                   </a>
                   Laissez vous guider à travers l'immensité du web et élargissez
-                  vos perspectives numérique. 🌠
+                  vos perspectives numériques. 🌠
                 </p>
               </div>
             )

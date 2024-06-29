@@ -119,3 +119,14 @@ body {
     overflow-x: hidden;
   }
 }
+
+// Text selection color
+::selection {
+  background: #444444;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: #444444;
+  color: #ffffff;
+}

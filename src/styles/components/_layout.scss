@@ -100,12 +100,23 @@
   transform: translateX(-50%);
 }
 
+@keyframes rocketLaunch {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
 // Icon
 .down-icon {
   border: 1px solid var(--color-3);
   box-shadow: 0 0 10px 0 var(--white);
   border-radius: 40px;
-  background-image: url(../../assets/images/icons/scroll-down-icon.png);
+  background-image: url(../../assets/images/icons/down-rocket.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

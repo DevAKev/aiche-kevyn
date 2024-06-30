@@ -46,6 +46,8 @@ const Layout = ({ children }) => {
   }, []);
 
   const handleScroll = () => {
+    const downIcon = document.querySelector(".down-icon");
+    downIcon.style.animation = "rocketLaunch 2s forwards";
     window.scrollBy(0, window.innerHeight);
   };
 

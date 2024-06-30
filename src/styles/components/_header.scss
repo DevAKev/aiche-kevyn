@@ -171,8 +171,9 @@ header {
 
 // Dark mode & Light mode icons button
 .mobile_theme-toggle {
-  margin-left: 4vw;
-  margin-top: 5vh;
+  width: 28px;
+  margin-left: 15px;
+  margin-top: 40px;
 }
 
 .flag-icon {
@@ -182,20 +183,18 @@ header {
 }
 
 .mobile_theme-icon {
-  height: 28px;
-  width: 28px;
-  background-color: var(--white);
-  box-shadow: 0 0 10px var(--white);
-  border-radius: 50px;
-  transition: all 0.5s ease-in-out;
+  height: 35px;
+  width: 35px;
+  transition: all 0.7s ease-in-out;
+  border-radius: 10px;
   &:hover {
-    transform: scale(1.2);
+    border-radius: 10px;
+    transform: scale(1);
   }
   &:active {
     transform: scale(0.95);
     position: relative;
     top: 4px;
-    box-shadow: none;
   }
 }
 
@@ -208,7 +207,7 @@ header {
   font-weight: bold;
   font-size: 2rem;
   font-family: var(--font-1);
-  margin-left: 6vw;
+  margin-left: 20px;
   color: var(--text);
   text-shadow: 2px 2px 2px var(--color-3);
 }
@@ -379,14 +378,16 @@ header {
 
 // Dark mode & Light mode icons button
 .desktop_theme-icon {
-  width: 2vw;
-  height: 2vw;
-  background-color: var(--white);
+  backdrop-filter: blur(40px);
+  width: 38px;
+  height: 38px;
   box-shadow: 0 0 10px var(--white);
   border-radius: 50px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.7s ease-in-out;
   &:hover {
-    transform: scale(1.2);
+    background-color: var(--white);
+    border-radius: 50px;
+    transform: scale(1);
   }
   &:active {
     transform: scale(0.95);

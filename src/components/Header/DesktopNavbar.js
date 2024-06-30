@@ -1,7 +1,7 @@
 import { useTheme } from "@hooks/ThemeContext";
 // Theme Icons
-import darkModeIcon from "@assets/images/theme/dark-emoji.webp";
-import lightModeIcon from "@assets/images/theme/light-emoji.webp";
+import darkModeIcon from "@assets/images/theme/dark-moon-icon.webp";
+import lightModeIcon from "@assets/images/theme/light-sun-icon.webp";
 // Language Icons
 import fr_flag from "@assets/images/flags/fr-flag.webp";
 import uk_flag from "@assets/images/flags/uk-flag.webp";

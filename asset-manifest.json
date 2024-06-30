@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aiche-kevyn/static/css/main.e3cad543.css",
-    "main.js": "/aiche-kevyn/static/js/main.e7eb54ed.js",
+    "main.css": "/aiche-kevyn/static/css/main.30a3924d.css",
+    "main.js": "/aiche-kevyn/static/js/main.02bd7f39.js",
     "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.1cee1d85e3e721ed9e7f.webm",
     "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.1d870e31667b9c7daadf.webm",
     "static/media/background-3-nebula-webb.webp": "/aiche-kevyn/static/media/background-3-nebula-webb.94a8922508cf3a2f2571.webp",
@@ -19,26 +19,27 @@
     "static/media/Halcom-Book-BF648a71455e035.otf": "/aiche-kevyn/static/media/Halcom-Book-BF648a71455e035.a42971f122707907bfaa.otf",
     "static/media/start-button.webp": "/aiche-kevyn/static/media/start-button.15364590731218eb7c9c.webp",
     "static/media/preview-webagency.webp": "/aiche-kevyn/static/media/preview-webagency.9f0c9320ca8dfb808e6c.webp",
+    "static/media/down-rocket.png": "/aiche-kevyn/static/media/down-rocket.22bccc29e046c8cf33f1.png",
     "static/media/devakev-logo.webp": "/aiche-kevyn/static/media/devakev-logo.aa8957d8cd42ee81f3a3.webp",
+    "static/media/light-sun-icon.webp": "/aiche-kevyn/static/media/light-sun-icon.8ec626f06c34ba33b912.webp",
+    "static/media/dark-moon-icon.webp": "/aiche-kevyn/static/media/dark-moon-icon.828b076c5c10a9751ed8.webp",
     "static/media/click_start.mp3": "/aiche-kevyn/static/media/click_start.616f1cec9d0ab6a769db.mp3",
     "static/media/instagram-icon.svg": "/aiche-kevyn/static/media/instagram-icon.c0113239bc87d217189205448af0e84a.svg",
     "static/media/whatsapp-icon.svg": "/aiche-kevyn/static/media/whatsapp-icon.da3ab0e46837b32d98d964adbffb7e0f.svg",
     "static/media/github-icon.svg": "/aiche-kevyn/static/media/github-icon.04ed74f38b41cdcbf14f80ae8cd0aa2b.svg",
     "static/media/twitter-icon.svg": "/aiche-kevyn/static/media/twitter-icon.740c588fcf1776067d15107863dbf2bc.svg",
-    "static/media/dark-emoji.webp": "/aiche-kevyn/static/media/dark-emoji.6ffa6bfc48b33d63a72d.webp",
     "static/media/linkedin-icon.svg": "/aiche-kevyn/static/media/linkedin-icon.9bd7e6453c3131532672b02aba2bcf26.svg",
     "index.html": "/aiche-kevyn/index.html",
-    "static/media/light-emoji.webp": "/aiche-kevyn/static/media/light-emoji.b4726c2f188e3d226730.webp",
     "static/media/gmail-icon.svg": "/aiche-kevyn/static/media/gmail-icon.831ed6247ab61a487f55411acbd8f59a.svg",
     "static/media/facebook-icon.svg": "/aiche-kevyn/static/media/facebook-icon.56e078e9ecc6d3958136658d07c82c48.svg",
     "static/media/uk-flag.webp": "/aiche-kevyn/static/media/uk-flag.ced837668c686208d614.webp",
     "static/media/website.svg": "/aiche-kevyn/static/media/website.c6ce0256e4043de47b08172548ca9800.svg",
     "static/media/fr-flag.webp": "/aiche-kevyn/static/media/fr-flag.a53d47c539fa79d5cc41.webp",
-    "main.e3cad543.css.map": "/aiche-kevyn/static/css/main.e3cad543.css.map",
-    "main.e7eb54ed.js.map": "/aiche-kevyn/static/js/main.e7eb54ed.js.map"
+    "main.30a3924d.css.map": "/aiche-kevyn/static/css/main.30a3924d.css.map",
+    "main.02bd7f39.js.map": "/aiche-kevyn/static/js/main.02bd7f39.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3cad543.css",
-    "static/js/main.e7eb54ed.js"
+    "static/css/main.30a3924d.css",
+    "static/js/main.02bd7f39.js"
   ]
 }

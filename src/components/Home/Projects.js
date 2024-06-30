@@ -3,15 +3,17 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ProjectSection from "@components/Projects/ProjectSection";
+// import ProjectScroll from "@assets/images/icons/project-scroll.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   const { language } = useTheme();
-  const projectsTitle = language === "en" ? "My Projects" : "Mes Projets";
+  const projectsTitle = language === "en" ? "Achievements" : "Réalisations";
   const projectsLink =
     language === "en" ? "Click to view" : "Cliquer pour voir";
-  const projectsScroll = language === "en" ? "⬆️SCROLL⬇️" : "⬆️Défilez⬇️";
+  // const projectsScroll =
+  //   language === "en" ? "Touch and scroll here" : "Toucher et défiler ici";
   const projectsDesc = {
     project1: {
       en: "Final training project, website for managing a garage and resale of used vehicles.",
@@ -133,11 +135,7 @@ const Projects = () => {
         <div className="projects-container">
           {/* <div className="projects-header"></div> */}
 
-          <ProjectSection
-            loading="lazy"
-            className="first"
-            title={projectsScroll}
-          />
+          <ProjectSection loading="lazy" className="first" title="" />
 
           {/* - Garage Parrot - */}
           <ProjectSection

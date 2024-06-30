@@ -6,7 +6,7 @@ $bg-gradient: linear-gradient(
 
 // Title
 .my-projects-title {
-  text-shadow: 1px 2px 1px var(--text);
+  text-shadow: 1px 2px 2px var(--text);
   color: var(--title-1);
   font-size: 2.5rem;
   text-align: center;
@@ -143,10 +143,22 @@ section {
 .first {
   .bg {
     width: 100%;
-    background-image: $bg-gradient,
-      url(../../assets/images/background/background-3-nebula-webb.webp);
+    background-image: url("../../assets/images/icons/project-scroll-gif.gif"),
+      url("../../assets/images/background/background-3-nebula-webb.webp"),
+      $bg-gradient;
+    background-repeat: no-repeat;
+    background-position: center, center, center bottom; /* Ajustez en fonction de l'endroit où vous voulez que le GIF apparaisse */
+    background-size: auto, cover, 50px;
   }
 }
+
+// .project-scroll-gif {
+//   position: absolute;
+//   bottom: 20px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   z-index: 10000; // Assurez-vous que le GIF est au-dessus de l'image de fond
+// }
 
 .first .section-heading {
   margin-top: auto;

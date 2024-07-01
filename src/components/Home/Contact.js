@@ -9,7 +9,7 @@ import { ReactComponent as GmailIcon } from "@assets/images/socials/gmail-icon.s
 import { ReactComponent as WhatsIcon } from "@assets/images/socials/whatsapp-icon.svg";
 
 const Contact = () => {
-  const language = useTheme();
+  const { language } = useTheme();
   const contactTitle = language === "en" ? "Contact me" : "Me contacter";
   const contactText =
     language === "en"

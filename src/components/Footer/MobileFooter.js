@@ -65,7 +65,7 @@ const MobileFooter = () => {
             </a>
           </li>
           <li className="mobile-menu-item">
-            <a href="#projects" className="mobile-menu-link">
+            <a href="#projets" className="mobile-menu-link">
               {menuLink.projects}
             </a>
           </li>

@@ -67,7 +67,7 @@ const DesktopFooter = () => {
             </a>
           </li>
           <li className="desktop-menu-item">
-            <a href="#projects" className="desktop-menu-link">
+            <a href="#projets" className="desktop-menu-link">
               {menuLink.projects}
             </a>
           </li>

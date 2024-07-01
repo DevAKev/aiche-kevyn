@@ -5,11 +5,13 @@ import MobileIcon from "@assets/images/icons/mobiles.png";
 // import GamesIcon from "@assets/images/icons/games.png";
 import GraphicDesignIcon from "@assets/images/icons/design.png";
 import SEOIcon from "@assets/images/icons/seo.png";
-import ResponsiveIcon from "@assets/images/icons/responsive.png";
+// import ResponsiveIcon from "@assets/images/icons/responsive.png";
+import RocketIcon from "@assets/images/icons/services-rocket-icon.webp";
 
 const Services = () => {
   const { language } = useTheme();
   const servicesTitle = language === "en" ? "My Services" : "Mes Services";
+  const servicesEmail = "devakev.contact@gmail.com";
 
   return (
     <div id="services" className="page-content">
@@ -23,31 +25,31 @@ const Services = () => {
               <div>
                 <p>
                   Are you looking for a web developer to propel your business
-                  into the world of the internet?
+                  into the online world ?
                 </p>
                 <p>
-                  I design custom websites that serve as a showcase digital to
-                  your business. Increase your visibility and attract new
-                  customers.
+                  I create customized websites that reflect your identity.
+                  Invest in your growth and increase your online visibility to
+                  attract new customers to your digital storefront. Ready for
+                  the take-off to online success ?
+                  <img
+                    className="service-rocket-icon"
+                    src={RocketIcon}
+                    alt="Rocket Icon"
+                  />
                 </p>
-                <p>
-                  Whether you are an SME, a large company or an NGO, I am here
-                  to meet your needs. By choosing my services, you are investing
-                  in the growth of your business.
-                </p>
-                <p>Ready for the take-off to online success ? 🚀</p>
                 <p>
                   <a
                     className="contact-link"
-                    href={`mailto:kevynpro7700@gmail.com?subject=${encodeURIComponent(
+                    href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
                       "Web Development Project"
                     )}&body=${encodeURIComponent(
                       "Hello, I am interested in your web development services. Can we discuss this further?"
                     )}`}
                   >
-                    Contact me today
+                    Send your message
                   </a>
-                  to discuss your web development needs.
+                  today to discuss your web development project.
                 </p>
               </div>
             ) : (
@@ -57,29 +59,31 @@ const Services = () => {
                   entreprise dans l'univers d'internet ?
                 </p>
                 <p>
-                  Je conçois des sites web sur mesure qui servent de vitrine
-                  digitale à votre entreprise. Augmentez votre visibilité en
-                  ligne et attirez de nouveaux clients.
+                  Je conçois des sites web sur mesure et qui vous ressemblent.
+                  Investissez dans votre croissance et augmentez votre
+                  visibilité en ligne pour attirer de nouveaux clients vers
+                  votre vitrine digitale.
                 </p>
                 <p>
-                  Que vous soyez une PME, une grande entreprise ou une ONG, je
-                  suis là pour répondre à vos besoins. En choisissant mes
-                  services, vous investissez dans la croissance de votre
-                  entreprise.
+                  Prêt à décoller vers le succès en ligne ?
+                  <img
+                    className="service-rocket-icon"
+                    src={RocketIcon}
+                    alt="Rocket Icon"
+                  />
                 </p>
-                <p>Prêt à décoller vers le succès en ligne ? 🚀</p>
                 <p>
                   <a
                     className="contact-link"
-                    href={`mailto:kevynpro7700@gmail.com?subject=${encodeURIComponent(
+                    href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
                       "Projet de développement web"
                     )}&body=${encodeURIComponent(
                       "Bonjour Kévyn, je suis intéressé par vos services de développement web. Pouvons-nous en discuter davantage ?"
                     )}`}
                   >
-                    Contactez-moi
+                    Envoyez votre message
                   </a>
-                  dès aujourd’hui pour discuter de vos besoins en développement
+                  dès aujourd’hui pour discuter de votre projet de développement
                   web.
                 </p>
               </div>
@@ -91,26 +95,24 @@ const Services = () => {
         {/* Mobile development card */}
         <ServiceCard
           title={
-            language === "en" ? "Mobile Development" : "Développement Mobile"
+            language === "en"
+              ? "Mobile Development & Responsive Design"
+              : "Développement Mobile & Design Réactif"
           }
           description={
             language === "en" ? (
               <div>
-                <p>Do you want to reach your targets on all mobile devices?</p>
+                <p>Do you want to reach your targets on all mobile devices ?</p>
                 <p>
                   Unlock the full potential of your business with customized
                   mobile apps, user-friendly, visually appealing, and optimized
                   to rank well in app store searches.
                 </p>
                 <p>
-                  Take a mobile-first approach to connect with your customers
-                  intuitively and more personally, right at your fingertips.
-                </p>
-                <p>
                   Together,{" "}
                   <a
                     className="contact-link"
-                    href={`mailto:kevynpro7700@gmail.com?subject=${encodeURIComponent(
+                    href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
                       "Mobile-first Web Development"
                     )}&body=${encodeURIComponent(
                       "Hello Kévyn, I would like to propose a mobile web development project. What are the steps to follow ?"
@@ -135,15 +137,10 @@ const Services = () => {
                   recherches des magasins d’applications.
                 </p>
                 <p>
-                  Adoptez une approche mobile-first pour vous connecter avec vos
-                  clients de manière intuitive et plus personnelle, directement
-                  à portée de main.
-                </p>
-                <p>
                   Ensemble,{" "}
                   <a
                     className="contact-link"
-                    href={`mailto:kevynpro7700@gmail.com?subject=${encodeURIComponent(
+                    href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
                       "Développement Web Mobile First"
                     )}&body=${encodeURIComponent(
                       "Bonjour Kévyn, j'aimerais vous proposer un projet de développement web mobile. Quels sont les étapes à suivre ?"
@@ -242,7 +239,7 @@ const Services = () => {
                 <p>
                   <a
                     className="contact-link"
-                    href={`mailto:kevynpro7700@gmail.com?subject=${encodeURIComponent(
+                    href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
                       "Improving a company's visual identity"
                     )}&body=${encodeURIComponent(
                       "Hello Kévyn, I would like to discuss with you the possibilities of improving my company's visual identity. What are the information to provide ?"
@@ -250,22 +247,15 @@ const Services = () => {
                   >
                     Are you lacking inspiration ?
                   </a>
-                  Do you need assistance in exploring and creating unique
-                  visuals?
+                  Do you want assistance in exploring and creating unique
+                  visuals that will effectively promote your brand identity?
                 </p>
+                <p>You are in a good place !</p>
                 <p>
-                  Turn your ideas into extraordinary, innovative, and effective
-                  graphics to convey your message and captivate your users.
-                </p>
-                <p>
-                  A design that reflects your image and effectively promotes
-                  your brand identity? It's possible! I offer a wide range of
-                  services to help your company stand out.
-                </p>
-                <p>
-                  With a keen eye for detail and a creative mindset, I strive to
-                  deliver content that is tailored to your preferences and
-                  resonates with your target audience. 🎨
+                  With a keen eye for detail and a creative mind, I offer a wide
+                  range of services to help your business stand out,
+                  transforming your ideas into exceptional and effective
+                  graphics to convey your message and appeal to your users. 🎨
                 </p>
               </div>
             ) : (
@@ -273,7 +263,7 @@ const Services = () => {
                 <p>
                   <a
                     className="contact-link"
-                    href={`mailto:kevynpro7700@gmail.com?subject=${encodeURIComponent(
+                    href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
                       "Amélioration de l'identité visuelle d'une entreprise"
                     )}&body=${encodeURIComponent(
                       "Bonjour Kévyn, j'aimerais discuter avec vous des possibilités d'amélioration de l'identité visuelle de mon entreprise. Quels sont les éléments d'informations à fournir ?"
@@ -282,23 +272,16 @@ const Services = () => {
                     En panne d'inspiration ?
                   </a>
                   Vous souhaitez un accompagnement dans l'exploration et la
-                  création de visuels uniques ?
+                  création de visuels uniques qui vous permettront de promouvoir
+                  efficacement l'identité de votre marque ?
                 </p>
-                <p>
-                  Transformez vos idées en graphisme hors du commun, innovant et
-                  efficace pour transmettre votre message et séduire vos
-                  utilisateurs.
-                </p>
-                <p>
-                  Un design qui vous ressemble et qui permet de promouvoir
-                  efficacement l'identité de votre marque ? C'est possible ! Je
-                  propose une large gamme de services pour aider votre
-                  entreprise à se démarquer.
-                </p>
+                <p>Vous êtes au bon endroit !</p>
                 <p>
                   Avec un œil attentif aux détails et un esprit créatif, je
-                  m'efforce de livrer du contenu qui soit adapté à vos envies et
-                  qui résonne avec votre public cible. 🎨
+                  propose une large gamme de services pour aider votre
+                  entreprise à se démarquer afin de transformer vos idées en
+                  graphisme hors du commun et efficace pour transmettre votre
+                  message et séduire vos utilisateurs. 🎨
                 </p>
               </div>
             )
@@ -328,16 +311,14 @@ const Services = () => {
                   optimization strategy.
                 </p>
                 <p>
-                  Specialized in improving natural rankings for search engines,
-                  I help your company achieve the visibility it deserves. With
-                  the right SEO strategies, your website can climb in search
+                  With good SEO practices, your website can climb in search
                   results, attract more traffic, and convert more visitors into
-                  customers
+                  customers.
                 </p>
                 <p>
                   <a
                     className="contact-link"
-                    href={`mailto:kevynpro7700@gmail.com?subject=${encodeURIComponent(
+                    href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
                       "Optimization of natural referencing (SEO)"
                     )}&body=${encodeURIComponent(
                       "Hello Kévyn, I am interested in your services regarding the improvement of natural referencing. What are your availabilities to organize a meeting ?"
@@ -345,8 +326,8 @@ const Services = () => {
                   >
                     Let's discuss your SEO needs
                   </a>
-                  and together enhance your online visibility to put your
-                  business at the forefront of search results. ✨
+                  and work together to help your business achieve the visibility
+                  it deserves to rank at the top of search results. ✨
                 </p>
               </div>
             ) : (
@@ -357,17 +338,14 @@ const Services = () => {
                   naturel efficace.
                 </p>
                 <p>
-                  Spécialisé dans l'amélioration du classement naturel pour les
-                  moteurs de recherche, j'aide votre entreprise à obtenir la
-                  visibilité qu'elle mérite. Avec les bonnes stratégies de SEO,
-                  votre site web peut grimper dans les résultats de recherche,
-                  attirer plus de trafic et convertir plus de visiteurs en
-                  clients.
+                  Avec les bonnes pratiques SEO, votre site web peut grimper
+                  dans les résultats de recherche, attirer plus de trafic et
+                  convertir plus de visiteurs en clients.
                 </p>
                 <p>
                   <a
                     className="contact-link"
-                    href={`mailto:kevynpro7700@gmail.com?subject=${encodeURIComponent(
+                    href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
                       "Optimisation du référencement naturel (SEO)"
                     )}&body=${encodeURIComponent(
                       "Bonjour Kévyn, vos services concernant l'amélioration du référencement naturel m'intéressent. Quelles sont vos disponibilités pour organiser un entretien ?"
@@ -375,9 +353,9 @@ const Services = () => {
                   >
                     Discutons de vos besoins en SEO
                   </a>
-                  et boostons ensemble votre visibilité en ligne pour mettre
-                  votre entreprise au premier plan des résultats de recherche.
-                  ✨
+                  et travaillons ensemble pour aider votre entreprise à obtenir
+                  la visibilité qu'elle mérite afin de se placer en tête des
+                  résultats de recherche. ✨
                 </p>
               </div>
             )
@@ -392,7 +370,7 @@ const Services = () => {
         />
 
         {/* Responsive design card */}
-        <ServiceCard
+        {/* <ServiceCard
           title={
             language === "en"
               ? "Adapting to Responsive Design"
@@ -419,7 +397,7 @@ const Services = () => {
                 <p>
                   <a
                     className="contact-link"
-                    href={`mailto:kevynpro7700@gmail.com?subject=${encodeURIComponent(
+                    href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
                       "Adapting a website to all devices"
                     )}&body=${encodeURIComponent(
                       "Hello Kévyn, I would like to adapt my website to be accessible on all devices. How can we proceed ?"
@@ -453,7 +431,7 @@ const Services = () => {
                 <p>
                   <a
                     className="contact-link"
-                    href={`mailto:kevynpro7700@gmail.com?subject=${encodeURIComponent(
+                    href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
                       "Adaptation d'un site web sur tout les appareils"
                     )}&body=${encodeURIComponent(
                       "Bonjour Kévyn, je souhaite adapter mon site web pour qu'il soit accessible sur tous les appareils. Comment pouvons-nous procéder ?"
@@ -474,12 +452,10 @@ const Services = () => {
               alt="Icône d'adaptation au design réactif"
             />
           }
-        />
+        /> */}
       </div>
     </div>
   );
 };
 
 export default Services;
-
-// ###### TODO : AJOUTER LIENS VERS CONTACT

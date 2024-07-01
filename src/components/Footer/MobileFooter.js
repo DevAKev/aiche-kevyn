@@ -43,7 +43,7 @@ const MobileFooter = () => {
         <button className="mobile-search-button">
           <a
             className="mobile-contact-link"
-            href={`mailto:kevynpro7700@gmail.com?subject=${encodeURIComponent(
+            href={`mailto:devakev.contact@gmail.com?subject=${encodeURIComponent(
               "Je cherche un développeur"
             )}&body=${encodeURIComponent(
               "Bonjour Kévyn, j'ai consulté votre portfolio et j'aimerais m'entretenir avec vous. Quelles sont vos disponibilités pour vous partager les détails sur le projet ?"

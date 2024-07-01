@@ -60,7 +60,6 @@ const Skills = () => {
     "windows11",
     "firefox",
     "chrome",
-    "edge",
     "safari",
     "opera",
     "android",

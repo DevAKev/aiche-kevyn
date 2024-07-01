@@ -19,7 +19,7 @@ const Contact = () => {
   const socialsLinks = [
     {
       name: "Gmail",
-      url: "mailto:kevynpro7700@gmail.com",
+      url: "mailto:devakev.contact@gmail.com",
       icon: GmailIcon,
     },
     {

@@ -11,7 +11,7 @@ import { ReactComponent as WhatsIcon } from "@assets/images/socials/whatsapp-ico
 const Socials = () => {
   // const { language } = useTheme();
   const socialsLinks = [
-    { name: "Gmail", url: "mailto:kevynpro7700@gmail.com", icon: GmailIcon },
+    { name: "Gmail", url: "mailto:devakev.contact@gmail.com", icon: GmailIcon },
     {
       name: "WhatsApp",
       url: "https://wa.me/33760050343",

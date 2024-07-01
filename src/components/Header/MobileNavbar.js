@@ -30,7 +30,7 @@ const MobileNavBar = () => {
   const socialsLinks = [
     {
       name: "Gmail",
-      url: "mailto:kevynpro7700@gmail.com?subject=Demande de renseignement / Proposition de projet&body=Bonjour Kévyn,",
+      url: "mailto:devakev.contact@gmail.com?subject=Demande de renseignement / Proposition de projet&body=Bonjour Kévyn,",
       icon: GmailIcon,
     },
     {

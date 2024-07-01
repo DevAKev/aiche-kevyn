@@ -17,7 +17,7 @@ $bg-gradient: linear-gradient(
 .projects-container {
   border: 1px solid var(--text);
   box-shadow: 0 0 10px var(--text);
-  height: 68vh;
+  height: 75vh;
   position: relative;
   overflow: hidden;
   margin: 5px;
@@ -140,15 +140,44 @@ section {
   }
 }
 
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .first {
   .bg {
     width: 100%;
-    background-image: url("../../assets/images/icons/project-scroll-gif.gif"),
-      url("../../assets/images/background/background-3-nebula-webb.webp"),
-      $bg-gradient;
+    background-image: url("../../assets/images/background/background-3-nebula-webb.webp");
+    position: relative;
+  }
+
+  .bg::after {
+    content: "";
+    position: absolute;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-image: url("../../assets/images/icons/project-scroll-gif.gif");
     background-repeat: no-repeat;
-    background-position: center, center, center bottom; /* Ajustez en fonction de l'endroit où vous voulez que le GIF apparaisse */
-    background-size: auto, cover, 50px;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  @media (min-width: 1025px) {
+    .bg::after {
+      animation: moveUpDown 0.7s ease-in-out infinite;
+      background-color: var(--white);
+      border-radius: 50%;
+      background-image: url("../../assets/images/icons/desktop-scroll.png"); /* Utilisez le GIF de bureau ici */
+    }
   }
 }
 

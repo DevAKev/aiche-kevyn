@@ -75,6 +75,11 @@ const MobileNavBar = () => {
           </a>
         </li>
         <li className={`navbar__item slideInDown2`}>
+          <a href="#projets" className="mobile_subtitle2">
+            {language === "en" ? "ACHIEVEMENTS" : "RÉALISATIONS"}
+          </a>
+        </li>
+        <li className={`navbar__item slideInDown2`}>
           <a href="#services" className="mobile_subtitle2">
             {language === "en" ? "SERVICES" : "SERVICES"}
           </a>
@@ -84,11 +89,7 @@ const MobileNavBar = () => {
             {language === "en" ? "SKILLS" : "COMPETENCES"}
           </a>
         </li>
-        <li className={`navbar__item slideInDown2`}>
-          <a href="#projets" className="mobile_subtitle2">
-            {language === "en" ? "PROJECTS" : "PROJETS"}
-          </a>
-        </li>
+
         <li className={`navbar__item slideInDown2`}>
           <a href="#about" className="mobile_subtitle2">
             {language === "en" ? "ABOUT" : "À PROPOS"}

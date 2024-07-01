@@ -452,6 +452,7 @@ header {
 }
 
 .desktop_navbar_link {
+  min-width: 200px;
   transition: all 0.7s ease-in-out;
   &:hover {
     display: flex;

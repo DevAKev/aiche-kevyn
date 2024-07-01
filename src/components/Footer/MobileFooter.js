@@ -15,17 +15,17 @@ const MobileFooter = () => {
     language === "en"
       ? {
           home: "Home",
+          projects: "Achievements",
           services: "Services",
           skills: "Skills",
-          projects: "Projects",
           about: "About",
           contact: "Contact",
         }
       : {
           home: "Accueil",
+          projects: "Réalisations",
           services: "Services",
           skills: "Compétences",
-          projects: "Projets",
           about: "À propos",
           contact: "Contact",
         };
@@ -65,6 +65,11 @@ const MobileFooter = () => {
             </a>
           </li>
           <li className="mobile-menu-item">
+            <a href="#projects" className="mobile-menu-link">
+              {menuLink.projects}
+            </a>
+          </li>
+          <li className="mobile-menu-item">
             <a href="#services" className="mobile-menu-link">
               {menuLink.services}
             </a>
@@ -75,32 +80,12 @@ const MobileFooter = () => {
             </a>
           </li>
           <li className="mobile-menu-item">
-            <a href="#projects" className="mobile-menu-link">
-              {menuLink.projects}
-            </a>
-          </li>
-          <li className="mobile-menu-item">
             <a href="#about" className="mobile-menu-link">
               {menuLink.about}
             </a>
           </li>
         </ul>
       </div>
-      {/* <div className="mobile-contact-container">
-        <ul className="mobile-contact-list">
-          <li className="mobile-contact-item">
-            <span>Paris, France</span>
-          </li>
-          <li className="mobile-contact-item">
-            <span>
-              <a href="tel:+331 23 45 67 89" className="mobile-phone-link">
-                +331 23 45 67 89
-              </a>
-            </span>
-          </li>
-        </ul>
-      </div> */}
-
       <div className="mobile-copyright-container">
         <h2 className="mobile-copyright">
           {copyright} {year}

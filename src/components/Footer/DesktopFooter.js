@@ -16,17 +16,17 @@ const DesktopFooter = () => {
     language === "en"
       ? {
           home: "Home",
+          projects: "Achievements",
           services: "Services",
           skills: "Skills",
-          projects: "Projects",
           about: "About",
           contact: "Contact",
         }
       : {
           home: "Accueil",
+          projects: "Réalisations",
           services: "Services",
           skills: "Compétences",
-          projects: "Projets",
           about: "À propos",
           contact: "Contact",
         };
@@ -67,6 +67,11 @@ const DesktopFooter = () => {
             </a>
           </li>
           <li className="desktop-menu-item">
+            <a href="#projects" className="desktop-menu-link">
+              {menuLink.projects}
+            </a>
+          </li>
+          <li className="desktop-menu-item">
             <a href="#services" className="desktop-menu-link">
               {menuLink.services}
             </a>
@@ -74,11 +79,6 @@ const DesktopFooter = () => {
           <li className="desktop-menu-item">
             <a href="#skills" className="desktop-menu-link">
               {menuLink.skills}
-            </a>
-          </li>
-          <li className="desktop-menu-item">
-            <a href="#projects" className="desktop-menu-link">
-              {menuLink.projects}
             </a>
           </li>
           <li className="desktop-menu-item">

@@ -176,7 +176,7 @@ section {
       animation: moveUpDown 0.7s ease-in-out infinite;
       background-color: var(--white);
       border-radius: 50%;
-      background-image: url("../../assets/images/icons/desktop-scroll.png"); /* Utilisez le GIF de bureau ici */
+      background-image: url("../../assets/images/icons/desktop-scroll.png");
     }
   }
 }
@@ -186,7 +186,7 @@ section {
 //   bottom: 20px;
 //   left: 50%;
 //   transform: translateX(-50%);
-//   z-index: 10000; // Assurez-vous que le GIF est au-dessus de l'image de fond
+//   z-index: 10000;
 // }
 
 .first .section-heading {
@@ -226,14 +226,6 @@ section {
   .bg {
     background-image: $bg-gradient,
       url(../../assets/images/projectsImages/preview-react-countries-app.webp);
-  }
-}
-
-.seventh {
-  .bg {
-    background-image: $bg-gradient,
-      url("https://images.unsplash.com/photo-1617141636403-f511e2d5dc17?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxODAzMjc4Mw&ixlib=rb-1.2.1&q=75w=1920");
-    background-position: 50% 45%;
   }
 }
 

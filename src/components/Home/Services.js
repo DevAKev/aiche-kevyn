@@ -5,8 +5,10 @@ import MobileIcon from "@assets/images/icons/mobiles.png";
 // import GamesIcon from "@assets/images/icons/games.png";
 import GraphicDesignIcon from "@assets/images/icons/design.png";
 import SEOIcon from "@assets/images/icons/seo.png";
-// import ResponsiveIcon from "@assets/images/icons/responsive.png";
 import RocketIcon from "@assets/images/icons/services-rocket-icon.webp";
+import UfoIcon from "@assets/images/icons/services-ufo-icon.webp";
+import DesignIcon from "@assets/images/icons/service-design-icon.webp";
+import PlanetIcon from "@assets/images/icons/services-planet-icon.webp";
 
 const Services = () => {
   const { language } = useTheme();
@@ -32,11 +34,6 @@ const Services = () => {
                   Invest in your growth and increase your online visibility to
                   attract new customers to your digital storefront. Ready for
                   the take-off to online success ?
-                  <img
-                    className="service-rocket-icon"
-                    src={RocketIcon}
-                    alt="Rocket Icon"
-                  />
                 </p>
                 <p>
                   <a
@@ -51,6 +48,11 @@ const Services = () => {
                   </a>
                   today to discuss your web development project.
                 </p>
+                <img
+                  className="services-icons"
+                  src={RocketIcon}
+                  alt="Rocket Icon"
+                />
               </div>
             ) : (
               <div>
@@ -64,14 +66,7 @@ const Services = () => {
                   visibilité en ligne pour attirer de nouveaux clients vers
                   votre vitrine digitale.
                 </p>
-                <p>
-                  Prêt à décoller vers le succès en ligne ?
-                  <img
-                    className="service-rocket-icon"
-                    src={RocketIcon}
-                    alt="Rocket Icon"
-                  />
-                </p>
+                <p>Prêt à décoller vers le succès en ligne ?</p>
                 <p>
                   <a
                     className="contact-link"
@@ -86,6 +81,11 @@ const Services = () => {
                   dès aujourd’hui pour discuter de votre projet de développement
                   web.
                 </p>
+                <img
+                  className="services-icons"
+                  src={RocketIcon}
+                  alt="Rocket Icon"
+                />
               </div>
             )
           }
@@ -121,8 +121,9 @@ const Services = () => {
                     let's turn your vision into reality.
                   </a>
                   Let yourself be guided through the vastness of the web and
-                  broaden your digital perspectives.🌠
+                  broaden your digital perspectives.
                 </p>
+                <img className="services-icons" src={UfoIcon} alt="Ufo Icon" />
               </div>
             ) : (
               <div>
@@ -149,8 +150,9 @@ const Services = () => {
                     transformons votre vision en réalité.
                   </a>
                   Laissez vous guider à travers l'immensité du web et élargissez
-                  vos perspectives numériques. 🌠
+                  vos perspectives numériques.
                 </p>
+                <img className="services-icons" src={UfoIcon} alt="Ufo Icon" />
               </div>
             )
           }
@@ -255,8 +257,13 @@ const Services = () => {
                   With a keen eye for detail and a creative mind, I offer a wide
                   range of services to help your business stand out,
                   transforming your ideas into exceptional and effective
-                  graphics to convey your message and appeal to your users. 🎨
+                  graphics to convey your message and appeal to your users.
                 </p>
+                <img
+                  className="services-icons"
+                  src={DesignIcon}
+                  alt="Design Icon"
+                />
               </div>
             ) : (
               <div>
@@ -281,8 +288,13 @@ const Services = () => {
                   propose une large gamme de services pour aider votre
                   entreprise à se démarquer afin de transformer vos idées en
                   graphisme hors du commun et efficace pour transmettre votre
-                  message et séduire vos utilisateurs. 🎨
+                  message et séduire vos utilisateurs.
                 </p>
+                <img
+                  className="services-icons"
+                  src={DesignIcon}
+                  alt="Design Icon"
+                />
               </div>
             )
           }
@@ -327,8 +339,13 @@ const Services = () => {
                     Let's discuss your SEO needs
                   </a>
                   and work together to help your business achieve the visibility
-                  it deserves to rank at the top of search results. ✨
+                  it deserves to rank at the top of search results.
                 </p>
+                <img
+                  className="services-icons"
+                  src={PlanetIcon}
+                  alt="Planet Icon"
+                />
               </div>
             ) : (
               <div>
@@ -355,8 +372,13 @@ const Services = () => {
                   </a>
                   et travaillons ensemble pour aider votre entreprise à obtenir
                   la visibilité qu'elle mérite afin de se placer en tête des
-                  résultats de recherche. ✨
+                  résultats de recherche.
                 </p>
+                <img
+                  className="services-icons"
+                  src={PlanetIcon}
+                  alt="Planet Icon"
+                />
               </div>
             )
           }
@@ -368,91 +390,6 @@ const Services = () => {
             />
           }
         />
-
-        {/* Responsive design card */}
-        {/* <ServiceCard
-          title={
-            language === "en"
-              ? "Adapting to Responsive Design"
-              : "Adaptation au Design Réactif"
-          }
-          description={
-            language === "en" ? (
-              <div>
-                <p>
-                  Experience smooth navigation on all devices with my responsive
-                  design services.
-                </p>
-                <p>
-                  Specializing in website adaptation, I make sure they offer
-                  optimal appearance and functionality on all screen sizes, from
-                  desktops to tablets and mobile phones.
-                </p>
-                <p>
-                  In the digital age, a responsive design isn't just an option —
-                  It's a necessity. Don't let your website get left behind.
-                  Let's work together to create a web experience that your users
-                  will love, no matter what device they're on.
-                </p>
-                <p>
-                  <a
-                    className="contact-link"
-                    href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
-                      "Adapting a website to all devices"
-                    )}&body=${encodeURIComponent(
-                      "Hello Kévyn, I would like to adapt my website to be accessible on all devices. How can we proceed ?"
-                    )}`}
-                  >
-                    Share all your questions here
-                  </a>
-                  to discuss your responsive design needs and ensure optimal
-                  navigation for your users. 📲
-                </p>
-              </div>
-            ) : (
-              <div>
-                <p>
-                  Expérimentez une navigation fluide sur tous les appareils
-                  grâce à mes services de design réactif.
-                </p>
-                <p>
-                  Spécialisé dans l'adaptation des sites web, je m'assure qu'ils
-                  offrent une apparence et une fonctionnalité optimales sur
-                  toutes les tailles d'écran, des ordinateurs de bureau aux
-                  tablettes et téléphones mobiles.
-                </p>
-                <p>
-                  À l'ère du numérique, un design réactif n'est pas seulement
-                  une option — C'est une nécessité. Ne laissez pas votre site
-                  web être laissé pour compte. Travaillons ensemble pour créer
-                  une expérience web que vos utilisateurs adoreront, quel que
-                  soit l'appareil qu'ils utilisent.
-                </p>
-                <p>
-                  <a
-                    className="contact-link"
-                    href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
-                      "Adaptation d'un site web sur tout les appareils"
-                    )}&body=${encodeURIComponent(
-                      "Bonjour Kévyn, je souhaite adapter mon site web pour qu'il soit accessible sur tous les appareils. Comment pouvons-nous procéder ?"
-                    )}`}
-                  >
-                    Partagez ici toutes vos questions
-                  </a>
-                  pour discuter de vos besoins en design réactif et garantir une
-                  navigation optimale à vos utilisateurs. 📲
-                </p>
-              </div>
-            )
-          }
-          icon={
-            <img
-              className="responsive-icon"
-              src={ResponsiveIcon}
-              alt="Icône d'adaptation au design réactif"
-            />
-          }
-        /> */}
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 // Principal files of the app
 import { ThemeProvider } from "@hooks/ThemeContext";
 import Home from "@pages/Home";
-// import StarRain from "@components/Animations/StarRain";
 
 // Principal component
 const App = () => {
@@ -23,14 +22,12 @@ export default App;
 // import Home from "@pages/Home";
 // import Projets from "@pages/Projets";
 // import About from "@pages/About";
-// // import StarRain from "@components/Animations/StarRain";
 
 // // Principal component
 // const App = () => {
 //   return (
 //     // Wrap the app with the ThemeProvider
 //     <ThemeProvider>
-//       {/* <StarRain /> */}
 //       {/* Manage router */}
 //       <BrowserRouter>
 //         {/*Define Routes */}

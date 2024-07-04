@@ -26,19 +26,6 @@ $bg-gradient: linear-gradient(
   border-radius: 50px;
 }
 
-// Project header
-// .projects-header {
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   padding: 0 5%;
-//   width: 100%;
-//   z-index: 999;
-//   font-family: "Bebas Neue", sans-serif;
-//   font-size: clamp(0.66rem, 2vw, 1rem);
-// }
-
 .section-wrap {
   position: relative;
   width: 100%;
@@ -180,14 +167,6 @@ section {
     }
   }
 }
-
-// .project-scroll-gif {
-//   position: absolute;
-//   bottom: 20px;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   z-index: 10000;
-// }
 
 .first .section-heading {
   margin-top: auto;

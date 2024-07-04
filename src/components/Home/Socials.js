@@ -1,4 +1,3 @@
-// import { useTheme } from "@hooks/ThemeContext";
 // Socials Icons
 import { ReactComponent as FbIcon } from "@assets/images/socials/facebook-icon.svg";
 import { ReactComponent as TwitIcon } from "@assets/images/socials/twitter-icon.svg";
@@ -9,7 +8,6 @@ import { ReactComponent as GmailIcon } from "@assets/images/socials/gmail-icon.s
 import { ReactComponent as WhatsIcon } from "@assets/images/socials/whatsapp-icon.svg";
 
 const Socials = () => {
-  // const { language } = useTheme();
   const socialsLinks = [
     { name: "Gmail", url: "mailto:devakev.contact@gmail.com", icon: GmailIcon },
     {
@@ -31,9 +29,6 @@ const Socials = () => {
   return (
     //   Socials Media Icons
     <nav className="desktop_socials-container">
-      {/* <p className="desktop_socials-title">
-        {language === "en" ? "Follow me" : "Suivez moi"}
-      </p> */}
       <div className="navbar__desktop-socials-links desktop-socials-links">
         {socialsLinks.map((link, index) => (
           <a

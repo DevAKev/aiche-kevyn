@@ -15,17 +15,6 @@
   transition: background-color 2s, color 2s; // Time transition for dark & light mode
 }
 
-// .start-container {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   z-index: 10;
-//   width: 200px;
-//   height: 200px;
-//   animation: fadeIn 2s;
-// }
-
 #start-button {
   animation: pulse 3s infinite;
   &:active {

@@ -53,9 +53,6 @@ const Contact = () => {
           <p className="contact-text">{contactText}</p>
           {/* Socials Media Icons */}
           <nav className="socials-container">
-            {/* <p className="socials-title">
-              {language === "en" ? "Follow me" : "Suivez moi"}
-            </p> */}
             <div className="bottom-socials-links">
               {socialsLinks.map((link, index) => (
                 <a

@@ -3,7 +3,6 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ProjectSection from "@components/Projects/ProjectSection";
-// import ProjectScroll from "@assets/images/icons/project-scroll.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,8 +11,7 @@ const Projects = () => {
   const projectsTitle = language === "en" ? "Achievements" : "Réalisations";
   const projectsLink =
     language === "en" ? "Click to view" : "Cliquer pour voir";
-  // const projectsScroll =
-  //   language === "en" ? "Touch and scroll here" : "Toucher et défiler ici";
+
   const projectsDesc = {
     project1: {
       en: "Final training project, website for managing a garage and resale of used vehicles.",
@@ -51,12 +49,12 @@ const Projects = () => {
       wrap = gsap.utils.wrap(0, sections.length),
       animating;
 
-    // Parcourir chaque titre
+    // Browse each title
     headings.forEach((heading) => {
-      // Divise le titre en caractères individuels
+      // Split the title into characters
       let chars = heading.textContent.split("");
 
-      // Enveloppe chaque caractère dans un élément span
+      // Wrap each character in a span
       heading.innerHTML = chars
         .map(
           (char) =>
@@ -133,8 +131,6 @@ const Projects = () => {
       <div id="projets" className="page-content">
         <h1 className="my-projects-title">{projectsTitle}</h1>
         <div className="projects-container">
-          {/* <div className="projects-header"></div> */}
-
           <ProjectSection loading="lazy" className="first" title="" />
 
           {/* - Garage Parrot - */}
@@ -223,14 +219,6 @@ const Projects = () => {
               "reactrouter",
             ]}
           />
-
-          {/* <ProjectSection
-            loading="lazy"
-            className="seventh"
-            title="Projet 6"
-            link="#"
-            projectsLink={projectsLink}
-          /> */}
         </div>
       </div>
     </>

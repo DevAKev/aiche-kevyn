@@ -6,7 +6,6 @@ import EnTypewriter from "@assets/sounds/keyboard_sound_en.m4a";
 import FrTypewriter from "@assets/sounds/keyboard_sound_fr.m4a";
 import About from "@components/Home/About";
 import Projects from "@components/Home/Projects";
-// import UfoEffect from "@components/Animations/UfoEffect";
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
 import Services from "@components/Home/Services";

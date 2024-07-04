@@ -357,7 +357,6 @@ header {
 // Nav elements & links
 .flex_row,
 .desktop_subtitle {
-  // align-items: center;
   font-family: "Outfit", sans-serif;
 }
 
@@ -470,7 +469,6 @@ header {
 // Navigation
 .navigation {
   ul {
-    // width: 20vw;
     display: grid;
     margin: 50px;
     // List of navigation links
@@ -484,34 +482,6 @@ header {
       padding: 10px;
       color: var(--text);
     }
-    // Active link
-    // .nav-active {
-    //   position: relative;
-    //   // Animation for the active link
-    //   &::after {
-    //     content: "";
-    //     height: 8px;
-    //     width: 0;
-    //     background: var(--gradient);
-    //     position: absolute;
-    //     border-radius: 10px;
-    //     bottom: 0px;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     -webkit-animation: anim 0.3s ease forwards;
-    //     animation: anim 0.5s ease forwards;
-    //     @-webkit-keyframes anim {
-    //       to {
-    //         width: 100%;
-    //       }
-    //     }
-    //     @keyframes anim {
-    //       to {
-    //         width: 100%;
-    //       }
-    //     }
-    //   }
-    // }
   }
 }
 

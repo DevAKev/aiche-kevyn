@@ -89,10 +89,11 @@ const Layout = ({ children }) => {
               zIndex: 10,
               width: "200px",
               height: "200px",
-              animation: "fadeIn 2s",
+              animation: "fadeIn 1s",
             }}
           >
             <button
+              loading="lazy"
               aria-label="Start button"
               className="start-button"
               type="button"

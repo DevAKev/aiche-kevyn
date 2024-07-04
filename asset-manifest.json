@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aiche-kevyn/static/css/main.089d2854.css",
-    "main.js": "/aiche-kevyn/static/js/main.ce6cf052.js",
+    "main.css": "/aiche-kevyn/static/css/main.5b2e3ad9.css",
+    "main.js": "/aiche-kevyn/static/js/main.ad2241e1.js",
     "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.1cee1d85e3e721ed9e7f.webm",
     "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.1d870e31667b9c7daadf.webm",
     "static/media/background-3-nebula-webb.webp": "/aiche-kevyn/static/media/background-3-nebula-webb.94a8922508cf3a2f2571.webp",
@@ -19,6 +19,7 @@
     "static/media/preview-garage-parrot.webp": "/aiche-kevyn/static/media/preview-garage-parrot.3df998726f07b619d4dd.webp",
     "static/media/preview-react-countries-app.webp": "/aiche-kevyn/static/media/preview-react-countries-app.0d698bdeebade07ce967.webp",
     "static/media/Halcom-Book-BF648a71455e035.otf": "/aiche-kevyn/static/media/Halcom-Book-BF648a71455e035.a42971f122707907bfaa.otf",
+    "static/media/about-ufo.webp": "/aiche-kevyn/static/media/about-ufo.2b18a1eaca29581a0cdf.webp",
     "static/media/start-button.webp": "/aiche-kevyn/static/media/start-button.15364590731218eb7c9c.webp",
     "static/media/preview-webagency.webp": "/aiche-kevyn/static/media/preview-webagency.9f0c9320ca8dfb808e6c.webp",
     "static/media/down-rocket.png": "/aiche-kevyn/static/media/down-rocket.22bccc29e046c8cf33f1.png",
@@ -41,11 +42,11 @@
     "static/media/uk-flag.webp": "/aiche-kevyn/static/media/uk-flag.ced837668c686208d614.webp",
     "static/media/website.svg": "/aiche-kevyn/static/media/website.c6ce0256e4043de47b08172548ca9800.svg",
     "static/media/fr-flag.webp": "/aiche-kevyn/static/media/fr-flag.a53d47c539fa79d5cc41.webp",
-    "main.089d2854.css.map": "/aiche-kevyn/static/css/main.089d2854.css.map",
-    "main.ce6cf052.js.map": "/aiche-kevyn/static/js/main.ce6cf052.js.map"
+    "main.5b2e3ad9.css.map": "/aiche-kevyn/static/css/main.5b2e3ad9.css.map",
+    "main.ad2241e1.js.map": "/aiche-kevyn/static/js/main.ad2241e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.089d2854.css",
-    "static/js/main.ce6cf052.js"
+    "static/css/main.5b2e3ad9.css",
+    "static/js/main.ad2241e1.js"
   ]
 }

@@ -6,24 +6,28 @@ export const useTheme = () => {
   return useContext(ThemeContext);
 };
 
+// Languages and Themes Mode
 export const ThemeProvider = ({ children }) => {
-  const storedTheme = localStorage.getItem("theme") || "light";
-  const storedLanguage = localStorage.getItem("language") || "fr";
-  const [theme, setTheme] = useState(storedTheme);
-  const [language, setLanguage] = useState(storedLanguage);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [language, setLanguage] = useState(
+    localStorage.getItem("language") || "fr"
+  );
 
+  // Dark mode & Light mode function
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
   };
 
+  // Languages function
   const toggleLanguage = () => {
     const newLanguage = language === "en" ? "fr" : "en";
     setLanguage(newLanguage);
     localStorage.setItem("language", newLanguage);
   };
 
+  // Use effect to apply the theme
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);

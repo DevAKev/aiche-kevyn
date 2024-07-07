@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useTheme } from "@hooks/ThemeContext";
 import Header from "@components/Header/Header";
 import MilkyWay from "@components/Animations/MilkyWay";
-import StartBtn from "@assets/images/buttons/start-button.webp";
 import ClickStart from "@assets/sounds/click_start.mp3";
 import Socials from "@components/Home/Socials";
 import MobileNavBar from "@components/Header/MobileNavbar";
@@ -79,19 +78,7 @@ const Layout = ({ children }) => {
         <>
           <MilkyWay />
           {/* Start button */}
-          <div
-            className="start-container"
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              zIndex: 10,
-              width: "200px",
-              height: "200px",
-              animation: "fadeIn 1s",
-            }}
-          >
+          <div className="start-container">
             <button
               loading="lazy"
               aria-label="Start button"
@@ -100,28 +87,15 @@ const Layout = ({ children }) => {
               alt="Start button"
               id="start-button"
               onClick={() => requestAnimationFrame(handleClick)}
-              style={{
-                backgroundImage: `url(${StartBtn})`,
-                backgroundSize: "contain",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                backgroundColor: "transparent",
-                borderStyle: "none",
-                borderRadius: "50px",
-                width: "100%",
-                height: "80%",
-                transition: "transform 0.1s, box-shadow 0.1s",
-                cursor: "pointer",
-              }}
             ></button>
           </div>
 
           {/* Copyright */}
-          <div className="footer-layout">
+          <footer className="footer-layout">
             {language === "en"
               ? `Designed & Built From Scratch With ❤️ By DevAKev © ${year}`
               : `Conçu & Développé de A à Z avec ❤️ Par DevAKev © ${year}`}
-          </div>
+          </footer>
         </>
       )}
       {isStarted && isMobile && <MobileNavBar />}

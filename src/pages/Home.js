@@ -1,4 +1,4 @@
-import Layout from "@components/Layout";
+import Layout from "@components/Layout/Layout";
 import { useTheme } from "@hooks/ThemeContext";
 import Skills from "@components/Home/Skills";
 import Typewriter from "@components/Animations/Typewriter";

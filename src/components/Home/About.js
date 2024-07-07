@@ -1,5 +1,5 @@
 import { useTheme } from "@hooks/ThemeContext";
-import DevImg from "@assets/images/about/dev-web.png";
+import DevImg from "@assets/images/about/about-perso-picture.webp";
 import UfoImg from "@assets/images/about/about-ufo.webp";
 
 // Component to display the about page

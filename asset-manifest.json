@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aiche-kevyn/static/css/main.ba7ec4b4.css",
-    "main.js": "/aiche-kevyn/static/js/main.ab7a1f22.js",
+    "main.css": "/aiche-kevyn/static/css/main.d1341077.css",
+    "main.js": "/aiche-kevyn/static/js/main.08d674ed.js",
     "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.1cee1d85e3e721ed9e7f.webm",
     "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.1d870e31667b9c7daadf.webm",
     "static/media/background-3-nebula-webb.webp": "/aiche-kevyn/static/media/background-3-nebula-webb.94a8922508cf3a2f2571.webp",
@@ -14,14 +14,15 @@
     "static/media/preload-start-img.webp": "/aiche-kevyn/static/media/preload-start-img.870a8b639098c571635a.webp",
     "static/media/background-services.webp": "/aiche-kevyn/static/media/background-services.bcc1d45031be7096e5d3.webp",
     "static/media/preview-andragogy.webp": "/aiche-kevyn/static/media/preview-andragogy.b00f14e2cde6754580a6.webp",
-    "static/media/about-perso-picture.webp": "/aiche-kevyn/static/media/about-perso-picture.abbb2f6cea629005925a.webp",
     "static/media/preview-asso-montagne.webp": "/aiche-kevyn/static/media/preview-asso-montagne.33946b62f88dfb9dfc8a.webp",
     "static/media/preview-garage-parrot.webp": "/aiche-kevyn/static/media/preview-garage-parrot.3df998726f07b619d4dd.webp",
     "static/media/preview-react-countries-app.webp": "/aiche-kevyn/static/media/preview-react-countries-app.0d698bdeebade07ce967.webp",
     "static/media/Halcom-Book-BF648a71455e035.otf": "/aiche-kevyn/static/media/Halcom-Book-BF648a71455e035.a42971f122707907bfaa.otf",
     "static/media/about-ufo.webp": "/aiche-kevyn/static/media/about-ufo.2b18a1eaca29581a0cdf.webp",
+    "static/media/about-perso-picture.webp": "/aiche-kevyn/static/media/about-perso-picture.2b1bd28c54d4ea992d80.webp",
     "static/media/preview-webagency.webp": "/aiche-kevyn/static/media/preview-webagency.9f0c9320ca8dfb808e6c.webp",
     "static/media/down-rocket.png": "/aiche-kevyn/static/media/down-rocket.22bccc29e046c8cf33f1.png",
+    "static/media/typewriter-perso-picture.webp": "/aiche-kevyn/static/media/typewriter-perso-picture.de518f3e23e92ddeaadf.webp",
     "static/media/start-button.webp": "/aiche-kevyn/static/media/start-button.ed336389fef9dc1848cb.webp",
     "static/media/devakev-logo.webp": "/aiche-kevyn/static/media/devakev-logo.aa8957d8cd42ee81f3a3.webp",
     "static/media/project-scroll-gif.gif": "/aiche-kevyn/static/media/project-scroll-gif.e49c864416d7213e0a5e.gif",
@@ -42,11 +43,11 @@
     "static/media/uk-flag.webp": "/aiche-kevyn/static/media/uk-flag.ced837668c686208d614.webp",
     "static/media/website.svg": "/aiche-kevyn/static/media/website.c6ce0256e4043de47b08172548ca9800.svg",
     "static/media/fr-flag.webp": "/aiche-kevyn/static/media/fr-flag.a53d47c539fa79d5cc41.webp",
-    "main.ba7ec4b4.css.map": "/aiche-kevyn/static/css/main.ba7ec4b4.css.map",
-    "main.ab7a1f22.js.map": "/aiche-kevyn/static/js/main.ab7a1f22.js.map"
+    "main.d1341077.css.map": "/aiche-kevyn/static/css/main.d1341077.css.map",
+    "main.08d674ed.js.map": "/aiche-kevyn/static/js/main.08d674ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba7ec4b4.css",
-    "static/js/main.ab7a1f22.js"
+    "static/css/main.d1341077.css",
+    "static/js/main.08d674ed.js"
   ]
 }

@@ -11,6 +11,7 @@ import "animate.css/animate.min.css";
 import Services from "@components/Home/Services";
 import Footer from "@components/Footer/Footer";
 import Contact from "@components/Home/Contact";
+import DevImg from "@assets/images/typewriter/typewriter-perso-picture.webp";
 
 const Home = () => {
   const { language } = useTheme();
@@ -45,6 +46,13 @@ const Home = () => {
           <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
             {/* Animation TypeWriter */}
             <Typewriter text={DescText} sound={languageSound} />
+            <div className="typewriter-img-container">
+              <img
+                src={DevImg}
+                alt="My presentation pic "
+                className="typewriter-img"
+              />
+            </div>
           </ScrollAnimation>
         </div>
 

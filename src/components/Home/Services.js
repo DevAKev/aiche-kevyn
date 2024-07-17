@@ -144,7 +144,7 @@ const Services = () => {
                     href={`mailto:${servicesEmail}?subject=${encodeURIComponent(
                       "Développement Web Mobile First"
                     )}&body=${encodeURIComponent(
-                      "Bonjour Kévyn, j'aimerais vous proposer un projet de développement web mobile. Quels sont les étapes à suivre ?"
+                      "Bonjour Kévyn, j'aimerais vous proposer un projet de développement web mobile. Quelles sont les étapes à suivre ?"
                     )}`}
                   >
                     transformons votre vision en réalité.

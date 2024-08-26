@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/aiche-kevyn/static/css/main.fa581dfe.css",
-    "main.js": "/aiche-kevyn/static/js/main.6445b0fd.js",
+    "main.js": "/aiche-kevyn/static/js/main.0ba51e3d.js",
     "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.1cee1d85e3e721ed9e7f.webm",
     "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.1d870e31667b9c7daadf.webm",
     "static/media/background-3-nebula-webb.webp": "/aiche-kevyn/static/media/background-3-nebula-webb.94a8922508cf3a2f2571.webp",
     "static/media/background-1-carina-nebula.webp": "/aiche-kevyn/static/media/background-1-carina-nebula.d10d52fb24d18bef7f58.webp",
     "static/media/background-2-tarantula-nebula.webp": "/aiche-kevyn/static/media/background-2-tarantula-nebula.4049ff0a021b8c3fbf7f.webp",
     "static/media/Array-Regular.ttf": "/aiche-kevyn/static/media/Array-Regular.2bd89ccac6911c43904d.ttf",
+    "static/media/about-perso-milky_way.webp": "/aiche-kevyn/static/media/about-perso-milky_way.e5dae156f44f3a5b52a4.webp",
     "static/media/keyboard_sound_fr.m4a": "/aiche-kevyn/static/media/keyboard_sound_fr.aade5df6b045b4d931dd.m4a",
     "static/media/service-design-icon.webp": "/aiche-kevyn/static/media/service-design-icon.90aca915da6078f2504d.webp",
     "static/media/keyboard_sound_en.m4a": "/aiche-kevyn/static/media/keyboard_sound_en.2a1b37f25ff45ab647fb.m4a",
@@ -22,7 +23,6 @@
     "static/media/typewriter-perso-picture.webp": "/aiche-kevyn/static/media/typewriter-perso-picture.2b1bd28c54d4ea992d80.webp",
     "static/media/preview-webagency.webp": "/aiche-kevyn/static/media/preview-webagency.9f0c9320ca8dfb808e6c.webp",
     "static/media/down-rocket.png": "/aiche-kevyn/static/media/down-rocket.22bccc29e046c8cf33f1.png",
-    "static/media/about-perso-picture.webp": "/aiche-kevyn/static/media/about-perso-picture.de518f3e23e92ddeaadf.webp",
     "static/media/start-button.webp": "/aiche-kevyn/static/media/start-button.ed336389fef9dc1848cb.webp",
     "static/media/devakev-logo.webp": "/aiche-kevyn/static/media/devakev-logo.aa8957d8cd42ee81f3a3.webp",
     "static/media/project-scroll-gif.gif": "/aiche-kevyn/static/media/project-scroll-gif.e49c864416d7213e0a5e.gif",
@@ -44,10 +44,10 @@
     "static/media/website.svg": "/aiche-kevyn/static/media/website.c6ce0256e4043de47b08172548ca9800.svg",
     "static/media/fr-flag.webp": "/aiche-kevyn/static/media/fr-flag.a53d47c539fa79d5cc41.webp",
     "main.fa581dfe.css.map": "/aiche-kevyn/static/css/main.fa581dfe.css.map",
-    "main.6445b0fd.js.map": "/aiche-kevyn/static/js/main.6445b0fd.js.map"
+    "main.0ba51e3d.js.map": "/aiche-kevyn/static/js/main.0ba51e3d.js.map"
   },
   "entrypoints": [
     "static/css/main.fa581dfe.css",
-    "static/js/main.6445b0fd.js"
+    "static/js/main.0ba51e3d.js"
   ]
 }

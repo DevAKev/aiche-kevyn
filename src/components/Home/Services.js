@@ -32,9 +32,9 @@ const Services = () => {
                 <p>
                   I create customized websites that reflect your identity.
                   Invest in your growth and increase your online visibility to
-                  attract new customers to your digital storefront. Ready for
-                  the take-off to online success ?
+                  attract new customers to your digital storefront.
                 </p>
+                <p>Ready to take off towards online success ?</p>
                 <p>
                   <a
                     className="contact-link"
@@ -44,9 +44,8 @@ const Services = () => {
                       "Hello, I am interested in your web development services. Can we discuss this further?"
                     )}`}
                   >
-                    Send your message
+                    Contact me now
                   </a>
-                  today to discuss your web development project.
                 </p>
                 <img
                   className="services-icons"
@@ -76,10 +75,8 @@ const Services = () => {
                       "Bonjour Kévyn, je suis intéressé par vos services de développement web. Pouvons-nous en discuter davantage ?"
                     )}`}
                   >
-                    Envoyez votre message
+                    Contactez moi dès maintenant
                   </a>
-                  dès aujourd’hui pour discuter de votre projet de développement
-                  web.
                 </p>
                 <img
                   className="services-icons"
@@ -118,7 +115,7 @@ const Services = () => {
                       "Hello Kévyn, I would like to propose a mobile web development project. What are the steps to follow ?"
                     )}`}
                   >
-                    let's turn your vision into reality.
+                    let's turn your vision into reality !
                   </a>
                   Let yourself be guided through the vastness of the web and
                   broaden your digital perspectives.
@@ -147,7 +144,7 @@ const Services = () => {
                       "Bonjour Kévyn, j'aimerais vous proposer un projet de développement web mobile. Quelles sont les étapes à suivre ?"
                     )}`}
                   >
-                    transformons votre vision en réalité.
+                    transformons votre vision en réalité !
                   </a>
                   Laissez vous guider à travers l'immensité du web et élargissez
                   vos perspectives numériques.
@@ -249,15 +246,14 @@ const Services = () => {
                   >
                     Are you lacking inspiration ?
                   </a>
-                  Do you want assistance in exploring and creating unique
-                  visuals that will effectively promote your brand identity?
+                  Would you like support in creating unique visuals that will
+                  allow you to promote your brand identity ?
                 </p>
-                <p>You are in a good place !</p>
+                <p>You are in a good place.</p>
                 <p>
                   With a keen eye for detail and a creative mind, I offer a wide
-                  range of services to help your business stand out,
-                  transforming your ideas into exceptional and effective
-                  graphics to convey your message and appeal to your users.
+                  range of services to help your business transform your ideas
+                  into standout graphics !
                 </p>
                 <img
                   className="services-icons"
@@ -278,17 +274,16 @@ const Services = () => {
                   >
                     En panne d'inspiration ?
                   </a>
-                  Vous souhaitez un accompagnement dans l'exploration et la
-                  création de visuels uniques qui vous permettront de promouvoir
-                  efficacement l'identité de votre marque ?
+                  Vous souhaitez un accompagnement dans la création de visuels
+                  uniques qui vous permettront de promouvoir l'identité de votre
+                  marque ?
                 </p>
-                <p>Vous êtes au bon endroit !</p>
+                <p>Vous êtes au bon endroit.</p>
                 <p>
                   Avec un œil attentif aux détails et un esprit créatif, je
                   propose une large gamme de services pour aider votre
-                  entreprise à se démarquer afin de transformer vos idées en
-                  graphisme hors du commun et efficace pour transmettre votre
-                  message et séduire vos utilisateurs.
+                  entreprise à transformer vos idées en graphisme hors du commun
+                  !
                 </p>
                 <img
                   className="services-icons"
@@ -318,14 +313,12 @@ const Services = () => {
             language === "en" ? (
               <div>
                 <p>
-                  Enhance your online presence and shine in the darkness of the
-                  internet through an effective natural search engine
+                  Shine in the dark of the internet with an effective SEO
                   optimization strategy.
                 </p>
                 <p>
-                  With good SEO practices, your website can climb in search
-                  results, attract more traffic, and convert more visitors into
-                  customers.
+                  With good SEO practices, your website can rank higher in
+                  search results and convert more visitors into customers.
                 </p>
                 <p>
                   <a
@@ -338,8 +331,8 @@ const Services = () => {
                   >
                     Let's discuss your SEO needs
                   </a>
-                  and work together to help your business achieve the visibility
-                  it deserves to rank at the top of search results.
+                  and let's work together to help your business get the
+                  visibility it deserves !
                 </p>
                 <img
                   className="services-icons"
@@ -350,14 +343,13 @@ const Services = () => {
             ) : (
               <div>
                 <p>
-                  Augmentez votre présence en ligne et brillez dans l'obscurité
-                  du net grâce à une stratégie d’optimisation du référencement
-                  naturel efficace.
+                  Brillez dans l'obscurité du net grâce à une stratégie
+                  d’optimisation du référencement naturel efficace.
                 </p>
                 <p>
-                  Avec les bonnes pratiques SEO, votre site web peut grimper
-                  dans les résultats de recherche, attirer plus de trafic et
-                  convertir plus de visiteurs en clients.
+                  Avec les bonnes pratiques SEO, votre site web peut être mis en
+                  avant dans les résultats de recherche et convertir plus de
+                  visiteurs en clients.
                 </p>
                 <p>
                   <a
@@ -371,8 +363,7 @@ const Services = () => {
                     Discutons de vos besoins en SEO
                   </a>
                   et travaillons ensemble pour aider votre entreprise à obtenir
-                  la visibilité qu'elle mérite afin de se placer en tête des
-                  résultats de recherche.
+                  la visibilité qu'elle mérite !
                 </p>
                 <img
                   className="services-icons"

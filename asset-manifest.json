@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/aiche-kevyn/static/css/main.b1db6e63.css",
-    "main.js": "/aiche-kevyn/static/js/main.7549ddb2.js",
+    "main.js": "/aiche-kevyn/static/js/main.94ffad6d.js",
     "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.1cee1d85e3e721ed9e7f.webm",
     "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.1d870e31667b9c7daadf.webm",
+    "static/media/about-perso-pic.png": "/aiche-kevyn/static/media/about-perso-pic.06426e598fe38e143afd.png",
     "static/media/background-3-nebula-webb.webp": "/aiche-kevyn/static/media/background-3-nebula-webb.94a8922508cf3a2f2571.webp",
     "static/media/background-1-carina-nebula.webp": "/aiche-kevyn/static/media/background-1-carina-nebula.d10d52fb24d18bef7f58.webp",
     "static/media/background-2-tarantula-nebula.webp": "/aiche-kevyn/static/media/background-2-tarantula-nebula.4049ff0a021b8c3fbf7f.webp",
     "static/media/Array-Regular.ttf": "/aiche-kevyn/static/media/Array-Regular.2bd89ccac6911c43904d.ttf",
-    "static/media/about-perso-milky_way.webp": "/aiche-kevyn/static/media/about-perso-milky_way.e5dae156f44f3a5b52a4.webp",
     "static/media/keyboard_sound_fr.m4a": "/aiche-kevyn/static/media/keyboard_sound_fr.aade5df6b045b4d931dd.m4a",
     "static/media/service-design-icon.webp": "/aiche-kevyn/static/media/service-design-icon.90aca915da6078f2504d.webp",
     "static/media/keyboard_sound_en.m4a": "/aiche-kevyn/static/media/keyboard_sound_en.2a1b37f25ff45ab647fb.m4a",
@@ -43,10 +43,10 @@
     "static/media/website.svg": "/aiche-kevyn/static/media/website.c6ce0256e4043de47b08172548ca9800.svg",
     "static/media/fr-flag.webp": "/aiche-kevyn/static/media/fr-flag.a53d47c539fa79d5cc41.webp",
     "main.b1db6e63.css.map": "/aiche-kevyn/static/css/main.b1db6e63.css.map",
-    "main.7549ddb2.js.map": "/aiche-kevyn/static/js/main.7549ddb2.js.map"
+    "main.94ffad6d.js.map": "/aiche-kevyn/static/js/main.94ffad6d.js.map"
   },
   "entrypoints": [
     "static/css/main.b1db6e63.css",
-    "static/js/main.7549ddb2.js"
+    "static/js/main.94ffad6d.js"
   ]
 }

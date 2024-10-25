@@ -1,5 +1,5 @@
 import { useTheme } from "@hooks/ThemeContext";
-import DevImg from "@assets/images/about/about-perso-milky_way.webp";
+import DevImg from "@assets/images/about/about-perso-pic.png";
 import UfoImg from "@assets/images/about/about-ufo.webp";
 
 // Component to display the about page
@@ -48,7 +48,6 @@ const About = () => {
   return (
     <div id="about" className="page-content">
       <h1 className="about-title">{aboutTitle}</h1>
-
       <div className="about-container">
         <div className="about-img-container">
           <img src={DevImg} alt="Developer" className="about-img" />

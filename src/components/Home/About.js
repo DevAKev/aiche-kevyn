@@ -1,5 +1,5 @@
 import { useTheme } from "@hooks/ThemeContext";
-import DevImg from "@assets/images/about/about-perso-pic.png";
+import DevImg from "@assets/images/about/about-perso-pic.webp";
 import UfoImg from "@assets/images/about/about-ufo.webp";
 
 // Component to display the about page
@@ -27,7 +27,7 @@ const About = () => {
           paragraph5:
             "This was my first professional experience in this field, which reinforced my decision to pursue a career as a developer.",
           paragraph6:
-            "I am now ready to take on new challenges within an innovative company that will trust me to develop its ideas. My goal is to discover new horizons and to conquer the world !",
+            "I am now ready to take on new challenges within an innovative company that will trust me to develop its ideas. As part of my professional journey, I will be joining the Bachelor Web Developer program at MyDigitalSchool and I am looking for an apprenticeship opportunity starting in July 2025. My goal is to explore new horizons and conquer the world !",
         }
       : {
           // French text
@@ -42,7 +42,7 @@ const About = () => {
           paragraph5:
             "Ce fut ma première plongée en situation professionnelle dans ce métier, ce qui m'a conforté dans ma décision de poursuivre une carrière en tant que développeur.",
           paragraph6:
-            "Je suis maintenant prêt à relever de nouveaux défis au sein d’une entreprise innovante qui me fera confiance pour développer ses idées. Mon objectif est de découvrir de nouveaux horizons et de conquérir le monde !",
+            "Je suis maintenant prêt à relever de nouveaux défis au sein d’une entreprise innovante qui me fera confiance pour développer ses idées. Dans le cadre de mon projet professionnel, je vais intégrer le Bachelor Développeur Web à l’école MyDigitalSchool je suis à la recherche d’une opportunité en alternance à partir du mois de juillet 2025. Mon objectif est de découvrir de nouveaux horizons et de conquérir le monde !",
         };
 
   return (

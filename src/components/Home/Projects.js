@@ -14,24 +14,24 @@ const Projects = () => {
 
   const projectsDesc = {
     project1: {
-      en: "Final training project, website for managing a garage and resale of used vehicles.",
-      fr: "Projet de fin de formation, site web de gestion d'un garage et revente de véhicules d'occasion.",
+      en: "Custom website design for a company specializing in the repair and resale of used vehicles",
+      fr: "Création d’un site web sur mesure pour une entreprise spécialisée dans la réparation et la revente de véhicules d’occasion",
     },
     project2: {
-      en: "Realization carried out during my final internship for an organization offering training.",
-      fr: "Réalisation effectuée durant mon stage de fin d'étude pour un organisme proposant des formations.",
+      en: "Development of a platform for an organization offering educational training adapted to the needs of learners",
+      fr: "Développement d’une plateforme pour un organisme proposant des formations pédagogiques adaptée aux besoins des apprenants",
     },
     project3: {
-      en: "Website for a web agency.",
-      fr: "Site web pour une agence web.",
+      en: "Design of a modern showcase website for a digital marketing agency",
+      fr: "Conception d'un site vitrine moderne pour une agence spécialisée en marketing digital",
     },
     project4: {
-      en: "Website for a non-profit organization.",
-      fr: "Site web pour une association à but non lucratif.",
+      en: "Website creation for a non-profit organization dedicated to mountain and environmental conservation",
+      fr: "Création d’un site web pour une association à but non lucratif dédiée à la protection de la montagne et de l'environnement",
     },
     project5: {
-      en: "Website to learn the names of the Countries, flags and cities of the World.",
-      fr: "Site web pour apprendre les noms des Pays, drapeaux et villes du Monde.",
+      en: "Development of an interactive educational website for learning the names of countries, their flags, and major cities around the world",
+      fr: "Développement d’un site pédagogique interactif pour l’apprentissage des noms des pays, de leurs drapeaux et des principales villes du monde",
     },
     project6: {
       en: "...",

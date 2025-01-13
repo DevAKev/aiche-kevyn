@@ -1,4 +1,5 @@
 import { useTheme } from "@hooks/ThemeContext";
+import cv from "@assets/cv/CV-WebDeveloper-12-01-2025.pdf";
 
 const Skills = () => {
   const { language } = useTheme();
@@ -6,6 +7,10 @@ const Skills = () => {
   const skillsTools = language === "en" ? "Tools" : "Outils";
   const skillsSystems =
     language === "en" ? "Systems & Browsers" : "Systèmes & Navigateurs";
+  const mobileCv = language === "en" ? "Download Resume" : "Télécharger le CV";
+  const desktopCv =
+    language === "en" ? "View Fullscreen" : "Voir en plein écran";
+  const isMobile = window.matchMedia("(max-width: 600px)").matches;
 
   // Front-end skills
   const frontEndSkills = [
@@ -60,10 +65,7 @@ const Skills = () => {
     "windows11",
     "firefox",
     "chrome",
-    "safari",
-    "opera",
     "android",
-    "raspberrypi",
     // More tools
   ];
 
@@ -71,6 +73,44 @@ const Skills = () => {
     <div id="skills" className="page-content">
       <div className="skills_container">
         <h1 className="skills-title">{skillsH1}</h1>
+        {/* CV Display & Download options */}
+        <div className="cv-container">
+          <iframe
+            src={cv}
+            className="cv-iframe"
+            title="CV Viewer"
+            width="100%"
+            style={{
+              border: "1px solid #ccc",
+              marginTop: "16px",
+              marginBottom: "16px",
+            }}
+          ></iframe>
+          <div className="cv-actions">
+            {isMobile ? (
+              <a
+                href={cv}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cv-download-button"
+                // download
+              >
+                {mobileCv}
+              </a>
+            ) : (
+              <a
+                href={cv}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cv-view-button"
+              >
+                {desktopCv}
+              </a>
+            )}
+          </div>
+        </div>
+
+        {/* skills icons */}
         <div className="skills-container-slider">
           <h2 className="skills-subtitles">Front-end :</h2>
           <div className="skills-scroll">

@@ -19,6 +19,56 @@
   font-size: 2.5rem;
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.cv-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cv-iframe {
+  width: 100%;
+  height: 60vh;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.cv-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.cv-view-button,
+.cv-download-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-view-button:hover,
+.cv-download-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .cv-iframe {
+    display: none; /* Masquer l'iframe sur mobile */
+  }
+
+  .cv-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .skills-container-slider {

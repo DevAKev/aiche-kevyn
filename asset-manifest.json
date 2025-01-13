@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aiche-kevyn/static/css/main.c6bb39d9.css",
-    "main.js": "/aiche-kevyn/static/js/main.777e7132.js",
+    "main.css": "/aiche-kevyn/static/css/main.b6d34af2.css",
+    "main.js": "/aiche-kevyn/static/js/main.26d6208b.js",
     "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.1cee1d85e3e721ed9e7f.webm",
     "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.1d870e31667b9c7daadf.webm",
     "static/media/background-3-nebula-webb.webp": "/aiche-kevyn/static/media/background-3-nebula-webb.94a8922508cf3a2f2571.webp",
@@ -13,6 +13,7 @@
     "static/media/service-design-icon.webp": "/aiche-kevyn/static/media/service-design-icon.90aca915da6078f2504d.webp",
     "static/media/keyboard_sound_en.m4a": "/aiche-kevyn/static/media/keyboard_sound_en.2a1b37f25ff45ab647fb.m4a",
     "static/media/preload-start-img.webp": "/aiche-kevyn/static/media/preload-start-img.870a8b639098c571635a.webp",
+    "static/media/capture-pdf-cv.png": "/aiche-kevyn/static/media/capture-pdf-cv.43574a400d930837ba41.png",
     "static/media/background-services.webp": "/aiche-kevyn/static/media/background-services.bcc1d45031be7096e5d3.webp",
     "static/media/preview-andragogy.webp": "/aiche-kevyn/static/media/preview-andragogy.b00f14e2cde6754580a6.webp",
     "static/media/preview-asso-montagne.webp": "/aiche-kevyn/static/media/preview-asso-montagne.33946b62f88dfb9dfc8a.webp",
@@ -43,11 +44,11 @@
     "static/media/uk-flag.webp": "/aiche-kevyn/static/media/uk-flag.ced837668c686208d614.webp",
     "static/media/website.svg": "/aiche-kevyn/static/media/website.c6ce0256e4043de47b08172548ca9800.svg",
     "static/media/fr-flag.webp": "/aiche-kevyn/static/media/fr-flag.a53d47c539fa79d5cc41.webp",
-    "main.c6bb39d9.css.map": "/aiche-kevyn/static/css/main.c6bb39d9.css.map",
-    "main.777e7132.js.map": "/aiche-kevyn/static/js/main.777e7132.js.map"
+    "main.b6d34af2.css.map": "/aiche-kevyn/static/css/main.b6d34af2.css.map",
+    "main.26d6208b.js.map": "/aiche-kevyn/static/js/main.26d6208b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6bb39d9.css",
-    "static/js/main.777e7132.js"
+    "static/css/main.b6d34af2.css",
+    "static/js/main.26d6208b.js"
   ]
 }

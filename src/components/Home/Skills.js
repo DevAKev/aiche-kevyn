@@ -1,16 +1,17 @@
 import { useTheme } from "@hooks/ThemeContext";
+import useIsMobile from "@hooks/useIsMobile";
 import cv from "@assets/cv/CV-WebDeveloper-12-01-2025.pdf";
+import screenCv from "@assets/images/skills/capture-pdf-cv.png";
 
 const Skills = () => {
   const { language } = useTheme();
   const skillsH1 = language === "en" ? "My Skills" : "Mes Compétences";
+  const isMobile = useIsMobile();
+  const desktopCv =
+    language === "en" ? "View Fullscreen" : "Voir en plein écran";
   const skillsTools = language === "en" ? "Tools" : "Outils";
   const skillsSystems =
     language === "en" ? "Systems & Browsers" : "Systèmes & Navigateurs";
-  const mobileCv = language === "en" ? "Download Resume" : "Télécharger le CV";
-  const desktopCv =
-    language === "en" ? "View Fullscreen" : "Voir en plein écran";
-  const isMobile = window.matchMedia("(max-width: 600px)").matches;
 
   // Front-end skills
   const frontEndSkills = [
@@ -73,44 +74,45 @@ const Skills = () => {
     <div id="skills" className="page-content">
       <div className="skills_container">
         <h1 className="skills-title">{skillsH1}</h1>
-        {/* CV Display & Download options */}
+
+        {/* #### CV PDF DISPLAY & DOWNLOAD #### */}
         <div className="cv-container">
-          <iframe
-            src={cv}
-            className="cv-iframe"
-            title="CV Viewer"
-            width="100%"
-            style={{
-              border: "1px solid #ccc",
-              marginTop: "16px",
-              marginBottom: "16px",
-            }}
-          ></iframe>
-          <div className="cv-actions">
-            {isMobile ? (
-              <a
-                href={cv}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cv-download-button"
-                // download
-              >
-                {mobileCv}
+          {/* Mobile */}
+          {isMobile ? (
+            <div className="screen-cv-container">
+              <a href={cv} target="_blank" rel="noopener noreferrer" download>
+                <img
+                  src={screenCv}
+                  alt="CV Screen Capture"
+                  className="screen-cv"
+                />
               </a>
-            ) : (
-              <a
-                href={cv}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cv-view-button"
-              >
-                {desktopCv}
-              </a>
-            )}
-          </div>
+            </div>
+          ) : (
+            // Desktop
+            <div className="cv-desktop-view">
+              <iframe
+                src={cv}
+                className="cv-iframe"
+                title="CV Viewer"
+                width="100%"
+                height="500px"
+              ></iframe>
+              <div className="cv-actions">
+                <a
+                  href={cv}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cv-view-button"
+                >
+                  {desktopCv}
+                </a>
+              </div>
+            </div>
+          )}
         </div>
 
-        {/* skills icons */}
+        {/* #### SKILLS ICONS SLIDER #### */}
         <div className="skills-container-slider">
           <h2 className="skills-subtitles">Front-end :</h2>
           <div className="skills-scroll">

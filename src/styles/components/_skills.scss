@@ -22,7 +22,26 @@
   margin-bottom: 40px;
 }
 
+// #### CV PDF ####
 .cv-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Mobile View - CV Capture */
+.screen-cv-container {
+  width: 100%;
+  text-align: center;
+}
+
+.screen-cv {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.cv-desktop-view {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -34,6 +53,8 @@
   height: 60vh;
   border: 1px solid #ccc;
   border-radius: 50px;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .cv-actions {
@@ -42,8 +63,9 @@
   gap: 15px;
 }
 
-.cv-view-button,
-.cv-download-button {
+.cv-view-button {
+  border: 1px solid var(--text);
+  box-shadow: 0 0 10px var(--text);
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: bold;
@@ -54,23 +76,11 @@
   transition: background-color 0.3s ease;
 }
 
-.cv-view-button:hover,
-.cv-download-button:hover {
+.cv-view-button:hover {
   background-color: #0056b3;
 }
 
-/* Responsive design */
-@media (max-width: 600px) {
-  .cv-iframe {
-    display: none; /* Masquer l'iframe sur mobile */
-  }
-
-  .cv-actions {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
+// #### SKILLS ICONS SLIDER ####
 .skills-container-slider {
   margin-top: 30px;
 }

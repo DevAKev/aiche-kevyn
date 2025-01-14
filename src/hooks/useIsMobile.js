@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useIsMobile = (query = "(max-width: 768px)") => {
+const useIsMobile = (query = "(max-width: 1200px)") => {
   const [isMobile, setIsMobile] = useState(
     typeof window !== "undefined" && window.matchMedia(query).matches
   );

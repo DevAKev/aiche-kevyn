@@ -49,9 +49,10 @@
 }
 
 .cv-iframe {
-  width: 100%;
+  width: 99%;
   height: 60vh;
-  border: 1px solid #ccc;
+  border: 1px solid var(--text);
+  box-shadow: 0 0 10px var(--text);
   border-radius: 50px;
   margin-top: 16px;
   margin-bottom: 16px;

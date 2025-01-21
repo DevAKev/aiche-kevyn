@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/aiche-kevyn/static/css/main.2c922ce8.css",
-    "main.js": "/aiche-kevyn/static/js/main.fbe0dcd8.js",
+    "main.js": "/aiche-kevyn/static/js/main.14950dd1.js",
     "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.1cee1d85e3e721ed9e7f.webm",
     "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.1d870e31667b9c7daadf.webm",
     "static/media/background-3-nebula-webb.webp": "/aiche-kevyn/static/media/background-3-nebula-webb.94a8922508cf3a2f2571.webp",
     "static/media/background-1-carina-nebula.webp": "/aiche-kevyn/static/media/background-1-carina-nebula.d10d52fb24d18bef7f58.webp",
     "static/media/background-2-tarantula-nebula.webp": "/aiche-kevyn/static/media/background-2-tarantula-nebula.4049ff0a021b8c3fbf7f.webp",
-    "static/media/CV-WebDeveloper-12-01-2025.pdf": "/aiche-kevyn/static/media/CV-WebDeveloper-12-01-2025.c7fc94d0d9621a4137f1.pdf",
+    "static/media/CV-WebDeveloper-17-01-2025(alt).pdf": "/aiche-kevyn/static/media/CV-WebDeveloper-17-01-2025(alt).dbfca002b346330befdd.pdf",
     "static/media/Array-Regular.ttf": "/aiche-kevyn/static/media/Array-Regular.2bd89ccac6911c43904d.ttf",
     "static/media/keyboard_sound_fr.m4a": "/aiche-kevyn/static/media/keyboard_sound_fr.aade5df6b045b4d931dd.m4a",
     "static/media/service-design-icon.webp": "/aiche-kevyn/static/media/service-design-icon.90aca915da6078f2504d.webp",
     "static/media/keyboard_sound_en.m4a": "/aiche-kevyn/static/media/keyboard_sound_en.2a1b37f25ff45ab647fb.m4a",
     "static/media/preload-start-img.webp": "/aiche-kevyn/static/media/preload-start-img.870a8b639098c571635a.webp",
-    "static/media/capture-pdf-cv.png": "/aiche-kevyn/static/media/capture-pdf-cv.43574a400d930837ba41.png",
     "static/media/background-services.webp": "/aiche-kevyn/static/media/background-services.bcc1d45031be7096e5d3.webp",
     "static/media/preview-andragogy.webp": "/aiche-kevyn/static/media/preview-andragogy.b00f14e2cde6754580a6.webp",
+    "static/media/capture-pdf-cv-last.png": "/aiche-kevyn/static/media/capture-pdf-cv-last.e713320275a277ff6b55.png",
     "static/media/preview-asso-montagne.webp": "/aiche-kevyn/static/media/preview-asso-montagne.33946b62f88dfb9dfc8a.webp",
     "static/media/preview-garage-parrot.webp": "/aiche-kevyn/static/media/preview-garage-parrot.3df998726f07b619d4dd.webp",
     "static/media/preview-react-countries-app.webp": "/aiche-kevyn/static/media/preview-react-countries-app.0d698bdeebade07ce967.webp",
@@ -45,10 +45,10 @@
     "static/media/website.svg": "/aiche-kevyn/static/media/website.c6ce0256e4043de47b08172548ca9800.svg",
     "static/media/fr-flag.webp": "/aiche-kevyn/static/media/fr-flag.a53d47c539fa79d5cc41.webp",
     "main.2c922ce8.css.map": "/aiche-kevyn/static/css/main.2c922ce8.css.map",
-    "main.fbe0dcd8.js.map": "/aiche-kevyn/static/js/main.fbe0dcd8.js.map"
+    "main.14950dd1.js.map": "/aiche-kevyn/static/js/main.14950dd1.js.map"
   },
   "entrypoints": [
     "static/css/main.2c922ce8.css",
-    "static/js/main.fbe0dcd8.js"
+    "static/js/main.14950dd1.js"
   ]
 }

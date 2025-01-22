@@ -1,7 +1,7 @@
 import { useTheme } from "@hooks/ThemeContext";
 import useIsMobile from "@hooks/useIsMobile";
-import cv from "@assets/cv/CV-WebDeveloper-12-01-2025.pdf";
-import screenCv from "@assets/images/skills/capture-pdf-cv.png";
+import cv from "@assets/cv/CV-WebDeveloper-17-01-2025(alt).pdf";
+import screenCv from "@assets/images/skills/capture-pdf-cv-last.png";
 
 const Skills = () => {
   const { language } = useTheme();

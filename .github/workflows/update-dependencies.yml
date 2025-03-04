@@ -17,7 +17,7 @@ jobs:
       - name: Mettre à jour les dépendances
         run: |
           npx npm-check-updates -u
-          npm install
+          npm install --legacy-peer-deps
 
       - name: Configurer Git
         run: |

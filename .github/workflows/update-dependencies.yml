@@ -1,0 +1,34 @@
+name: Monthly dependencies update
+
+on:
+  # Exécution du workflow à minuit le 1er de chaque mois
+  schedule:
+    - cron: "0 0 1 * *"
+  # Déclenchement manuel
+  workflow_dispatch:
+
+jobs:
+  update-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du dépôt
+        uses: actions/checkout@v3
+
+      - name: Mettre à jour les dépendances
+        run: |
+          npx npm-check-updates -u
+          npm install
+
+      - name: Configurer Git
+        run: |
+          git config user.name "DevAKev"
+          git config user.email "kevynpro7700@gmail.com"
+
+      - name: Commit et push des modifications
+        run: |
+          git add package.json package-lock.json
+          git commit -m "Monthly Dependencies Update $(date +'%Y-%m-%d')"
+          git push
+        env:
+          #Configuration du token GitHub (Si nécessaire)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,5 +1,9 @@
 name: Monthly dependencies update
 
+# Permissions d'exécution
+permissions:
+  contents: write
+
 on:
   # Exécution du workflow à minuit le 1er de chaque mois
   schedule:

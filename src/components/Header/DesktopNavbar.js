@@ -80,6 +80,12 @@ const DesktopNavBar = () => {
               </li>
             </a>
 
+            {/* <a href="#articles">
+              <li className="desktop_navbar_link">
+                {language === "en" ? "ARTICLES" : "ARTICLES"}
+              </li>
+            </a> */}
+
             <a href="#about">
               <li className="desktop_navbar_link">
                 {language === "en" ? "ABOUT" : "À PROPOS"}

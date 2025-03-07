@@ -5,10 +5,10 @@ import MobileIcon from "@assets/images/icons/mobiles.png";
 // import GamesIcon from "@assets/images/icons/games.png";
 import GraphicDesignIcon from "@assets/images/icons/design.png";
 import SEOIcon from "@assets/images/icons/seo.png";
-import RocketIcon from "@assets/images/icons/services-rocket-icon.webp";
-import UfoIcon from "@assets/images/icons/services-ufo-icon.webp";
-import DesignIcon from "@assets/images/icons/service-design-icon.webp";
-import PlanetIcon from "@assets/images/icons/services-planet-icon.webp";
+// import RocketIcon from "@assets/images/icons/services-rocket-icon.webp";
+// import UfoIcon from "@assets/images/icons/services-ufo-icon.webp";
+// import DesignIcon from "@assets/images/icons/service-design-icon.webp";
+// import PlanetIcon from "@assets/images/icons/services-planet-icon.webp";
 
 const Services = () => {
   const { language } = useTheme();
@@ -25,14 +25,14 @@ const Services = () => {
           description={
             language === "en" ? (
               <div>
-                <p>
+                {/* <p>
                   Are you looking for a web developer to propel your business
                   into the online world ?
-                </p>
+                </p> */}
                 <p>
-                  I create customized websites that reflect your identity.
+                  Custom websites design that reflects your brand identity.
                   Invest in your growth and increase your online visibility to
-                  attract new customers to your digital storefront.
+                  attract new customers to your digital showcase.
                 </p>
                 <p>Ready to take off towards online success ?</p>
                 <p>
@@ -47,23 +47,23 @@ const Services = () => {
                     Contact me now
                   </a>
                 </p>
-                <img
+                {/* <img
                   className="services-icons"
                   src={RocketIcon}
                   alt="Rocket Icon"
-                />
+                /> */}
               </div>
             ) : (
               <div>
-                <p>
+                {/* <p>
                   Vous cherchez un développeur web pour propulser votre
                   entreprise dans l'univers d'internet ?
-                </p>
+                </p> */}
                 <p>
-                  Je conçois des sites web sur mesure et qui vous ressemblent.
-                  Investissez dans votre croissance et augmentez votre
-                  visibilité en ligne pour attirer de nouveaux clients vers
-                  votre vitrine digitale.
+                  Conception de sites Web personnalisés qui reflètent l'identité
+                  de votre marque. Investissez dans votre croissance et
+                  augmentez votre visibilité en ligne pour attirer de nouveaux
+                  clients vers votre vitrine digitale.
                 </p>
                 <p>Prêt à décoller vers le succès en ligne ?</p>
                 <p>
@@ -75,14 +75,14 @@ const Services = () => {
                       "Bonjour Kévyn, je suis intéressé par vos services de développement web. Pouvons-nous en discuter davantage ?"
                     )}`}
                   >
-                    Contactez moi dès maintenant
+                    Votre Devis GRATUIT ➡️
                   </a>
                 </p>
-                <img
+                {/* <img
                   className="services-icons"
                   src={RocketIcon}
                   alt="Rocket Icon"
-                />
+                /> */}
               </div>
             )
           }
@@ -99,7 +99,7 @@ const Services = () => {
           description={
             language === "en" ? (
               <div>
-                <p>Do you want to reach your targets on all mobile devices ?</p>
+                {/* <p>Do you want to reach your targets on all mobile devices ?</p> */}
                 <p>
                   Unlock the full potential of your business with customized
                   mobile apps, user-friendly, visually appealing, and optimized
@@ -120,14 +120,14 @@ const Services = () => {
                   Let yourself be guided through the vastness of the web and
                   broaden your digital perspectives.
                 </p>
-                <img className="services-icons" src={UfoIcon} alt="Ufo Icon" />
+                {/* <img className="services-icons" src={UfoIcon} alt="Ufo Icon" /> */}
               </div>
             ) : (
               <div>
-                <p>
+                {/* <p>
                   Vous souhaitez atteindre vos cibles sur tous les appareils
                   mobiles ?
-                </p>
+                </p> */}
                 <p>
                   Libérez tout le potentiel de votre entreprise avec des
                   applications mobiles personnalisées, conviviales, visuellement
@@ -149,7 +149,7 @@ const Services = () => {
                   Laissez vous guider à travers l'immensité du web et élargissez
                   vos perspectives numériques.
                 </p>
-                <img className="services-icons" src={UfoIcon} alt="Ufo Icon" />
+                {/* <img className="services-icons" src={UfoIcon} alt="Ufo Icon" /> */}
               </div>
             )
           }
@@ -255,11 +255,11 @@ const Services = () => {
                   range of services to help your business transform your ideas
                   into standout graphics !
                 </p>
-                <img
+                {/* <img
                   className="services-icons"
                   src={DesignIcon}
                   alt="Design Icon"
-                />
+                /> */}
               </div>
             ) : (
               <div>
@@ -285,11 +285,11 @@ const Services = () => {
                   entreprise à transformer vos idées en graphisme hors du commun
                   !
                 </p>
-                <img
+                {/* <img
                   className="services-icons"
                   src={DesignIcon}
                   alt="Design Icon"
-                />
+                /> */}
               </div>
             )
           }
@@ -334,11 +334,11 @@ const Services = () => {
                   and let's work together to help your business get the
                   visibility it deserves !
                 </p>
-                <img
+                {/* <img
                   className="services-icons"
                   src={PlanetIcon}
                   alt="Planet Icon"
-                />
+                /> */}
               </div>
             ) : (
               <div>
@@ -365,11 +365,11 @@ const Services = () => {
                   et travaillons ensemble pour aider votre entreprise à obtenir
                   la visibilité qu'elle mérite !
                 </p>
-                <img
+                {/* <img
                   className="services-icons"
                   src={PlanetIcon}
                   alt="Planet Icon"
-                />
+                /> */}
               </div>
             )
           }

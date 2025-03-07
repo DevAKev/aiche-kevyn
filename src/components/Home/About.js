@@ -1,5 +1,5 @@
 import { useTheme } from "@hooks/ThemeContext";
-import DevImg from "@assets/images/about/about-perso-pic.webp";
+import DevImg from "@assets/images/about/lbc-img-2.jpeg";
 import UfoImg from "@assets/images/about/about-ufo.webp";
 
 // Component to display the about page
@@ -82,4 +82,4 @@ const About = () => {
 
 export default About;
 
-// ###### TODO : AJOUTER PHOTO PERSO / AJOUTER LA POSSIBILITE DE CONSULTER LE DIPLÔME ET LE CV ######
+// ###### TODO : AJOUTER PHOTO PERSO / AJOUTER LA POSSIBILITE DE CONSULTER LE DIPLÔME ######

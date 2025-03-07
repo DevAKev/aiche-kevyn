@@ -1,14 +1,14 @@
 // Import all files scss in this folder
-@import "./settings";
-@import "./src/styles/components/_layout";
-@import "./src/styles/components/_about";
-@import "./src/styles/components/_home";
-@import "./src/styles/components/_logo";
-@import "./src/styles/components/_skills";
-@import "./src/styles/components/_projects";
-@import "./src/styles/components/_header";
-@import "./src/styles/components/_footer";
-@import "./src/styles/components/_milkyWay";
-@import "./src/styles/components/_services";
-@import "./src/styles/components/_contact";
-// @import "./src/styles/components/_articles";
+@use "./settings";
+@use "./src/styles/components/_layout";
+@use "./src/styles/components/_about";
+@use "./src/styles/components/_home";
+@use "./src/styles/components/_logo";
+@use "./src/styles/components/_skills";
+@use "./src/styles/components/_projects";
+@use "./src/styles/components/_header";
+@use "./src/styles/components/_footer";
+@use "./src/styles/components/_milkyWay";
+@use "./src/styles/components/_services";
+@use "./src/styles/components/_contact";
+// @use "./src/styles/components/_articles";

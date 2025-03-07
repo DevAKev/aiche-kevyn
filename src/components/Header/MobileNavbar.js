@@ -44,9 +44,13 @@ const MobileNavBar = () => {
       url: "https://www.linkedin.com/in/kévyn-aiche",
       icon: LinkIcon,
     },
-    { name: "Facebook", url: "https://www.facebook.com/", icon: FbIcon },
-    { name: "Twitter", url: "https://www.twitter.com/", icon: TwitIcon },
+    {
+      name: "Facebook",
+      url: "https://www.facebook.com/Devakev.pro/",
+      icon: FbIcon,
+    },
     { name: "Instagram", url: "https://www.instagram.com/", icon: InstaIcon },
+    { name: "Twitter", url: "https://www.twitter.com/", icon: TwitIcon },
   ];
 
   // Close the mobile menu when clicking outside

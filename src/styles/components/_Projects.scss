@@ -211,6 +211,20 @@ section {
   }
 }
 
+.seventh {
+  .bg {
+    background-image: $bg-gradient,
+      url(../../assets/images/projectsImages/preview-trouvez-votre-voiture.png);
+  }
+}
+
+.eight {
+  .bg {
+    background-image: $bg-gradient,
+      url(../../assets/images/projectsImages/preview-familink.png);
+  }
+}
+
 .section-heading * {
   will-change: transform;
 }

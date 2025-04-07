@@ -12,6 +12,7 @@ import Skills from "@components/Home/Skills";
 import About from "@components/Home/About";
 import Contact from "@components/Home/Contact";
 import Footer from "@components/Footer/Footer";
+// import EstimateForm from "@components/EstimateForm/EstimateForm";
 
 const Home = () => {
   const { language } = useTheme();
@@ -49,6 +50,12 @@ const Home = () => {
             <Typewriter text={descText} sound={languageSound} />
           </ScrollAnimation>
         </div>
+
+        {/* <div className="scroll-animation-container">
+          <ScrollAnimation animateIn="animate__bounceInUp" animateOnce={true}>
+            <EstimateForm />
+          </ScrollAnimation>
+        </div> */}
 
         {/* Projets section */}
         <div className="scroll-animation-container">

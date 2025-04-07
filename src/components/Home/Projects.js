@@ -34,8 +34,12 @@ const Projects = () => {
       fr: "Développement d’un site pédagogique interactif pour l’apprentissage des noms des pays, de leurs drapeaux et des principales villes du monde",
     },
     project6: {
-      en: "...",
-      fr: "...",
+      en: "WORK IN PROGRESS: Development of an application for searching for used vehicles on the main classified ad sites in France, with advanced filters and automation of data retrieval.",
+      fr: "PROJET EN COURS : Développement d'une application de recherche de véhicules d'occasion sur les principaux sites d'annonces en France, avec filtres avancés et automatisation de la récupération.",
+    },
+    project7: {
+      en: "WORK IN PROGRESS: Development of an application to manage family projects and organize family events.",
+      fr: "PROJET EN COURS: Développement d'une application pour gérer les projets de familles et organiser les événements familiaux.",
     },
   };
 
@@ -217,6 +221,48 @@ const Projects = () => {
               "react",
               "axios",
               "reactrouter",
+            ]}
+          />
+
+          {/* - Search used cars app  - */}
+          <ProjectSection
+            loading="lazy"
+            className="seventh"
+            title="Trouvez votre voiture"
+            link="https://github.com/DevAKev/trouvez-votre-voiture"
+            projectsLink={projectsLink}
+            description={projectsDesc.project6[language]}
+            technologies={[
+              "figma",
+              "trello",
+              "html5",
+              "css3",
+              "react",
+              "axios",
+              "vitejs",
+              "express",
+              "tailwindcss",
+              "puppeteer",
+            ]}
+          />
+
+          {/* - Familink - */}
+          <ProjectSection
+            loading="lazy"
+            className="eight"
+            title="Familink"
+            link="#"
+            projectsLink={projectsLink}
+            description={projectsDesc.project7[language]}
+            technologies={[
+              "figma",
+              "trello",
+              "html5",
+              "css3",
+              "react",
+              "axios",
+              "vitejs",
+              "express",
             ]}
           />
         </div>

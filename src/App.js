@@ -7,7 +7,6 @@ const App = () => {
   return (
     // Wrap the app with the ThemeProvider
     <ThemeProvider>
-      {/* <StarRain /> */}
       <Home />
     </ThemeProvider>
   );

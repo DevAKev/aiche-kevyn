@@ -8,6 +8,7 @@ module.exports = override(
     "@hooks": path.resolve(__dirname, "src/hooks"),
     "@pages": path.resolve(__dirname, "src/pages"),
     "@styles": path.resolve(__dirname, "src/styles"),
+    "@data": path.resolve(__dirname, "src/data"),
   })
 );
 
@@ -17,3 +18,4 @@ module.exports = override(
 // - @hooks: src/hooks
 // - @pages: src/pages
 // - @styles: src/styles
+// - @data: src/data

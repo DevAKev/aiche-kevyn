@@ -50,11 +50,7 @@ export const getProjectsData = (language) => {
         "jquery",
         "php",
         "mysql",
-        "bootstrap",
         "npm",
-        "git",
-        "apache",
-        "filezilla",
       ],
     },
 

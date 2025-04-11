@@ -4,7 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// * Hook pour gérer le scroll avec GSAP, détecter le scroll et déclencher les animations
 export const useGsapProjectsScroll = () => {
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -37,7 +36,7 @@ export const useGsapProjectsScroll = () => {
       const dFactor = fromTop ? -1 : 1;
 
       const tl = gsap.timeline({
-        defaults: { duration: 1.25, ease: "power1.inOut" },
+        defaults: { duration: 0.8, ease: "power2.out" }, // 🟢 plus rapide + fluide
         onComplete: () => (animating = false),
       });
 
@@ -65,20 +64,19 @@ export const useGsapProjectsScroll = () => {
           {
             autoAlpha: 1,
             yPercent: 0,
-            duration: 1,
-            ease: "power2",
-            stagger: 0.05,
+            duration: 0.6, // plus court
+            ease: "power2.out",
+            stagger: 0.03, // 🟢 plus rapide
           }
         );
 
       currentIndex = index;
     };
 
-    // * ScrollTrigger pour gérer le défilement de la souris et les animations
     ScrollTrigger.observe({
       target: ".projects-container",
       type: "wheel,touch,pointer",
-      wheelSpeed: -1,
+      wheelSpeed: -1.5, // 🟢 plus réactif
       onDown: () => !animating && gotoSection(currentIndex - 1, -1),
       onUp: () => !animating && gotoSection(currentIndex + 1, 1),
       tolerance: 10,

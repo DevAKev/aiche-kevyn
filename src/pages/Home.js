@@ -59,22 +59,14 @@ const Home = () => {
 
         {/* Projets section */}
         <div className="scroll-animation-container">
-          <ScrollAnimation animateIn="animate__heartBeat" animateOnce={true}>
-            <div className="section-wrap">
-              <Projects />
-            </div>
-          </ScrollAnimation>
+          <div className="section-wrap">
+            <Projects />
+          </div>
         </div>
 
         {/* Services section */}
         <div className="scroll-animation-container">
-          <ScrollAnimation
-            animateIn="animate__bounceInUp"
-            animateOnce={true}
-            delay={600}
-          >
-            <Services />
-          </ScrollAnimation>
+          <Services />
         </div>
 
         {/* Skills section */}
@@ -100,7 +92,7 @@ const Home = () => {
         {/* About section */}
         <div className="scroll-animation-container">
           <ScrollAnimation
-            animateIn="animate__fadeInLeftBig"
+            animateIn="animate__fadeInRightBig"
             animateOnce={true}
             delay={300}
           >

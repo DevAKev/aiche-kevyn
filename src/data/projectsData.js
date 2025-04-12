@@ -3,30 +3,37 @@ export const getProjectsData = (language) => {
   const translations = {
     link: language === "en" ? "Click to view" : "Cliquer pour voir",
     description: {
+      // GARAGE PARROT */
       project1: {
         en: "Custom website design for a company specializing in the repair and resale of used vehicles",
         fr: "Création d’un site web sur mesure pour une entreprise spécialisée dans la réparation et la revente de véhicules d’occasion",
       },
+      // ANDRAGOGY */
       project2: {
         en: "Development of a platform for an organization offering educational training adapted to the needs of learners",
         fr: "Développement d’une plateforme pour un organisme proposant des formations pédagogiques adaptée aux besoins des apprenants",
       },
+      // WEB AGENCY */
       project3: {
         en: "Design of a modern showcase website for a digital marketing agency",
         fr: "Conception d'un site vitrine moderne pour une agence spécialisée en marketing digital",
       },
+      // LES AMIS DE LA MONTAGNE */
       project4: {
         en: "Website creation for a non-profit organization dedicated to mountain and environmental conservation",
         fr: "Création d’un site web pour une association à but non lucratif dédiée à la protection de la montagne et de l'environnement",
       },
+      // DRAPEAUX DU MONDE */
       project5: {
         en: "Development of an interactive educational website for learning the names of countries, their flags, and major cities around the world",
         fr: "Développement d’un site pédagogique interactif pour l’apprentissage des noms des pays, de leurs drapeaux et des principales villes du monde",
       },
+      // TROUVEZ VOTRE VOITURE */
       project6: {
         en: "WORK IN PROGRESS: Application to search used vehicles on French classified ad sites, with filters and data automation.",
         fr: "PROJET EN COURS : Application de recherche de véhicules d'occasion sur les sites d'annonces en France avec filtres et automatisation.",
       },
+      // FAMILINK */
       project7: {
         en: "WORK IN PROGRESS: Application to manage family projects and organize events.",
         fr: "PROJET EN COURS : Application pour gérer les projets de famille et organiser les événements.",

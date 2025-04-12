@@ -1,62 +1,25 @@
 import { useTheme } from "@hooks/ThemeContext";
 import DevImg from "@assets/images/about/lbc-img-2.jpeg";
 import UfoImg from "@assets/images/about/about-ufo.webp";
+import { getAboutData } from "@data/aboutData";
 
 // Component to display the about page
 const About = () => {
   const { language } = useTheme();
-
-  const aboutTitle = language === "en" ? "About" : "À propos";
-  const aboutSubtitle =
-    language === "en"
-      ? "I'm a passionate developer !"
-      : "Je suis un développeur passionné !";
-
-  const aboutText =
-    language === "en"
-      ? {
-          // English text
-          paragraph1:
-            "My passion for development began in 2018. I discovered the unlimited potential of computer programming and immediately fell in love !",
-          paragraph2:
-            "I decided to radically change my life. I started practicing alongside jobs in other fields, which required a lot of concentration.",
-          paragraph3:
-            "End of 2022, I wanted to get started for make it my career by completing the Bac+2 diploma in 'Full Stack' Web and Mobile Web Developer, which I obtained in February 2024.",
-          paragraph4:
-            "After this success, I had the opportunity to do an internship of several months to collaborate on the development of an application intended for the training sector for companies and schools.",
-          paragraph5:
-            "This was my first professional experience in this field, which reinforced my decision to pursue a career as a developer.",
-          paragraph6:
-            "I am now ready to take on new challenges within an innovative company that will trust me to develop its ideas. As part of my professional journey, I will be joining the Bachelor Web Developer program at MyDigitalSchool and I am looking for an apprenticeship opportunity starting in July 2025. My goal is to explore new horizons and conquer the world !",
-        }
-      : {
-          // French text
-          paragraph1:
-            "Ma passion pour le développement a commencé en 2018. J'ai découvert le potentiel illimité de la programmation informatique et je suis immédiatement tombé amoureux !",
-          paragraph2:
-            "J’ai décidé de changer radicalement de vie. J’ai commencé à pratiquer en parallèle d'emplois dans d'autres domaines, ce qui m'a demandé une grande concentration.",
-          paragraph3:
-            "Fin 2022, j'ai voulu me lancer pour en faire mon métier en passant le diplôme Bac+2 de Developpeur Web et Web mobile 'Full Stack', que j'ai obtenu en Février 2024.",
-          paragraph4:
-            "Après ce succès, j'ai eu l'opportunité de réaliser un stage de plusieurs mois pour collaborer au développement d'une application destinée au secteur de la formation pour les entreprises et les écoles.",
-          paragraph5:
-            "Ce fut ma première plongée en situation professionnelle dans ce métier, ce qui m'a conforté dans ma décision de poursuivre une carrière en tant que développeur.",
-          paragraph6:
-            "Je suis maintenant prêt à relever de nouveaux défis au sein d’une entreprise innovante qui me fera confiance pour développer ses idées. Dans le cadre de mon projet professionnel, je vais intégrer le Bachelor Développeur Web à l’école MyDigitalSchool je suis à la recherche d’une opportunité en alternance à partir du mois de juillet 2025. Mon objectif est de découvrir de nouveaux horizons et de conquérir le monde !",
-        };
+  const about = getAboutData(language);
 
   return (
     <div id="about" className="page-content">
-      <h1 className="about-title">{aboutTitle}</h1>
+      <h1 className="about-title">{about.title}</h1>
       <div className="about-container">
         <div className="about-img-container">
           <img src={DevImg} alt="Developer" className="about-img" />
         </div>
         <div className="about-text-container">
-          <h2 className="about-subtitle">{aboutSubtitle}</h2>
-          <p className="about-text">{aboutText.paragraph1}</p>
-          <p className="about-text">{aboutText.paragraph2}</p>
-          <p className="about-text">{aboutText.paragraph3}</p>
+          <h2 className="about-subtitle">{about.subtitle}</h2>
+          <p className="about-text">{about.paragraphs[0]}</p>
+          <p className="about-text">{about.paragraphs[1]}</p>
+          <p className="about-text">{about.paragraphs[2]}</p>
         </div>
       </div>
       <div className="about-img-container">
@@ -64,9 +27,9 @@ const About = () => {
       </div>
       <div className="about-container">
         <div className="about-text-container2">
-          <p className="about-text2">{aboutText.paragraph4}</p>
-          <p className="about-text2">{aboutText.paragraph5}</p>
-          <p className="about-text2">{aboutText.paragraph6}</p>
+          <p className="about-text2">{about.paragraphs[3]}</p>
+          <p className="about-text2">{about.paragraphs[4]}</p>
+          <p className="about-text2">{about.paragraphs[5]}</p>
         </div>
         <div className="about-img-container">
           <img
@@ -81,5 +44,3 @@ const About = () => {
 };
 
 export default About;
-
-// ###### TODO : AJOUTER PHOTO PERSO / AJOUTER LA POSSIBILITE DE CONSULTER LE DIPLÔME ######

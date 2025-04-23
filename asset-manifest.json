@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/aiche-kevyn/static/css/main.7f30bc32.css",
-    "main.js": "/aiche-kevyn/static/js/main.52a92678.js",
+    "main.css": "/aiche-kevyn/static/css/main.a458da27.css",
+    "main.js": "/aiche-kevyn/static/js/main.8514769a.js",
     "static/media/start-background-video-milky-way.webm": "/aiche-kevyn/static/media/start-background-video-milky-way.1cee1d85e3e721ed9e7f.webm",
     "static/media/contact-background-video.webm": "/aiche-kevyn/static/media/contact-background-video.1d870e31667b9c7daadf.webm",
     "static/media/background-3-nebula-webb.webp": "/aiche-kevyn/static/media/background-3-nebula-webb.94a8922508cf3a2f2571.webp",
@@ -10,7 +10,7 @@
     "static/media/background-2-tarantula-nebula.webp": "/aiche-kevyn/static/media/background-2-tarantula-nebula.4049ff0a021b8c3fbf7f.webp",
     "static/media/Array-Regular.ttf": "/aiche-kevyn/static/media/Array-Regular.2bd89ccac6911c43904d.ttf",
     "static/media/lbc-img-2.jpeg": "/aiche-kevyn/static/media/lbc-img-2.0563305c6d43e62528e4.jpeg",
-    "static/media/web-developer-17-03-2025-alt.pdf": "/aiche-kevyn/static/media/web-developer-17-03-2025-alt.07a54b25c547e7db7065.pdf",
+    "static/media/web-developer-23-04-2025-alt.pdf": "/aiche-kevyn/static/media/web-developer-23-04-2025-alt.38645a55adbd3b983475.pdf",
     "static/media/keyboard_sound_fr.m4a": "/aiche-kevyn/static/media/keyboard_sound_fr.aade5df6b045b4d931dd.m4a",
     "static/media/background-space-services.webp": "/aiche-kevyn/static/media/background-space-services.68bf0faa421001e9201e.webp",
     "static/media/preview-familink.png": "/aiche-kevyn/static/media/preview-familink.8e21f53456a4fddf7104.png",
@@ -21,7 +21,7 @@
     "static/media/preview-garage-parrot.webp": "/aiche-kevyn/static/media/preview-garage-parrot.3df998726f07b619d4dd.webp",
     "static/media/preview-react-countries-app.webp": "/aiche-kevyn/static/media/preview-react-countries-app.0d698bdeebade07ce967.webp",
     "static/media/Halcom-Book-BF648a71455e035.otf": "/aiche-kevyn/static/media/Halcom-Book-BF648a71455e035.a42971f122707907bfaa.otf",
-    "static/media/capture-pdf-cv-last.webp": "/aiche-kevyn/static/media/capture-pdf-cv-last.ba03d4e8d439a3819f9b.webp",
+    "static/media/capture-pdf-cv-last.webp": "/aiche-kevyn/static/media/capture-pdf-cv-last.01ec5f6e90ca296baa08.webp",
     "static/media/about-ufo.webp": "/aiche-kevyn/static/media/about-ufo.2b18a1eaca29581a0cdf.webp",
     "static/media/preview-webagency.webp": "/aiche-kevyn/static/media/preview-webagency.9f0c9320ca8dfb808e6c.webp",
     "static/media/down-rocket.png": "/aiche-kevyn/static/media/down-rocket.22bccc29e046c8cf33f1.png",
@@ -42,11 +42,11 @@
     "static/media/uk-flag.webp": "/aiche-kevyn/static/media/uk-flag.ced837668c686208d614.webp",
     "static/media/website.svg": "/aiche-kevyn/static/media/website.c6ce0256e4043de47b08172548ca9800.svg",
     "static/media/fr-flag.webp": "/aiche-kevyn/static/media/fr-flag.a53d47c539fa79d5cc41.webp",
-    "main.7f30bc32.css.map": "/aiche-kevyn/static/css/main.7f30bc32.css.map",
-    "main.52a92678.js.map": "/aiche-kevyn/static/js/main.52a92678.js.map"
+    "main.a458da27.css.map": "/aiche-kevyn/static/css/main.a458da27.css.map",
+    "main.8514769a.js.map": "/aiche-kevyn/static/js/main.8514769a.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f30bc32.css",
-    "static/js/main.52a92678.js"
+    "static/css/main.a458da27.css",
+    "static/js/main.8514769a.js"
   ]
 }

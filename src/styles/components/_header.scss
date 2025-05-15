@@ -44,11 +44,11 @@ header {
   animation: fadeIn 0.7s ease-in forwards, curtainOpen 1.5s ease-in-out;
   transition: background-image 3s ease-in-out;
 }
-@media screen and (max-width: 500px) {
-  .header {
-    border-radius: 0 0 75% 75% / 0 0 20% 20%;
-  }
-}
+// @media screen and (max-width: 500px) {
+//   .header {
+//     border-radius: 0 0 75% 75% / 0 0 20% 20%;
+//   }
+// }
 
 @keyframes curtainOpen {
   0% {

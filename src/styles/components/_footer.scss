@@ -10,11 +10,11 @@
   z-index: 5;
   border-top: 1px solid var(--text);
 }
-@media screen and (max-width: 500px) {
-  .mobile-footer {
-    border-radius: 75% 75% 0 0 / 32% 32% 0 0;
-  }
-}
+// @media screen and (max-width: 500px) {
+//   .mobile-footer {
+//     border-radius: 75% 75% 0 0 / 32% 32% 0 0;
+//   }
+// }
 
 .mobile-btn-container {
   display: flex;

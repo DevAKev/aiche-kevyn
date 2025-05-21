@@ -8,10 +8,18 @@ export const useTheme = () => {
 
 // Languages and Themes Mode
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-  const [language, setLanguage] = useState(
-    localStorage.getItem("language") || "fr"
-  );
+  const getInitialTheme = () => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme || "dark"; // Default to dark mode
+  };
+
+  const getInitialLanguage = () => {
+    const savedLanguage = localStorage.getItem("language");
+    return savedLanguage || "fr"; // Default to French
+  };
+
+  const [theme, setTheme] = useState(getInitialTheme);
+  const [language, setLanguage] = useState(getInitialLanguage);
 
   // Dark mode & Light mode function
   const toggleTheme = () => {

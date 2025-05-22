@@ -10,8 +10,8 @@ const Skills = () => {
   const desktopCv =
     language === "en" ? "View Fullscreen" : "Voir en plein écran";
   const skillsTools = language === "en" ? "Tools" : "Outils";
-  const skillsSystems =
-    language === "en" ? "Systems & Browsers" : "Systèmes & Navigateurs";
+  // const skillsSystems =
+  //   language === "en" ? "Systems & Browsers" : "Systèmes & Navigateurs";
 
   // Front-end skills
   const frontEndSkills = [
@@ -19,12 +19,14 @@ const Skills = () => {
     "css3",
     "sass",
     "javascript",
-    "jquery",
     "vitejs",
     "react",
+    "typescript",
     "vuejs",
     "bootstrap",
+    "reactbootstrap",
     "tailwindcss",
+    "materializecss",
     "materialui",
     // More front-end skills
   ];
@@ -35,9 +37,6 @@ const Skills = () => {
     "php",
     "mysql",
     "sqlite",
-    "python",
-    "bash",
-    "nginx",
     "apache",
     "mariadb",
     "postman",
@@ -46,29 +45,38 @@ const Skills = () => {
 
   // Tools skills
   const tools = [
+    "vitest",
+    "mocha",
+    "jest",
+    "jira",
+    "puppeteer",
+    "stackoverflow",
     "axios",
     "git",
     "webpack",
     "github",
     "figma",
     "trello",
+    "notion",
+    "canva",
     "slack",
     "photoshop",
     "illustrator",
     "xd",
     "vscode",
     "filezilla",
+    "wordpress",
     // More tools
   ];
 
   // Operating systems skills
-  const systems = [
-    "windows11",
-    "firefox",
-    "chrome",
-    "android",
-    // More tools
-  ];
+  // const systems = [
+  //   "windows11",
+  //   "firefox",
+  //   "chrome",
+  //   "android",
+  //   // More tools
+  // ];
 
   return (
     <div id="skills" className="page-content">
@@ -153,7 +161,7 @@ const Skills = () => {
               ))}
             </ul>
           </div>
-          <h2 className="skills-subtitles">{skillsSystems} :</h2>
+          {/* <h2 className="skills-subtitles">{skillsSystems} :</h2>
           <div className="skills-scroll">
             <ul className="skills-ul">
               {systems.map((system, index) => (
@@ -165,7 +173,7 @@ const Skills = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

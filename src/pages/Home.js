@@ -6,7 +6,7 @@ import EnTypewriter from "@assets/sounds/keyboard_sound_en.m4a";
 import FrTypewriter from "@assets/sounds/keyboard_sound_fr.m4a";
 import Typewriter from "@components/Animations/Typewriter";
 import Projects from "@components/Home/Projects";
-import Services from "@components/Home/Services";
+// import Services from "@components/Home/Services";
 import Skills from "@components/Home/Skills";
 // import Articles from "@components/Home/Articles";
 import About from "@components/Home/About";
@@ -65,9 +65,9 @@ const Home = () => {
         </div>
 
         {/* Services section */}
-        <div className="scroll-animation-container">
+        {/* <div className="scroll-animation-container">
           <Services />
-        </div>
+        </div> */}
 
         {/* Skills section */}
         <div className="scroll-animation-container">

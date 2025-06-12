@@ -83,11 +83,11 @@ const MobileNavBar = () => {
             {language === "en" ? "ACHIEVEMENTS" : "RÉALISATIONS"}
           </a>
         </li>
-        <li className={`navbar__item slideInDown2`}>
+        {/* <li className={`navbar__item slideInDown2`}>
           <a href="#services" className="mobile_subtitle2">
             {language === "en" ? "SERVICES" : "SERVICES"}
           </a>
-        </li>
+        </li> */}
         <li className={`navbar__item slideInDown2`}>
           <a href="#skills" className="mobile_subtitle2">
             {language === "en" ? "SKILLS" : "COMPETENCES"}

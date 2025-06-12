@@ -68,11 +68,11 @@ const DesktopNavBar = () => {
               </li>
             </a>
 
-            <a href="#services">
+            {/* <a href="#services">
               <li className="desktop_navbar_link">
                 {language === "en" ? "SERVICES" : "SERVICES"}
               </li>
-            </a>
+            </a> */}
 
             <a href="#skills">
               <li className="desktop_navbar_link">

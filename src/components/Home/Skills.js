@@ -1,6 +1,6 @@
 import { useTheme } from "@hooks/ThemeContext";
 import useIsMobile from "@hooks/useIsMobile";
-import cv from "@assets/cv/web-developer-19-05-25.pdf";
+import cv from "@assets/cv/DÉVELOPPEUR-WEB-12-06-25.pdf";
 import screenCv from "@assets/images/skills/capture-pdf-cv-last.webp";
 
 const Skills = () => {

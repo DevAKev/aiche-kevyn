@@ -71,11 +71,11 @@ const DesktopFooter = () => {
               {menuLink.projects}
             </a>
           </li>
-          <li className="desktop-menu-item">
+          {/* <li className="desktop-menu-item">
             <a href="#services" className="desktop-menu-link">
               {menuLink.services}
             </a>
-          </li>
+          </li> */}
           <li className="desktop-menu-item">
             <a href="#skills" className="desktop-menu-link">
               {menuLink.skills}
